@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="Labitec.LeadForce.WorkflowAPI.Workflow" CodeBehind="Workflow.svc.cs" %>

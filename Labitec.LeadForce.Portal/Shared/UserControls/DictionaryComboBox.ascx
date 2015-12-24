@@ -1,0 +1,5 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="DictionaryComboBox.ascx.cs" Inherits="Labitec.LeadForce.Portal.Shared.UserControls.DictionaryComboBox" %>
+<telerik:RadComboBox ID="rcbDictionary" DataSourceID="edsDictionary" runat="server" AllowCustomText="false" Filter="Contains" ShowToggleImage="True" EnableEmbeddedSkins="false" skin="Labitec" Width="234px" ExpandAnimation-Type="None" CollapseAnimation-Type="None" />
+<asp:RequiredFieldValidator ID="rfvDictionary" ControlToValidate="rcbDictionary" CssClass="required" Text="*" ErrorMessage="Вы не выбрали значение" runat="server" InitialValue="Выберите значение"/>
+<asp:LinkButton runat="server" ID="lbtnEditDictionary" CssClass="edit-button" OnClick="lbtnEditDictionary_Click" Visible="false"><span>Редактировать</span></asp:LinkButton>
+<asp:EntityDataSource ID="edsDictionary" runat="server" ConnectionString="name=WebCounterEntities" DefaultContainerName="WebCounterEntities" />

@@ -1,0 +1,37 @@
+﻿html, body { overflow: hidden; margin: 0px; padding: 0px; }
+body { background-color: #fff!important; font-family: Tahoma, Geneva, sans-serif; color: #222; font-size: 12px; line-height: 14px;margin: 0;padding: 0 }
+.ajax-loader { background: url(../images/ajax-loader.gif) 5px 5px no-repeat; width:48px; height:48px; padding: 5px; background-color: #000000; opacity: 0.6; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=60); position: fixed; z-index: 999; top: 0; left: 49%; border-radius: 0 0 5px 5px; -moz-border-radius: 0 0 5px 5px; -webkit-border-radius: 0 0 5px 5px; }
+.clear { clear: both; height: 0; line-height: 0; font-size: 0 }
+.clearfix { zoom: 1; }
+.clearfix:after { content: ' '; clear: both; display: block; width: 0; height: 0; overflow: hidden; font-size: 0; }
+
+.row.required label, .required {color: #fc0202 }
+input.input-text { width: 450px; height: 25px; border: 1px solid #999; background: #fff url(../images/bgInput.gif) repeat-x; font-family: Tahoma, Geneva, sans-serif; font-size: 12px; line-height: 25px; padding: 0 6px; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; }
+select.select-text { width: 234px; height: 27px; border: 1px solid #999; background: #fff url(../images/bgInput.gif) repeat-x; font-family: Tahoma, Geneva, sans-serif; font-size: 12px; line-height: 27px; padding: 3px; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; }
+input:focus.input-text,
+select:focus.select-text,
+textarea:focus.area-text { border: 1px solid #bccbdd; -moz-box-shadow: 0px 0px 10px #bccbdd; -webkit-box-shadow: 0px 0px 10px #bccbdd; box-shadow: 0px 0px 10px #bccbdd; }
+.row.required input { border: 1px solid #fe6868; -moz-box-shadow: 0px 0px 5px #fe6868; -webkit-box-shadow: 0px 0px 5px #fe6868; box-shadow: 0px 0px 5px #fe6868; }
+
+.success {font-size: 12px; background: url(../images/btnOk.png) no-repeat #d4f9ce;background-position: 10px center;padding: 20px 10px 20px 45px;border: 1px solid #9acc92; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;margin-top: 0px  }
+
+textarea.area-text { width: 450px; height: 60px; border: 1px solid #999; background: #fff url(../images/bgInput.gif) repeat-x; font-family: Tahoma, Geneva, sans-serif; font-size: 12px; line-height: 15px; padding: 6px; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; resize: none; vertical-align: top; }
+
+
+a.btn { margin-bottom: 10px;margin-top: 16px;height: 27px; display: inline-block; font-size: 13px; font-weight: normal; line-height: 27px; text-decoration: none!important; text-align: center; color: #fff; background-color: #64c400; -webkit-border-radius: 16px; -moz-border-radius: 16px; border-radius: 16px; }
+a.btn em { width: 13px; height: 27px; display: inline-block; float: left; background: url(../../../images/sprite.png) 0 -97px no-repeat; }
+a.btn span { height: 27px; display: inline-block; float: left; background: url(../../../images/sprite.png) right -70px no-repeat; padding: 0 26px 0 12px; }
+a:hover.btn em { background-position: 0 -151px; }
+a:hover.btn span { background-position: right -124px; }
+a:active.btn em { background-position: 0 -205px; }
+a:active.btn span { background-position: right -178px; }        
+
+.container { width: 570px }
+
+.row { color: #666; font-size: 12px; line-height: 14px; font-weight: bold;padding-top: 12px }
+.row label { width: 82px; display: inline-block; font-weight: normal; padding-right: 15px;color:#777 }
+
+h1 { font-size: 18px;color: #222;font-weight: normal;padding: 0;margin: 0;padding-bottom: 14px}
+p.instruction { font-size: 11px;color: #9db5c1;margin: 0 }
+a.link {color: #315a6f;text-decoration: none}
+a.link:hover {text-decoration: underline}

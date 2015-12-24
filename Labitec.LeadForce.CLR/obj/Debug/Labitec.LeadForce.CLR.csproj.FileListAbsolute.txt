@@ -1,0 +1,10 @@
+C:\Users\Andrey\Desktop\LeadForce\Labitec.LeadForce.CLR\bin\Debug\Labitec.LeadForce.CLR.dll
+C:\Users\Andrey\Desktop\LeadForce\Labitec.LeadForce.CLR\bin\Debug\Labitec.LeadForce.CLR.pdb
+C:\Users\Andrey\Desktop\LeadForce\Labitec.LeadForce.CLR\obj\Debug\Labitec.LeadForce.CLR.csprojResolveAssemblyReference.cache
+C:\Users\Andrey\Desktop\LeadForce\Labitec.LeadForce.CLR\obj\Debug\Labitec.LeadForce.CLR.dll
+C:\Users\Andrey\Desktop\LeadForce\Labitec.LeadForce.CLR\obj\Debug\Labitec.LeadForce.CLR.pdb
+C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce\Labitec.LeadForce.CLR\bin\Debug\Labitec.LeadForce.CLR.dll
+C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce\Labitec.LeadForce.CLR\bin\Debug\Labitec.LeadForce.CLR.pdb
+C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce\Labitec.LeadForce.CLR\obj\Debug\Labitec.LeadForce.CLR.csprojResolveAssemblyReference.cache
+C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce\Labitec.LeadForce.CLR\obj\Debug\Labitec.LeadForce.CLR.dll
+C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce\Labitec.LeadForce.CLR\obj\Debug\Labitec.LeadForce.CLR.pdb

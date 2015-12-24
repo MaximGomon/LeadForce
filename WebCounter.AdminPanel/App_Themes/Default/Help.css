@@ -1,0 +1,61 @@
+﻿/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: separate!important;
+	border-spacing: 0;
+}
+
+html, body { width: 100%; height: 100%; margin: 0; padding: 0; }
+body { background-color: #fafcfe; font-family: Tahoma, Geneva, sans-serif; color: #222; font-size: 12px; line-height: 14px; }
+form { height: 100%; }
+
+*:focus { outline: none; }
+
+.clear { clear: both; height: 0; line-height: 0; font-size: 0 }
+.clearfix { zoom: 1; }
+.clearfix:after { content: ' '; clear: both; display: block; width: 0; height: 0; overflow: hidden; font-size: 0; }
+
+.ajax-loader { background: url(images/ajax-loader.gif) 5px 5px no-repeat; width:48px; height:48px; padding: 5px; background-color: #000000; opacity: 0.6; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=60); position: fixed; z-index: 999; top: 0; left: 49%; border-radius: 0 0 5px 5px; -moz-border-radius: 0 0 5px 5px; -webkit-border-radius: 0 0 5px 5px; }
+
+h1 { color: #1272f2; font-size: 14px; line-height: 16px; padding-bottom: 20px; }
+
+.rtMinus, .rtMinusHover { background-image: url(images/icoManualOpened.png)!important;height: 16px!important;width: 16px!important;background-position:0!important }
+.rtPlus, .rtPlusHover {background-image: url(images/icoManual.png)!important;height: 16px!important;width: 16px!important;background-position:0!important }

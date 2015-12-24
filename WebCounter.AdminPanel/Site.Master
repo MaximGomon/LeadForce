@@ -1,0 +1,173 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.Master.cs" Inherits="WebCounter.AdminPanel.Site" %>
+<%@ Register TagPrefix="uc" TagName="Reminder" Src="~/UserControls/Task/Reminder.ascx" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link rel="stylesheet" href="<%# ResolveUrl("~/App_Themes/Default/AdminPanel.css") %>" type="text/css" enableviewstate="false" />
+    <script src="<%#ResolveUrl("~/Scripts/jquery-1.5.2.min.js")%>" type="text/javascript"></script>
+    <script src="<%#ResolveUrl("~/Scripts/jquery.corner.js")%>" type="text/javascript"></script>
+    <script type="text/javascript" language="javascript">
+        /*$(document).ready(function () {
+            $('.RadRibbonBar .rrbButtonArea .rrbButtonGroupIn').each(function (i) {
+                if ($(this).find('a').size() != 0) {
+                    $($('.RadRibbonBar .rtsLevel .rtsUL li').get(i)).show();
+                }
+            });
+        });*/
+        function openHelpWindow(siteID, publicationID, elementID) {
+            var oWnd = $find("rwHelp");
+            oWnd.setUrl("/Help.aspx?siteID=" + siteID + "&publicationID=" + publicationID + "&elementID=" + elementID);
+            oWnd.show();
+            rwHelpSize();
+            oWnd.center();
+        }
+
+        function rwHelpCommand(sender, eventArgs) {
+            setTimeout("rwHelpSize()",100);
+        }
+        function rwHelpSize() {
+            var windowWidth = $('#RadWindowWrapper_rwHelp').width();
+            var windowHeight = $('#RadWindowWrapper_rwHelp').height();                                    
+
+            $("iframe[name=rwHelp]").contents().find("#txtSearchQuery").width(windowWidth - 150);
+            $("iframe[name=rwHelp]").contents().find("#RAD_SPLITTER_RadSplitter1").height(windowHeight - 123);
+            $("iframe[name=rwHelp]").contents().find("#RadPane1").height(windowHeight - 123);
+            $("iframe[name=rwHelp]").contents().find("#RAD_SPLITTER_PANE_CONTENT_RadPane1").height(windowHeight - 123);
+            $("iframe[name=rwHelp]").contents().find("#RadPane2").height(windowHeight - 123);
+            $("iframe[name=rwHelp]").contents().find("#RAD_SPLITTER_PANE_CONTENT_RadPane2").height(windowHeight - 123);                        
+        }
+        function OnClientUpdated(sender, args) { if (sender.get_value() != 0) { sender.show(); } }
+
+        function OnClientUpdated(sender, args) { sender.set_updateInterval(60000); if (sender.get_value() != 0 && !sender.isVisible()) { sender.show(); } }
+        function OnClientUpdating(sender, args) { if (sender.isVisible()) { args.set_cancel(true); } }
+    </script>    
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <telerik:RadScriptManager ID="RadScriptManager1" runat="server" EnablePageMethods="true" />
+            
+        <telerik:RadAjaxLoadingPanel ID="ajaxLoadingPanel" Skin="Windows7" runat="server"></telerik:RadAjaxLoadingPanel>
+        <labitec:Page ID="LabitecPage" runat="server">
+            <Header>
+                <labitec:Logo ID="MainLogo" ImageUrl="~/App_Themes/Default/images/logo.png" AlternateText="LeadForce" ToolTip="LeadForce" runat="server" />
+        
+                <labitec:Menu ID="MainMenu" OnLogoutClick="MainMenu_OnLogoutClick" runat="server">
+                    <Tabs>
+                        <labitec:MenuTab ID="MenuTab1" Text="Мониторинг" Value="Monitoring" runat="server">
+                            <Items>
+                                <labitec:MenuItem ID="MenuItem1" Text="Компании" ImageUrl="~/App_Themes/Default/images/menu-icons/Companies.png" Value="Companies" NavigateUrl="~/Monitoring/Companies/List" runat="server" />
+                                <labitec:MenuItem ID="MenuItem2" Text="Контакты" ImageUrl="~/App_Themes/Default/images/menu-icons/Contacts.png" Value="Contacts" NavigateUrl="~/Monitoring/Contacts/List" runat="server" />
+                                <labitec:MenuItem ID="MenuItem3" Text="Лог действий" ImageUrl="~/App_Themes/Default/images/menu-icons/ContactActivity.png" Value="ContactActivity" NavigateUrl="~/Monitoring/ContactActivity/List" runat="server" />
+                                <labitec:MenuItem ID="MenuItem4" Text="Сообщения" ImageUrl="~/App_Themes/Default/images/menu-icons/SiteAction.png" Value="SiteAction" NavigateUrl="~/Monitoring/SiteAction/List" runat="server" />                                
+                            </Items>
+                        </labitec:MenuTab>
+                        <labitec:MenuTab ID="MenuTab2" Text="Оценка и развитие" Value="Evaluation" runat="server">
+                            <Items>
+                                <labitec:MenuItem ID="MenuItem6" Text="Шаблоны сообщений" ImageUrl="~/App_Themes/Default/images/menu-icons/SiteActionTemplates.png" Value="SiteActionTemplates" NavigateUrl="~/Evaluation/SiteActionTemplates/List" runat="server" />
+                                <labitec:MenuItem ID="MenuItem7" Text="Опросные формы" ImageUrl="~/App_Themes/Default/images/menu-icons/Form.png" Value="Form" NavigateUrl="~/Evaluation/Form/List" runat="server" />
+                                <labitec:MenuItem ID="MenuItem8" Text="Внешние ссылки" ImageUrl="~/App_Themes/Default/images/menu-icons/Link.png" Value="Link" NavigateUrl="~/Evaluation/Link/List" runat="server" />
+                                <labitec:MenuItem ID="MenuItem9" Text="Файлы" ImageUrl="~/App_Themes/Default/images/menu-icons/File.png" Value="File" NavigateUrl="~/Evaluation/File/List" runat="server" />
+                                <labitec:MenuItem ID="MenuItem10" Text="Внешние формы" ImageUrl="~/App_Themes/Default/images/menu-icons/ExternalForm.png" Value="ExternalForm" NavigateUrl="~/Evaluation/ExternalForm/List" runat="server" />
+                                <labitec:MenuItem ID="MenuItem39" Text="Мини сайты" ImageUrl="~/App_Themes/Default/images/menu-icons/WebSites.png" Value="WebSites" NavigateUrl="~/Evaluation/WebSites/List" runat="server" />
+                            </Items>
+                        </labitec:MenuTab>
+                        <labitec:MenuTab ID="MenuTab6" Text="Продажи" Value="Sales" runat="server">
+                            <Items>
+                                <labitec:MenuItem ID="MenuItem19" Text="Компании" ImageUrl="~/App_Themes/Default/images/menu-icons/Companies.png" Value="Companies" NavigateUrl="~/Sales/Companies/List" runat="server" />
+                                <labitec:MenuItem ID="MenuItem20" Text="Контакты" ImageUrl="~/App_Themes/Default/images/menu-icons/Contacts.png" Value="Contacts" NavigateUrl="~/Sales/Contacts/List" runat="server" />
+                                <labitec:MenuItem ID="MenuItem28" Text="Задачи" ImageUrl="~/App_Themes/Default/images/menu-icons/Tasks.png" Value="Tasks" NavigateUrl="~/Sales/Tasks/List" runat="server" />
+                                <labitec:MenuItem ID="MenuItem22" Text="Заказы" ImageUrl="~/App_Themes/Default/images/menu-icons/Orders.png" Value="Orders" NavigateUrl="~/Sales/Orders/List" runat="server" />
+                                <labitec:MenuItem ID="MenuItem34" Text="Счета" ImageUrl="~/App_Themes/Default/images/menu-icons/Invoices.png" Value="Invoices" NavigateUrl="~/Sales/Invoices/List" runat="server" />
+                                <labitec:MenuItem ID="MenuItem41" Text="Отгрузки" ImageUrl="~/App_Themes/Default/images/menu-icons/Shipments.png" Value="Shipments" NavigateUrl="~/Sales/Shipments/List" runat="server" />
+                                <labitec:MenuItem ID="MenuItem21" Text="Продукты" ImageUrl="~/App_Themes/Default/images/menu-icons/Products.png" Value="Products" NavigateUrl="~/Sales/Products/List" runat="server" />
+                            </Items>
+                        </labitec:MenuTab>
+                        <labitec:MenuTab ID="MenuTab3" Text="Рассылки" Value="MassMails" runat="server">
+                            <Items>
+                                <labitec:MenuItem ID="MenuItem11" Text="Рассылки" ImageUrl="~/App_Themes/Default/images/menu-icons/MassMails.png" Value="MassMails" runat="server" NavigateUrl="~/MassMails/MassMails/List" />
+                                <labitec:MenuItem ID="MenuItem12" Text="Шаблоны сообщений" ImageUrl="~/App_Themes/Default/images/menu-icons/SiteActionTemplates.png" Value="SiteActionTemplates" NavigateUrl="~/MassMails/SiteActionTemplates/List" runat="server" />
+                                <labitec:MenuItem ID="MenuItem13" Text="Сообщения" ImageUrl="~/App_Themes/Default/images/menu-icons/SiteAction.png" Value="SiteAction" NavigateUrl="~/MassMails/SiteAction/List" runat="server" />
+                            </Items>
+                        </labitec:MenuTab>
+                        <labitec:MenuTab ID="MenuTab4" Text="Материалы" Value="Materials" runat="server">
+                            <Items>
+                                <labitec:MenuItem ID="MenuItem29" Text="Публикации" ImageUrl="~/App_Themes/Default/images/menu-icons/Publications.png" Value="Publications" NavigateUrl="~/Materials/Publications/List" runat="server" />
+                                <labitec:MenuItem ID="MenuItem14" Text="Файлы" ImageUrl="~/App_Themes/Default/images/menu-icons/File.png" Value="File" NavigateUrl="~/Materials/File/List" runat="server" />
+                                <labitec:MenuItem ID="MenuItem40" Text="Мини сайты" ImageUrl="~/App_Themes/Default/images/menu-icons/WebSites.png" Value="WebSites" NavigateUrl="~/Materials/WebSites/List" runat="server" />
+                            </Items>
+                        </labitec:MenuTab>
+                        <labitec:MenuTab ID="MenuTab7" Text="Поддержка" Value="Support" runat="server">
+                            <Items>
+                                <labitec:MenuItem ID="MenuItem30" Text="База знаний" ImageUrl="~/App_Themes/Default/images/menu-icons/Publications.png" Value="KnowledgeBase" NavigateUrl="~/Support/KnowledgeBase/List" runat="server" />
+                                <labitec:MenuItem ID="MenuItem33" Text="Обсуждения" ImageUrl="~/App_Themes/Default/images/menu-icons/Discussions.png" Value="Discussions" NavigateUrl="~/Support/Discussions/List" runat="server" />
+                                <labitec:MenuItem ID="MenuItem35" Text="Запросы" ImageUrl="~/App_Themes/Default/images/menu-icons/Requests.png" Value="Requests" NavigateUrl="~/Support/Requests/List" runat="server" />
+                                <labitec:MenuItem ID="MenuItem36" Text="Требования" ImageUrl="~/App_Themes/Default/images/menu-icons/Requirements.png" Value="Requirements" NavigateUrl="~/Support/Requirements/List" runat="server" />
+                            </Items>
+                        </labitec:MenuTab>
+                        <labitec:MenuTab ID="MenuTab8" Text="Управление" Value="Managment" runat="server">
+                            <Items>
+                                <labitec:MenuItem ID="MenuItem31" Text="Шаблоны процессов" ImageUrl="~/App_Themes/Default/images/menu-icons/WorkflowTemplates.png" Value="WorkflowTemplates" NavigateUrl="~/Managment/WorkflowTemplates/List" runat="server" />
+                                <labitec:MenuItem ID="MenuItem32" Text="Процессы" ImageUrl="~/App_Themes/Default/images/menu-icons/Workflows.png" Value="Workflows" NavigateUrl="~/Managment/Workflows/List" runat="server" />
+                                <labitec:MenuItem ID="MenuItem38" Text="Мероприятия" ImageUrl="~/App_Themes/Default/images/menu-icons/MassWorkflows.png" Value="MassWorkflows" NavigateUrl="~/Managment/MassWorkflows/List" runat="server" />
+                                <labitec:MenuItem ID="MenuItem37" Text="Аналитика" ImageUrl="~/App_Themes/Default/images/menu-icons/Analytics.png" Value="Analytics" NavigateUrl="~/Managment/Analytics/List" runat="server" />
+                                <labitec:MenuItem ID="MenuItem5" Text="Оплаты" ImageUrl="~/App_Themes/Default/images/menu-icons/Payments.png" Value="Payments" NavigateUrl="~/Managment/Payments/List" runat="server" />
+                            </Items>
+                        </labitec:MenuTab>
+                        <labitec:MenuTab ID="MenuTab5" Text="Администрирование" Value="Settings" runat="server">
+                            <Items>
+                                <labitec:MenuItem ID="MenuItem15" Text="Профиль контакта" ImageUrl="~/App_Themes/Default/images/menu-icons/SiteColumns.png" Value="SiteColumns" NavigateUrl="~/Settings/SiteColumns/List" runat="server" />
+                                <labitec:MenuItem ID="MenuItem16" Text="Справочники" ImageUrl="~/App_Themes/Default/images/menu-icons/Dictionaries.png" Value="Dictionaries" NavigateUrl="~/Settings/Dictionaries/List" runat="server" />
+                                <labitec:MenuItem ID="MenuItem17" Text="Системные настройки" ImageUrl="~/App_Themes/Default/images/menu-icons/SystemSettings.png" Value="SystemSettings" NavigateUrl="~/Settings/SystemSettings/List" runat="server" />
+                                <labitec:MenuItem ID="MenuItem18" Text="Импорт" ImageUrl="~/App_Themes/Default/images/menu-icons/Imports.png" Value="Imports" NavigateUrl="~/Settings/Imports/List" runat="server" />
+                                <labitec:MenuItem ID="MenuItem27" Text="Пользователи" ImageUrl="~/App_Themes/Default/images/menu-icons/Users.png" Value="Users" NavigateUrl="~/Settings/Users/List" runat="server" />
+                                <labitec:MenuItem ID="MenuItem23" Text="Профили доступа" ImageUrl="~/App_Themes/Default/images/menu-icons/AccessProfiles.png" Value="AccessProfiles" NavigateUrl="~/Settings/AccessProfiles/List" runat="server" />
+                                <labitec:MenuItem ID="MenuItem24" Text="Мониторинг" ImageUrl="~/App_Themes/Default/images/menu-icons/SourceMonitorings.png" Value="SourceMonitorings" NavigateUrl="~/Settings/SourceMonitorings/List" runat="server" />
+                                <labitec:MenuItem ID="MenuItem25" Text="Аккаунт LeadForce" ImageUrl="~/App_Themes/Default/images/menu-icons/Sites.png" Value="Sites" NavigateUrl="~/Settings/Sites/List" runat="server" />
+                                <labitec:MenuItem ID="MenuItem26" Text="Профили LeadForce" ImageUrl="~/App_Themes/Default/images/menu-icons/ProfileSites.png" Value="ProfileSites" NavigateUrl="~/Settings/ProfileSites/List" runat="server" />
+                            </Items>
+                        </labitec:MenuTab>
+                    </Tabs>
+                </labitec:Menu>
+            </Header>
+            <Content>
+                <asp:UpdateProgress ID="PageUpdateProgress" runat="server">
+                    <ProgressTemplate>                
+                        <div class="ajax-loader"></div>
+                    </ProgressTemplate>
+                </asp:UpdateProgress>
+                <asp:ContentPlaceHolder ID="ContentHolder" runat="server" />
+            </Content>
+            <Footer>
+                &copy; Copyright 2011-<telerik:RadCodeBlock runat="server"><%= DateTime.Now.ToString("yyyy") %></telerik:RadCodeBlock>
+            </Footer>
+        </labitec:Page>
+        <telerik:RadWindow ShowContentDuringLoad="false" OnClientResizeEnd="rwHelpSize" OnClientAutoSizeEnd="rwHelpSize" OnClientCommand="rwHelpCommand" AutoSize="true" EnableShadow="true" Skin="Windows7" ID="rwHelp" Width="900px" Height="100%" runat="server" ClientIDMode="Static"></telerik:RadWindow>
+        <%--<telerik:RadNotification ID="rnReminder" runat="server" 
+                                 KeepOnMouseOver="true" 
+                                 Width="500px" 
+                                 Skin="Vista" 
+                                 LoadContentOn="TimeInterval" 
+                                 Animation="Fade" 
+                                 EnableRoundedCorners="true" 
+                                 EnableShadow="true" 
+                                 Title="Напоминание" 
+                                 OffsetX="-20" 
+                                 OffsetY="-20" 
+                                 TitleIcon="none" 
+                                 UpdateInterval="5000" 
+                                 OnClientUpdated="OnClientUpdated" 
+                                 OnClientUpdating="OnClientUpdating"
+                                 AutoCloseDelay="10000" 
+                                 OnCallbackUpdate="ReminderOnCallbackUpdate">
+            <ContentTemplate>
+                <uc:Reminder ID="ucReminder" runat="server" />
+            </ContentTemplate>
+        </telerik:RadNotification>--%>
+    </form>
+</body>
+</html>

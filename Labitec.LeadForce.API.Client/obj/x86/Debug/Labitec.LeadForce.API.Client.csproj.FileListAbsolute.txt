@@ -1,0 +1,12 @@
+C:\Users\Andrey\Desktop\LeadForce\Labitec.LeadForce.API.Client\bin\Debug\Labitec.LeadForce.API.Client.exe.config
+C:\Users\Andrey\Desktop\LeadForce\Labitec.LeadForce.API.Client\bin\Debug\Labitec.LeadForce.API.Client.exe
+C:\Users\Andrey\Desktop\LeadForce\Labitec.LeadForce.API.Client\bin\Debug\Labitec.LeadForce.API.Client.pdb
+C:\Users\Andrey\Desktop\LeadForce\Labitec.LeadForce.API.Client\obj\x86\Debug\Labitec.LeadForce.API.Client.csprojResolveAssemblyReference.cache
+C:\Users\Andrey\Desktop\LeadForce\Labitec.LeadForce.API.Client\obj\x86\Debug\Labitec.LeadForce.API.Client.exe
+C:\Users\Andrey\Desktop\LeadForce\Labitec.LeadForce.API.Client\obj\x86\Debug\Labitec.LeadForce.API.Client.pdb
+C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce\Labitec.LeadForce.API.Client\bin\Debug\Labitec.LeadForce.API.Client.exe.config
+C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce\Labitec.LeadForce.API.Client\bin\Debug\Labitec.LeadForce.API.Client.exe
+C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce\Labitec.LeadForce.API.Client\bin\Debug\Labitec.LeadForce.API.Client.pdb
+C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce\Labitec.LeadForce.API.Client\obj\x86\Debug\Labitec.LeadForce.API.Client.csprojResolveAssemblyReference.cache
+C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce\Labitec.LeadForce.API.Client\obj\x86\Debug\Labitec.LeadForce.API.Client.exe
+C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce\Labitec.LeadForce.API.Client\obj\x86\Debug\Labitec.LeadForce.API.Client.pdb

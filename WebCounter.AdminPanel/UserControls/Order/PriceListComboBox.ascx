@@ -1,0 +1,3 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="PriceListComboBox.ascx.cs" Inherits="WebCounter.AdminPanel.UserControls.Order.PriceListComboBox" %>
+<telerik:RadComboBox ID="rcbDictionary" runat="server" AllowCustomText="false" Filter="Contains" ShowToggleImage="True" EnableEmbeddedSkins="false" skin="Labitec" Width="220px" ExpandAnimation-Type="None" CollapseAnimation-Type="None" />
+<asp:RequiredFieldValidator ID="rfvDictionary" Display="Dynamic" ControlToValidate="rcbDictionary" CssClass="required" Text="*" ErrorMessage="Вы не выбрали значение" runat="server" InitialValue="Выберите значение"/>

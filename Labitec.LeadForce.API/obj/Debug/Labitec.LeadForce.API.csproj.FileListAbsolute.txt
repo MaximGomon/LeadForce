@@ -1,0 +1,45 @@
+C:\Users\Andrey\Desktop\LeadForce\Labitec.LeadForce.API\bin\Labitec.LeadForce.API.dll.config
+C:\Users\Andrey\Desktop\LeadForce\Labitec.LeadForce.API\bin\Labitec.LeadForce.API.dll
+C:\Users\Andrey\Desktop\LeadForce\Labitec.LeadForce.API\bin\Labitec.LeadForce.API.pdb
+C:\Users\Andrey\Desktop\LeadForce\Labitec.LeadForce.API\bin\Labitec.DataFeed.dll
+C:\Users\Andrey\Desktop\LeadForce\Labitec.LeadForce.API\bin\WebCounter.BusinessLogicLayer.dll
+C:\Users\Andrey\Desktop\LeadForce\Labitec.LeadForce.API\bin\WebCounter.DataAccessLayer.dll
+C:\Users\Andrey\Desktop\LeadForce\Labitec.LeadForce.API\bin\log4net.dll
+C:\Users\Andrey\Desktop\LeadForce\Labitec.LeadForce.API\bin\Newtonsoft.Json.dll
+C:\Users\Andrey\Desktop\LeadForce\Labitec.LeadForce.API\bin\WufooSharp.dll
+C:\Users\Andrey\Desktop\LeadForce\Labitec.LeadForce.API\bin\HtmlAgilityPack.dll
+C:\Users\Andrey\Desktop\LeadForce\Labitec.LeadForce.API\bin\WebCounter.BusinessLogicLayer.pdb
+C:\Users\Andrey\Desktop\LeadForce\Labitec.LeadForce.API\bin\WebCounter.DataAccessLayer.pdb
+C:\Users\Andrey\Desktop\LeadForce\Labitec.LeadForce.API\obj\Debug\Labitec.LeadForce.API.csprojResolveAssemblyReference.cache
+C:\Users\Andrey\Desktop\LeadForce\Labitec.LeadForce.API\obj\Debug\Labitec.LeadForce.API.dll
+C:\Users\Andrey\Desktop\LeadForce\Labitec.LeadForce.API\obj\Debug\Labitec.LeadForce.API.pdb
+C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce\Labitec.LeadForce.API\bin\Labitec.LeadForce.API.dll.config
+C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce\Labitec.LeadForce.API\bin\Labitec.LeadForce.API.dll
+C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce\Labitec.LeadForce.API\bin\Labitec.LeadForce.API.pdb
+C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce\Labitec.LeadForce.API\bin\Labitec.DataFeed.dll
+C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce\Labitec.LeadForce.API\bin\WebCounter.BusinessLogicLayer.dll
+C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce\Labitec.LeadForce.API\bin\WebCounter.DataAccessLayer.dll
+C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce\Labitec.LeadForce.API\bin\log4net.dll
+C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce\Labitec.LeadForce.API\bin\Newtonsoft.Json.dll
+C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce\Labitec.LeadForce.API\bin\WufooSharp.dll
+C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce\Labitec.LeadForce.API\bin\HtmlAgilityPack.dll
+C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce\Labitec.LeadForce.API\bin\WebCounter.BusinessLogicLayer.pdb
+C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce\Labitec.LeadForce.API\bin\WebCounter.DataAccessLayer.pdb
+C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce\Labitec.LeadForce.API\obj\Debug\Labitec.LeadForce.API.csprojResolveAssemblyReference.cache
+C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce\Labitec.LeadForce.API\obj\Debug\Labitec.LeadForce.API.dll
+C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce\Labitec.LeadForce.API\obj\Debug\Labitec.LeadForce.API.pdb
+C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce - Copy\Labitec.LeadForce.API\bin\Labitec.LeadForce.API.dll.config
+C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce - Copy\Labitec.LeadForce.API\bin\Labitec.LeadForce.API.dll
+C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce - Copy\Labitec.LeadForce.API\bin\Labitec.LeadForce.API.pdb
+C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce - Copy\Labitec.LeadForce.API\bin\Labitec.DataFeed.dll
+C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce - Copy\Labitec.LeadForce.API\bin\WebCounter.BusinessLogicLayer.dll
+C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce - Copy\Labitec.LeadForce.API\bin\WebCounter.DataAccessLayer.dll
+C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce - Copy\Labitec.LeadForce.API\bin\log4net.dll
+C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce - Copy\Labitec.LeadForce.API\bin\Newtonsoft.Json.dll
+C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce - Copy\Labitec.LeadForce.API\bin\WufooSharp.dll
+C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce - Copy\Labitec.LeadForce.API\bin\HtmlAgilityPack.dll
+C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce - Copy\Labitec.LeadForce.API\bin\WebCounter.BusinessLogicLayer.pdb
+C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce - Copy\Labitec.LeadForce.API\bin\WebCounter.DataAccessLayer.pdb
+C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce - Copy\Labitec.LeadForce.API\obj\Debug\Labitec.LeadForce.API.csprojResolveAssemblyReference.cache
+C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce - Copy\Labitec.LeadForce.API\obj\Debug\Labitec.LeadForce.API.dll
+C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce - Copy\Labitec.LeadForce.API\obj\Debug\Labitec.LeadForce.API.pdb

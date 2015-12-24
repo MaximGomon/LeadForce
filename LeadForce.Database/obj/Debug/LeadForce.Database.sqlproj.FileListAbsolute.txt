@@ -1,0 +1,28 @@
+C:\Users\Andrey\Desktop\LeadForce\LeadForce.Database\bin\Debug\LeadForce.Database.dacpac
+C:\Users\Andrey\Desktop\LeadForce\LeadForce.Database\obj\Debug\LeadForce.Database.sqlprojResolveAssemblyReference.cache
+C:\Users\Andrey\Desktop\LeadForce\LeadForce.Database\obj\Debug\LeadForce.Database.dll
+C:\Users\Andrey\Desktop\LeadForce\LeadForce.Database\obj\Debug\LeadForce.Database.pdb
+C:\Users\Andrey\Desktop\LeadForce\LeadForce.Database\bin\Debug\LeadForce.Database.dll
+C:\Users\Andrey\Desktop\LeadForce\LeadForce.Database\bin\Debug\LeadForce.Database.pdb
+C:\Users\Andrey\Desktop\LeadForce\LeadForce.Database\bin\Debug\Labitec.LeadForce.CLR.dll
+C:\Users\Andrey\Desktop\LeadForce\LeadForce.Database\bin\Debug\Labitec.LeadForce.CLR.pdb
+C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce\LeadForce.Database\bin\Debug\LeadForce.Database.dacpac
+C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce\LeadForce.Database\bin\Debug\LeadForce.Database.dll
+C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce\LeadForce.Database\bin\Debug\LeadForce.Database.pdb
+C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce\LeadForce.Database\bin\Debug\Labitec.LeadForce.CLR.dll
+C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce\LeadForce.Database\bin\Debug\Labitec.LeadForce.CLR.pdb
+C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce\LeadForce.Database\obj\Debug\LeadForce.Database.sqlprojResolveAssemblyReference.cache
+C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce\LeadForce.Database\obj\Debug\Model.xml
+C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce\LeadForce.Database\obj\Debug\refactor.xml
+C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce\LeadForce.Database\obj\Debug\postdeploy.sql
+C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce\LeadForce.Database\obj\Debug\predeploy.sql
+C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce\LeadForce.Database\obj\Debug\LeadForce.Database.dll
+C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce\LeadForce.Database\obj\Debug\LeadForce.Database.pdb
+C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce - Copy\LeadForce.Database\bin\Debug\LeadForce.Database.dacpac
+C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce - Copy\LeadForce.Database\bin\Debug\LeadForce.Database.dll
+C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce - Copy\LeadForce.Database\bin\Debug\LeadForce.Database.pdb
+C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce - Copy\LeadForce.Database\bin\Debug\Labitec.LeadForce.CLR.dll
+C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce - Copy\LeadForce.Database\bin\Debug\Labitec.LeadForce.CLR.pdb
+C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce - Copy\LeadForce.Database\obj\Debug\LeadForce.Database.sqlprojResolveAssemblyReference.cache
+C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce - Copy\LeadForce.Database\obj\Debug\LeadForce.Database.dll
+C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce - Copy\LeadForce.Database\obj\Debug\LeadForce.Database.pdb

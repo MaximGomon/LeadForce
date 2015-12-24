@@ -1,0 +1,25 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="CMS.master.cs" EnableViewState="false" Inherits="Labitec.LeadForce.CMS.CMS" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:Literal runat="server" ID="lrlFavIcon" />   
+    <asp:Literal runat="server" ID="lrlResourcesHead"/>     
+    <asp:ContentPlaceHolder ID="head" runat="server">        
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div class="lf-content">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>    
+    <asp:ContentPlaceHolder ID="analytics" runat="server">
+    </asp:ContentPlaceHolder>
+    <asp:Literal runat="server" ID="lrlResourcesBody"/> 
+    </form>
+</body>
+</html>

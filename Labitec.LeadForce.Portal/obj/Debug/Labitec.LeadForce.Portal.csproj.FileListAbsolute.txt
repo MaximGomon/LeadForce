@@ -1,0 +1,84 @@
+C:\Users\Andrey\Desktop\LeadForce\Labitec.LeadForce.Portal\bin\Labitec.LeadForce.Portal.dll.config
+C:\Users\Andrey\Desktop\LeadForce\Labitec.LeadForce.Portal\bin\Labitec.LeadForce.Portal.dll
+C:\Users\Andrey\Desktop\LeadForce\Labitec.LeadForce.Portal\bin\Labitec.LeadForce.Portal.pdb
+C:\Users\Andrey\Desktop\LeadForce\Labitec.LeadForce.Portal\bin\HtmlSanitizationLibrary.dll
+C:\Users\Andrey\Desktop\LeadForce\Labitec.LeadForce.Portal\bin\Labitec.LeadForce.Report.dll
+C:\Users\Andrey\Desktop\LeadForce\Labitec.LeadForce.Portal\bin\Labitec.UI.Address.dll
+C:\Users\Andrey\Desktop\LeadForce\Labitec.LeadForce.Portal\bin\Labitec.UI.BaseWorkspace.dll
+C:\Users\Andrey\Desktop\LeadForce\Labitec.LeadForce.Portal\bin\Labitec.UI.Dictionary.dll
+C:\Users\Andrey\Desktop\LeadForce\Labitec.LeadForce.Portal\bin\Newtonsoft.Json.dll
+C:\Users\Andrey\Desktop\LeadForce\Labitec.LeadForce.Portal\bin\skmValidators.dll
+C:\Users\Andrey\Desktop\LeadForce\Labitec.LeadForce.Portal\bin\Telerik.Reporting.dll
+C:\Users\Andrey\Desktop\LeadForce\Labitec.LeadForce.Portal\bin\Telerik.ReportViewer.WebForms.dll
+C:\Users\Andrey\Desktop\LeadForce\Labitec.LeadForce.Portal\bin\Telerik.Web.Design.dll
+C:\Users\Andrey\Desktop\LeadForce\Labitec.LeadForce.Portal\bin\Telerik.Web.UI.dll
+C:\Users\Andrey\Desktop\LeadForce\Labitec.LeadForce.Portal\bin\Telerik.Web.UI.Skins.dll
+C:\Users\Andrey\Desktop\LeadForce\Labitec.LeadForce.Portal\bin\WebCounter.BusinessLogicLayer.dll
+C:\Users\Andrey\Desktop\LeadForce\Labitec.LeadForce.Portal\bin\WebCounter.DataAccessLayer.dll
+C:\Users\Andrey\Desktop\LeadForce\Labitec.LeadForce.Portal\bin\log4net.dll
+C:\Users\Andrey\Desktop\LeadForce\Labitec.LeadForce.Portal\bin\Labitec.DataFeed.dll
+C:\Users\Andrey\Desktop\LeadForce\Labitec.LeadForce.Portal\bin\WufooSharp.dll
+C:\Users\Andrey\Desktop\LeadForce\Labitec.LeadForce.Portal\bin\HtmlAgilityPack.dll
+C:\Users\Andrey\Desktop\LeadForce\Labitec.LeadForce.Portal\bin\Labitec.LeadForce.Report.pdb
+C:\Users\Andrey\Desktop\LeadForce\Labitec.LeadForce.Portal\bin\WebCounter.BusinessLogicLayer.pdb
+C:\Users\Andrey\Desktop\LeadForce\Labitec.LeadForce.Portal\bin\WebCounter.DataAccessLayer.pdb
+C:\Users\Andrey\Desktop\LeadForce\Labitec.LeadForce.Portal\bin\Labitec.UI.BaseWorkspace.pdb
+C:\Users\Andrey\Desktop\LeadForce\Labitec.LeadForce.Portal\obj\Debug\Labitec.LeadForce.Portal.csprojResolveAssemblyReference.cache
+C:\Users\Andrey\Desktop\LeadForce\Labitec.LeadForce.Portal\obj\Debug\Labitec.LeadForce.Portal.dll
+C:\Users\Andrey\Desktop\LeadForce\Labitec.LeadForce.Portal\obj\Debug\Labitec.LeadForce.Portal.pdb
+C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce\Labitec.LeadForce.Portal\bin\Labitec.LeadForce.Portal.dll.config
+C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce\Labitec.LeadForce.Portal\bin\Labitec.LeadForce.Portal.dll
+C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce\Labitec.LeadForce.Portal\bin\Labitec.LeadForce.Portal.pdb
+C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce\Labitec.LeadForce.Portal\bin\HtmlSanitizationLibrary.dll
+C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce\Labitec.LeadForce.Portal\bin\Labitec.LeadForce.Report.dll
+C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce\Labitec.LeadForce.Portal\bin\Labitec.UI.Address.dll
+C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce\Labitec.LeadForce.Portal\bin\Labitec.UI.BaseWorkspace.dll
+C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce\Labitec.LeadForce.Portal\bin\Labitec.UI.Dictionary.dll
+C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce\Labitec.LeadForce.Portal\bin\Newtonsoft.Json.dll
+C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce\Labitec.LeadForce.Portal\bin\skmValidators.dll
+C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce\Labitec.LeadForce.Portal\bin\Telerik.Reporting.dll
+C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce\Labitec.LeadForce.Portal\bin\Telerik.ReportViewer.WebForms.dll
+C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce\Labitec.LeadForce.Portal\bin\Telerik.Web.Design.dll
+C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce\Labitec.LeadForce.Portal\bin\Telerik.Web.UI.dll
+C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce\Labitec.LeadForce.Portal\bin\Telerik.Web.UI.Skins.dll
+C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce\Labitec.LeadForce.Portal\bin\WebCounter.BusinessLogicLayer.dll
+C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce\Labitec.LeadForce.Portal\bin\WebCounter.DataAccessLayer.dll
+C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce\Labitec.LeadForce.Portal\bin\log4net.dll
+C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce\Labitec.LeadForce.Portal\bin\Labitec.DataFeed.dll
+C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce\Labitec.LeadForce.Portal\bin\WufooSharp.dll
+C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce\Labitec.LeadForce.Portal\bin\HtmlAgilityPack.dll
+C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce\Labitec.LeadForce.Portal\bin\Labitec.LeadForce.Report.pdb
+C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce\Labitec.LeadForce.Portal\bin\WebCounter.BusinessLogicLayer.pdb
+C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce\Labitec.LeadForce.Portal\bin\WebCounter.DataAccessLayer.pdb
+C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce\Labitec.LeadForce.Portal\bin\Labitec.UI.BaseWorkspace.pdb
+C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce\Labitec.LeadForce.Portal\obj\Debug\Labitec.LeadForce.Portal.csprojResolveAssemblyReference.cache
+C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce\Labitec.LeadForce.Portal\obj\Debug\Labitec.LeadForce.Portal.dll
+C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce\Labitec.LeadForce.Portal\obj\Debug\Labitec.LeadForce.Portal.pdb
+C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce - Copy\Labitec.LeadForce.Portal\bin\Labitec.LeadForce.Portal.dll.config
+C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce - Copy\Labitec.LeadForce.Portal\bin\Labitec.LeadForce.Portal.dll
+C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce - Copy\Labitec.LeadForce.Portal\bin\Labitec.LeadForce.Portal.pdb
+C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce - Copy\Labitec.LeadForce.Portal\bin\HtmlSanitizationLibrary.dll
+C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce - Copy\Labitec.LeadForce.Portal\bin\Labitec.LeadForce.Report.dll
+C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce - Copy\Labitec.LeadForce.Portal\bin\Labitec.UI.Address.dll
+C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce - Copy\Labitec.LeadForce.Portal\bin\Labitec.UI.BaseWorkspace.dll
+C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce - Copy\Labitec.LeadForce.Portal\bin\Labitec.UI.Dictionary.dll
+C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce - Copy\Labitec.LeadForce.Portal\bin\Newtonsoft.Json.dll
+C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce - Copy\Labitec.LeadForce.Portal\bin\skmValidators.dll
+C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce - Copy\Labitec.LeadForce.Portal\bin\Telerik.Reporting.dll
+C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce - Copy\Labitec.LeadForce.Portal\bin\Telerik.ReportViewer.WebForms.dll
+C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce - Copy\Labitec.LeadForce.Portal\bin\Telerik.Web.Design.dll
+C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce - Copy\Labitec.LeadForce.Portal\bin\Telerik.Web.UI.dll
+C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce - Copy\Labitec.LeadForce.Portal\bin\Telerik.Web.UI.Skins.dll
+C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce - Copy\Labitec.LeadForce.Portal\bin\WebCounter.BusinessLogicLayer.dll
+C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce - Copy\Labitec.LeadForce.Portal\bin\WebCounter.DataAccessLayer.dll
+C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce - Copy\Labitec.LeadForce.Portal\bin\log4net.dll
+C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce - Copy\Labitec.LeadForce.Portal\bin\Labitec.DataFeed.dll
+C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce - Copy\Labitec.LeadForce.Portal\bin\WufooSharp.dll
+C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce - Copy\Labitec.LeadForce.Portal\bin\HtmlAgilityPack.dll
+C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce - Copy\Labitec.LeadForce.Portal\bin\Labitec.LeadForce.Report.pdb
+C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce - Copy\Labitec.LeadForce.Portal\bin\WebCounter.BusinessLogicLayer.pdb
+C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce - Copy\Labitec.LeadForce.Portal\bin\WebCounter.DataAccessLayer.pdb
+C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce - Copy\Labitec.LeadForce.Portal\bin\Labitec.UI.BaseWorkspace.pdb
+C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce - Copy\Labitec.LeadForce.Portal\obj\Debug\Labitec.LeadForce.Portal.csprojResolveAssemblyReference.cache
+C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce - Copy\Labitec.LeadForce.Portal\obj\Debug\Labitec.LeadForce.Portal.dll
+C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce - Copy\Labitec.LeadForce.Portal\obj\Debug\Labitec.LeadForce.Portal.pdb

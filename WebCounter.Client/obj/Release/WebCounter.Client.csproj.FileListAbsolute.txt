@@ -1,0 +1,17 @@
+C:\LeadForceRepository\WebCounter\WebCounter.Client\bin\WebCounter.Client.dll
+C:\LeadForceRepository\WebCounter\WebCounter.Client\bin\WebCounter.Client.pdb
+C:\LeadForceRepository\WebCounter\WebCounter.Client\obj\Release\ResolveAssemblyReference.cache
+C:\LeadForceRepository\WebCounter\WebCounter.Client\obj\Release\WebCounter.Client.dll
+C:\LeadForceRepository\WebCounter\WebCounter.Client\obj\Release\WebCounter.Client.pdb
+D:\LeadForceRepository\WebCounter\WebCounter.Client\bin\WebCounter.Client.dll
+D:\LeadForceRepository\WebCounter\WebCounter.Client\bin\WebCounter.Client.pdb
+D:\LeadForceRepository\WebCounter\WebCounter.Client\obj\Release\WebCounter.Client.dll
+D:\LeadForceRepository\WebCounter\WebCounter.Client\obj\Release\WebCounter.Client.pdb
+D:\LeadForceRepository\WebCounter\WebCounter.Client\bin\mscorlib.dll
+D:\LeadForceRepository\WebCounter\WebCounter.Client\bin\normidna.nlp
+D:\LeadForceRepository\WebCounter\WebCounter.Client\bin\normnfc.nlp
+D:\LeadForceRepository\WebCounter\WebCounter.Client\bin\normnfd.nlp
+D:\LeadForceRepository\WebCounter\WebCounter.Client\bin\normnfkc.nlp
+D:\LeadForceRepository\WebCounter\WebCounter.Client\bin\normnfkd.nlp
+D:\LeadForceRepository\WebCounter\WebCounter.Client\bin\WebCounter.Client.dll.config
+D:\LeadForceRepository\WebCounter\WebCounter.Client\obj\Release\WebCounter.Client.csprojResolveAssemblyReference.cache

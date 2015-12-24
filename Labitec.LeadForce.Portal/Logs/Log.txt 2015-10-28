@@ -1,0 +1,133 @@
+2015-10-28 20:11:56,720 [6] ERROR WebCounter.BusinessLogicLayer.Configuration.Log {CurrentUserID=, RequestURL=http://localhost:61817/default.aspx, UserIP=::1, ReferrerURL=, log4net:HostName=WIN-60O3D53A2UE} - Application Error System.Data.SqlClient.SqlException (0x80131904): Login failed for user 'LeadForceUser'.
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlInternalConnectionTds.CompleteLogin(Boolean enlistOK)
+   at System.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at System.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at System.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at System.Data.EntityClient.EntityConnection.OpenStoreConnectionIf(Boolean openCondition, DbConnection storeConnectionToOpen, DbConnection originalConnection, String exceptionCode, String attemptedOperation, Boolean& closeStoreConnectionOnFailure)
+ClientConnectionId:91e6ab6d-2842-4b8b-9123-cafb1806d61d
+
+2015-10-28 20:14:08,761 [12] ERROR WebCounter.BusinessLogicLayer.Configuration.Log {CurrentUserID=, RequestURL=http://localhost:61817/default.aspx, UserIP=::1, ReferrerURL=, log4net:HostName=WIN-60O3D53A2UE} - Application Error System.Data.SqlClient.SqlException (0x80131904): Login failed for user 'LeadForceUser'.
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlInternalConnectionTds.CompleteLogin(Boolean enlistOK)
+   at System.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at System.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at System.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at System.Data.EntityClient.EntityConnection.OpenStoreConnectionIf(Boolean openCondition, DbConnection storeConnectionToOpen, DbConnection originalConnection, String exceptionCode, String attemptedOperation, Boolean& closeStoreConnectionOnFailure)
+ClientConnectionId:c8162357-1f96-4b51-ab8c-93632fdf5877
+
+2015-10-28 20:17:48,176 [8] ERROR WebCounter.BusinessLogicLayer.Configuration.Log {CurrentUserID=, RequestURL=http://localhost:61817/default.aspx, UserIP=::1, ReferrerURL=, log4net:HostName=WIN-60O3D53A2UE} - Application Error System.NullReferenceException: Object reference not set to an instance of an object.
+   at WebCounter.BusinessLogicLayer.Configuration.Settings.Vkontakte.OAuthFullUrl(Guid portalSettingsId, String domain) in c:\Users\Andrey\Desktop\LeadForce\WebCounter.BusinessLogicLayer\Configuration\Settings.cs:line 146
+   at Labitec.LeadForce.Portal.Shared.UserControls.SocialAuthorization.Page_Load(Object sender, EventArgs e) in c:\Users\Andrey\Desktop\LeadForce\Labitec.LeadForce.Portal\Shared\UserControls\SocialAuthorization.ascx.cs:line 37
+   at System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+2015-10-28 20:24:09,456 [6] ERROR WebCounter.BusinessLogicLayer.Configuration.Log {CurrentUserID=, RequestURL=http://localhost:61817/default.aspx, UserIP=::1, ReferrerURL=, log4net:HostName=WIN-60O3D53A2UE} - Application Error System.NullReferenceException: Object reference not set to an instance of an object.
+   at WebCounter.BusinessLogicLayer.Configuration.Settings.Vkontakte.RedirectUri(Guid portalSettingsId, String domain) in c:\Users\Andrey\Desktop\LeadForce\WebCounter.BusinessLogicLayer\Configuration\Settings.cs:line 114
+   at WebCounter.BusinessLogicLayer.Configuration.Settings.Vkontakte.OAuthFullUrl(Guid portalSettingsId, String domain) in c:\Users\Andrey\Desktop\LeadForce\WebCounter.BusinessLogicLayer\Configuration\Settings.cs:line 146
+   at Labitec.LeadForce.Portal.Shared.UserControls.SocialAuthorization.Page_Load(Object sender, EventArgs e) in c:\Users\Andrey\Desktop\LeadForce\Labitec.LeadForce.Portal\Shared\UserControls\SocialAuthorization.ascx.cs:line 37
+   at System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+2015-10-28 20:24:30,142 [17] ERROR WebCounter.BusinessLogicLayer.Configuration.Log {CurrentUserID=, RequestURL=http://localhost:61817/default.aspx, UserIP=::1, ReferrerURL=, log4net:HostName=WIN-60O3D53A2UE} - Application Error System.NullReferenceException: Object reference not set to an instance of an object.
+   at WebCounter.BusinessLogicLayer.Configuration.Settings.Facebook.OAuthFullUrl(Guid portalSettingsId, String domain) in c:\Users\Andrey\Desktop\LeadForce\WebCounter.BusinessLogicLayer\Configuration\Settings.cs:line 192
+   at Labitec.LeadForce.Portal.Shared.UserControls.SocialAuthorization.Page_Load(Object sender, EventArgs e) in c:\Users\Andrey\Desktop\LeadForce\Labitec.LeadForce.Portal\Shared\UserControls\SocialAuthorization.ascx.cs:line 38
+   at System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+2015-10-28 20:24:48,207 [8] ERROR WebCounter.BusinessLogicLayer.Configuration.Log {CurrentUserID=, RequestURL=http://localhost:61817/default.aspx, UserIP=::1, ReferrerURL=, log4net:HostName=WIN-60O3D53A2UE} - Application Error System.NullReferenceException: Object reference not set to an instance of an object.
+   at WebCounter.BusinessLogicLayer.Configuration.Settings.Facebook.RedirectUri(Guid portalSettingsId, String domain) in c:\Users\Andrey\Desktop\LeadForce\WebCounter.BusinessLogicLayer\Configuration\Settings.cs:line 171
+   at WebCounter.BusinessLogicLayer.Configuration.Settings.Facebook.OAuthFullUrl(Guid portalSettingsId, String domain) in c:\Users\Andrey\Desktop\LeadForce\WebCounter.BusinessLogicLayer\Configuration\Settings.cs:line 192
+   at Labitec.LeadForce.Portal.Shared.UserControls.SocialAuthorization.Page_Load(Object sender, EventArgs e) in c:\Users\Andrey\Desktop\LeadForce\Labitec.LeadForce.Portal\Shared\UserControls\SocialAuthorization.ascx.cs:line 38
+   at System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+2015-10-28 20:25:43,306 [21] ERROR WebCounter.BusinessLogicLayer.Configuration.Log {CurrentUserID=, RequestURL=http://localhost:61817/default.aspx, UserIP=::1, ReferrerURL=, log4net:HostName=WIN-60O3D53A2UE} - Application Error System.NullReferenceException: Object reference not set to an instance of an object.
+   at WebCounter.BusinessLogicLayer.Configuration.Settings.DictionaryLogoPath(Guid siteId, String dictionary) in c:\Users\Andrey\Desktop\LeadForce\WebCounter.BusinessLogicLayer\Configuration\Settings.cs:line 69
+   at Labitec.LeadForce.Portal.Main.Discussions.UserControls.ActivityRibbon.CreatePublication.Page_Load(Object sender, EventArgs e) in c:\Users\Andrey\Desktop\LeadForce\Labitec.LeadForce.Portal\Main\Discussions\UserControls\ActivityRibbon\CreatePublication.ascx.cs:line 120
+   at System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+

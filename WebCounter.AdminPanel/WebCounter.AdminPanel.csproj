@@ -1,0 +1,2535 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C4229013-EB69-4C0D-8625-35D20176ABA2}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebCounter.AdminPanel</RootNamespace>
+    <AssemblyName>WebCounter.AdminPanel</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication>enabled</IISExpressAnonymousAuthentication>
+    <IISExpressWindowsAuthentication>enabled</IISExpressWindowsAuthentication>
+    <IISExpressUseClassicPipelineMode>false</IISExpressUseClassicPipelineMode>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ExcludeFilesFromDeployment>appsettings.config;connectionstrings.config;smtp.config;log4net.config;bin\Telerik.Web.UI.dll;Scripts\form.js</ExcludeFilesFromDeployment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ExcludeFilesFromDeployment>appsettings.config;connectionstrings.config;smtp.config;log4net.config;bin\Telerik.Web.UI.dll;Scripts\form.js</ExcludeFilesFromDeployment>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AForge">
+      <HintPath>..\Libs\AForge.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Imaging">
+      <HintPath>..\Libs\AForge.Imaging.dll</HintPath>
+    </Reference>
+    <Reference Include="DirtyPageReminder">
+      <HintPath>..\Libs\DirtyPageReminder.dll</HintPath>
+    </Reference>
+    <Reference Include="Excel, Version=2.1.0.0, Culture=neutral, PublicKeyToken=93517dbe6a4012fa, processorArchitecture=MSIL">
+      <HintPath>..\Libs\Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="HtmlAgilityPack">
+      <HintPath>..\Libs\HtmlAgilityPack.dll</HintPath>
+    </Reference>
+    <Reference Include="HtmlSanitizationLibrary">
+      <HintPath>..\Libs\HtmlSanitizationLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>..\Libs\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Labitec.DataFeed">
+      <HintPath>..\Libs\Labitec.DataFeed.dll</HintPath>
+    </Reference>
+    <Reference Include="Labitec.UI.Address, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libs\Labitec.UI.Address.dll</HintPath>
+    </Reference>
+    <Reference Include="Labitec.UI.BaseWorkspace, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libs\Labitec.UI.BaseWorkspace.dll</HintPath>
+    </Reference>
+    <Reference Include="Labitec.UI.Dictionary, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libs\Labitec.UI.Dictionary.dll</HintPath>
+    </Reference>
+    <Reference Include="Labitec.UI.Photo, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libs\Labitec.UI.Photo.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=4.0.5.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libs\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Activities" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Telerik.Reporting, Version=6.1.12.611, Culture=neutral, PublicKeyToken=a9d7983dfcc261be, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libs\Telerik.Reporting.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.ReportViewer.WebForms, Version=6.1.12.611, Culture=neutral, PublicKeyToken=a9d7983dfcc261be, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libs\Telerik.ReportViewer.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Web.Design">
+      <HintPath>..\Libs\Telerik.Web.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Web.UI, Version=2011.2.915.40, Culture=neutral, PublicKeyToken=121fae78165ba3d4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libs\Telerik.Web.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Web.UI.Skins">
+      <HintPath>..\Libs\Telerik.Web.UI.Skins.dll</HintPath>
+    </Reference>
+    <Reference Include="WufooSharp">
+      <HintPath>..\Libs\WufooSharp.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AccessDenied.aspx" />
+    <Content Include="AccessProfiles.aspx" />
+    <Content Include="Analytics.aspx" />
+    <Content Include="App_Themes\Default\images\ajaxLoaderBar.gif" />
+    <Content Include="App_Themes\Default\images\bgTopblock.png" />
+    <Content Include="App_Themes\Default\images\checkListIcons.png" />
+    <Content Include="App_Themes\Default\images\icoAreaChart.png" />
+    <Content Include="App_Themes\Default\images\icoBarChart.png" />
+    <Content Include="App_Themes\Default\images\icoCheck.png" />
+    <Content Include="App_Themes\Default\images\icoContactList.png" />
+    <Content Include="App_Themes\Default\images\icoDomain.png" />
+    <Content Include="App_Themes\Default\images\icoDomain2.png" />
+    <Content Include="App_Themes\Default\images\icoDownload2.png" />
+    <Content Include="App_Themes\Default\images\icoExternalForm.png" />
+    <Content Include="App_Themes\Default\images\icoFile.png" />
+    <Content Include="App_Themes\Default\images\icoGetScript.png" />
+    <Content Include="App_Themes\Default\images\icoHtmlEditBig.png" />
+    <Content Include="App_Themes\Default\images\icoHtmlEditSmall.png" />
+    <Content Include="App_Themes\Default\images\icoImage.png" />
+    <Content Include="App_Themes\Default\images\icoLineChart.png" />
+    <Content Include="App_Themes\Default\images\icoMarker.png" />
+    <Content Include="App_Themes\Default\images\icoPieChart.png" />
+    <Content Include="App_Themes\Default\images\icoRestore.png" />
+    <Content Include="App_Themes\Default\images\menu-icons\Analytics.png" />
+    <Content Include="App_Themes\Default\images\menu-icons\ContactsAdd.png" />
+    <Content Include="App_Themes\Default\images\menu-icons\ContactSegments.png" />
+    <Content Include="App_Themes\Default\images\menu-icons\DomainSettings.png" />
+    <Content Include="App_Themes\Default\images\menu-icons\MassWorkflows.png" />
+    <Content Include="App_Themes\Default\images\menu-icons\Payments.png" />
+    <Content Include="App_Themes\Default\images\menu-icons\PaymentServices.png" />
+    <Content Include="App_Themes\Default\images\menu-icons\Shipments.png" />
+    <Content Include="App_Themes\Default\images\menu-icons\WebSites.png" />
+    <Content Include="App_Themes\Default\images\spriteNavigation.png" />
+    <Content Include="App_Themes\Default\images\spriteNavigationActive.png" />
+    <Content Include="App_Themes\Default\images\spriteNavigationNotActive.png" />
+    <Content Include="App_Themes\Default\images\spriteStatus.png" />
+    <Content Include="App_Themes\Default\images\treeview-icons\icoActive.png" />
+    <Content Include="App_Themes\Default\images\treeview-icons\icoFormPage.png" />
+    <Content Include="App_Themes\Default\images\treeview-icons\icoNotActive.png" />
+    <Content Include="App_Themes\Default\images\treeview-icons\icoStaticPage.png" />
+    <Content Include="App_Themes\Default\RadEditor.css" />
+    <Content Include="App_Themes\Default\Help.css" />
+    <Content Include="App_Themes\Default\images\bg.png" />
+    <Content Include="App_Themes\Default\images\bgDot.png" />
+    <Content Include="App_Themes\Default\images\bgProgress.png" />
+    <Content Include="App_Themes\Default\images\bgText.png" />
+    <Content Include="App_Themes\Default\images\btnAdd.png" />
+    <Content Include="App_Themes\Default\images\btnOk.png" />
+    <Content Include="App_Themes\Default\images\DefaultPortalLogo.png" />
+    <Content Include="App_Themes\Default\images\edit-icon.png" />
+    <Content Include="App_Themes\Default\images\icoAdd.gif" />
+    <Content Include="App_Themes\Default\images\icoAttachment.png" />
+    <Content Include="App_Themes\Default\images\icoClose.png" />
+    <Content Include="App_Themes\Default\images\icoComments.png" />
+    <Content Include="App_Themes\Default\images\icoCopy.png" />
+    <Content Include="App_Themes\Default\images\icoCross.png" />
+    <Content Include="App_Themes\Default\images\icoCtxAdd.gif" />
+    <Content Include="App_Themes\Default\images\icoDelete.gif" />
+    <Content Include="App_Themes\Default\images\icoDestination.png" />
+    <Content Include="App_Themes\Default\images\icoDownload.png" />
+    <Content Include="App_Themes\Default\images\icoForm.png" />
+    <Content Include="App_Themes\Default\images\icoFormField.png" />
+    <Content Include="App_Themes\Default\images\icoGroupFields.png" />
+    <Content Include="App_Themes\Default\images\icoHelp.png" />
+    <Content Include="App_Themes\Default\images\icoInbox.png" />
+    <Content Include="App_Themes\Default\images\icoLike01.png" />
+    <Content Include="App_Themes\Default\images\icoLike02.png" />
+    <Content Include="App_Themes\Default\images\icoManual.png" />
+    <Content Include="App_Themes\Default\images\icoManualOpened.png" />
+    <Content Include="App_Themes\Default\images\icoOutbox.png" />
+    <Content Include="App_Themes\Default\images\icoPrinter.png" />
+    <Content Include="App_Themes\Default\images\icoProfileField.png" />
+    <Content Include="App_Themes\Default\images\icoRbtnDelete.png" />
+    <Content Include="App_Themes\Default\images\icoRemove.gif" />
+    <Content Include="App_Themes\Default\images\icoRename.gif" />
+    <Content Include="App_Themes\Default\images\icoTextBlock.png" />
+    <Content Include="App_Themes\Default\images\icoToolbarAdd.png" />
+    <Content Include="App_Themes\Default\images\icoToolbarCopy.png" />
+    <Content Include="App_Themes\Default\images\icoToolbarDelete.png" />
+    <Content Include="App_Themes\Default\images\icoToolbarRename.png" />
+    <Content Include="App_Themes\Default\images\icoToolbarReset.png" />
+    <Content Include="App_Themes\Default\images\icoView.png" />
+    <Content Include="App_Themes\Default\images\icoWarning.png" />
+    <Content Include="App_Themes\Default\images\menu-icons\AccessProfiles.png" />
+    <Content Include="App_Themes\Default\images\menu-icons\Companies.png" />
+    <Content Include="App_Themes\Default\images\menu-icons\ContactActivity.png" />
+    <Content Include="App_Themes\Default\images\menu-icons\Contacts.png" />
+    <Content Include="App_Themes\Default\images\menu-icons\Discussions.png" />
+    <Content Include="App_Themes\Default\images\menu-icons\ExternalForm.png" />
+    <Content Include="App_Themes\Default\images\menu-icons\File.png" />
+    <Content Include="App_Themes\Default\images\menu-icons\Form.png" />
+    <Content Include="App_Themes\Default\images\menu-icons\Imports.png" />
+    <Content Include="App_Themes\Default\images\menu-icons\Invoices.png" />
+    <Content Include="App_Themes\Default\images\menu-icons\KnowledgeBase.png" />
+    <Content Include="App_Themes\Default\images\menu-icons\LandingPages.png" />
+    <Content Include="App_Themes\Default\images\menu-icons\Link.png" />
+    <Content Include="App_Themes\Default\images\menu-icons\MassMails.png" />
+    <Content Include="App_Themes\Default\images\menu-icons\Requests.png" />
+    <Content Include="App_Themes\Default\images\menu-icons\Requirements.png" />
+    <Content Include="App_Themes\Default\images\menu-icons\SourceMonitorings.png" />
+    <Content Include="App_Themes\Default\images\menu-icons\Products.png" />
+    <Content Include="App_Themes\Default\images\menu-icons\ProfileSites.png" />
+    <Content Include="App_Themes\Default\images\menu-icons\Publications.png" />
+    <Content Include="App_Themes\Default\images\menu-icons\Dictionaries.png" />
+    <Content Include="App_Themes\Default\images\menu-icons\SystemSettings.png" />
+    <Content Include="App_Themes\Default\images\menu-icons\SiteAction.png" />
+    <Content Include="App_Themes\Default\images\menu-icons\SiteActionTemplates.png" />
+    <Content Include="App_Themes\Default\images\menu-icons\SiteActivityRules.png" />
+    <Content Include="App_Themes\Default\images\menu-icons\SiteColumns.png" />
+    <Content Include="App_Themes\Default\images\menu-icons\SiteEventTemplates.png" />
+    <Content Include="App_Themes\Default\images\menu-icons\Sites.png" />
+    <Content Include="App_Themes\Default\images\menu-icons\Users.png" />
+    <Content Include="App_Themes\Default\images\menu-icons\Orders.png" />
+    <Content Include="App_Themes\Default\images\menu-icons\Tasks.png" />
+    <Content Include="App_Themes\Default\images\menu-icons\Workflows.png" />
+    <Content Include="App_Themes\Default\images\menu-icons\WorkflowTemplates.png" />
+    <Content Include="App_Themes\Default\images\spriteMainMenu.png" />
+    <Content Include="ClientBin\Labitec.LeadForce.WorkflowDesigner.xap" />
+    <Content Include="Companies.aspx" />
+    <Content Include="Company.aspx" />
+    <Content Include="ContactSegments.aspx" />
+    <Content Include="ContactSegment.aspx" />
+    <Content Include="Shipment.aspx" />
+    <Content Include="Shipments.aspx" />
+    <Content Include="DomainSettings.aspx" />
+    <Content Include="Handlers\AutoCompleteBoxContactRole.aspx" />
+    <Content Include="Link.aspx" />
+    <Content Include="Links.aspx" />
+    <Content Include="PaymentServices.aspx" />
+    <Content Include="SiteActivityRuleForms.aspx" />
+    <Content Include="SiteActivityRuleFiles.aspx" />
+    <Content Include="Discussions.aspx" />
+    <Content Include="FormCode.aspx" />
+    <Content Include="GenerateSiteActionTemplateThumbnails.aspx" />
+    <Content Include="Handlers\ActivityRibbon.aspx" />
+    <Content Include="Handlers\Comments.aspx" />
+    <Content Include="Handlers\SiteActionTemplateThumbnail.aspx" />
+    <Content Include="Invoice.aspx" />
+    <Content Include="Invoices.aspx" />
+    <Content Include="KnowledgeBase.aspx" />
+    <Content Include="KnowledgeBases.aspx" />
+    <Content Include="Help.aspx" />
+    <Content Include="HelpTest.aspx" />
+    <Content Include="MassMail.aspx" />
+    <Content Include="MassWorkflow.aspx" />
+    <Content Include="MassWorkflows.aspx" />
+    <Content Include="ModuleEditionAction.aspx" />
+    <Content Include="Payment.aspx" />
+    <Content Include="Payments.aspx" />
+    <Content Include="PortalSetting.aspx" />
+    <Content Include="Publication.aspx" />
+    <Content Include="Publications.aspx" />
+    <Content Include="CronJob.aspx" />
+    <Content Include="Contact.aspx" />
+    <Content Include="ContactAdd.aspx" />
+    <Content Include="Contacts.aspx" />
+    <Content Include="Order.aspx" />
+    <Content Include="Orders.aspx" />
+    <Content Include="Product.aspx" />
+    <Content Include="Products.aspx" />
+    <Content Include="FIOTest.aspx" />
+    <Content Include="ImportEdit.aspx" />
+    <Content Include="Imports.aspx" />
+    <Content Include="Dictionaries.aspx" />
+    <Content Include="error.html" />
+    <Content Include="Handlers\MassMailSelectTemplate.aspx" />
+    <Content Include="Handlers\MassMailSelectContacts.aspx" />
+    <Content Include="MassMail_old.aspx" />
+    <Content Include="MassMails.aspx" />
+    <Content Include="RadEditor\HtmlEditorToolsExtended.xml" />
+    <Content Include="RadEditor\HtmlEditorToolsSimple.xml" />
+    <Content Include="RadEditor\HtmlTemplateTools.xml" />
+    <Content Include="RadEditor\Tools.xml" />
+    <Content Include="Reports\RequiremetReports.aspx" />
+    <Content Include="Request.aspx" />
+    <Content Include="Requests.aspx" />
+    <Content Include="Requirement.aspx" />
+    <Content Include="Requirements.aspx" />
+    <Content Include="Scripts\ActivityRibbon.js" />
+    <Content Include="Scripts\AdvancedForm.js" />
+    <Content Include="Scripts\ajaxfileupload.js" />
+    <Content Include="Scripts\Comments.js" />
+    <Content Include="Scripts\Common.js" />
+    <Content Include="Scripts\formcode.js" />
+    <Content Include="Scripts\highlight.pack.js" />
+    <Content Include="Scripts\jquery-1.5.2.min.js" />
+    <Content Include="Scripts\jquery.corner.js" />
+    <Content Include="Scripts\jquery.textarea-expander.js" />
+    <Content Include="Scripts\jquery.tmpl.js" />
+    <Content Include="Scripts\RadListViewClientBindingExtender.js" />
+    <Content Include="Scripts\Search.js" />
+    <Content Include="Scripts\Silverlight.js" />
+    <Content Include="Scripts\textarea-expander.js" />
+    <Content Include="Settings.aspx" />
+    <Content Include="ShowInvoiceReport.aspx" />
+    <Content Include="SiteAction.aspx" />
+    <Content Include="SiteActionMessage.aspx" />
+    <Content Include="SiteActionTemplate.aspx" />
+    <Content Include="SiteDomain.aspx" />
+    <Content Include="SiteEdit.aspx" />
+    <Content Include="ProfileSites.aspx" />
+    <Content Include="SiteEventTemplate.aspx" />
+    <Content Include="SiteEventTemplates.aspx" />
+    <Content Include="Sites.aspx" />
+    <Content Include="App_Themes\Default\AdminPanel.css" />
+    <Content Include="App_Themes\Default\images\ajax-loader.gif" />
+    <Content Include="App_Themes\Default\images\arrowBottom.gif" />
+    <Content Include="App_Themes\Default\images\arrowRight.gif" />
+    <Content Include="App_Themes\Default\images\bgAsideFooter.png" />
+    <Content Include="App_Themes\Default\images\bgAsideHeader.png" />
+    <Content Include="App_Themes\Default\images\bgFooter.png" />
+    <Content Include="App_Themes\Default\images\bgFooterTile.png" />
+    <Content Include="App_Themes\Default\images\bgInput.gif" />
+    <Content Include="App_Themes\Default\images\bgLoginForm.png" />
+    <Content Include="App_Themes\Default\images\bgLoginFormTile.png" />
+    <Content Include="App_Themes\Default\images\bgTH.png" />
+    <Content Include="App_Themes\Default\images\logo.png" />
+    <Content Include="App_Themes\Default\images\spriteBtn.png" />
+    <Content Include="Default.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Login.aspx" />
+    <Content Include="SiteActionTemplate_old.aspx" />
+    <Content Include="SiteActionTemplates.aspx" />
+    <Content Include="SiteActivityRule.aspx" />
+    <Content Include="SiteActivityRules.aspx" />
+    <Content Include="SiteColumn.aspx" />
+    <Content Include="SiteColumns.aspx" />
+    <Content Include="ContactActivity.aspx" />
+    <Content Include="ContactSession.aspx" />
+    <Content Include="Skins\Labitec\ComboBox.Labitec.css" />
+    <Content Include="Skins\Labitec\ComboBox\rcbSprite.png" />
+    <Content Include="SomeJobs.aspx" />
+    <Content Include="SourceMonitoring.aspx" />
+    <Content Include="SourceMonitorings.aspx" />
+    <Content Include="Task.aspx" />
+    <Content Include="Tasks.aspx" />
+    <Content Include="Test.aspx" />
+    <Content Include="UserAgent.xml" />
+    <Content Include="UserControls\ActivityRibbon\CreatePublication.ascx" />
+    <Content Include="UserControls\ActivityRibbon\PublicationCategory.ascx" />
+    <Content Include="UserControls\ActivityRibbon\PublicationFilter.ascx" />
+    <Content Include="UserControls\ActivityRibbon\PublicationsRibbon.ascx" />
+    <Content Include="UserControls\ActivityRibbon\PublicationTypes.ascx" />
+    <Content Include="UserControls\Address.ascx" />
+    <Content Include="UserControls\Analytics\AnalyticReportAxisValue.ascx" />
+    <Content Include="UserControls\Analytics\AnalyticReportFilters.ascx" />
+    <Content Include="UserControls\Analytics\Chart.ascx" />
+    <Content Include="UserControls\Analytics\TableReport.ascx" />
+    <Content Include="UserControls\Analytics\XAxis.ascx" />
+    <Content Include="UserControls\Company\Companies.ascx" />
+    <Content Include="UserControls\Company\Company.ascx" />
+    <Content Include="UserControls\Company\CompanyComboBox.ascx" />
+    <Content Include="UserControls\Company\CompanyLegalAccount.ascx" />
+    <Content Include="UserControls\Contact\Contact.ascx" />
+    <Content Include="UserControls\Contact\ContactActivityList.ascx" />
+    <Content Include="UserControls\Contact\ContactAdd.ascx" />
+    <Content Include="UserControls\Contact\ContactComboBox.ascx" />
+    <Content Include="UserControls\Contact\ContactEdit.ascx" />
+    <Content Include="UserControls\Contact\Contacts.ascx" />
+    <Content Include="UserControls\Contact\SelectContacts.ascx" />
+    <Content Include="UserControls\Contact\SimpleContact.ascx" />
+    <Content Include="UserControls\Contact\ContactList.ascx" />
+    <Content Include="UserControls\DictionaryEditForm\ContactRoleEdit.ascx" />
+    <Content Include="UserControls\Import\ImportTag.ascx" />
+    <Content Include="UserControls\Invoice\InvoiceShipments.ascx" />
+    <Content Include="UserControls\Links.ascx" />
+    <Content Include="UserControls\ModuleEditionAction\Product\Product.ascx" />
+    <Content Include="UserControls\ModuleEditionAction\Product\Products.ascx" />
+    <Content Include="UserControls\Shared\PeriodFilter.ascx" />
+    <Content Include="UserControls\Shipment\ShipmentInvoices.ascx" />
+    <Content Include="UserControls\Shipment\ShipmentProducts.ascx" />
+    <Content Include="UserControls\SiteActivityRuleForms.ascx" />
+    <Content Include="UserControls\SiteActivityRuleFile.ascx" />
+    <Content Include="UserControls\SiteActivityRuleFiles.ascx" />
+    <Content Include="UserControls\CssEditor.ascx" />
+    <Content Include="UserControls\DictionaryEditForm\PaymentArticleEdit.ascx" />
+    <Content Include="UserControls\DictionaryEditForm\PaymentCFOEdit.ascx" />
+    <Content Include="UserControls\DictionaryEditForm\PaymentPassRuleEdit.ascx" />
+    <Content Include="UserControls\DictionaryEditForm\ServiceLevelEdit.ascx" />
+    <Content Include="UserControls\Invoice\InvoiceProducts.ascx" />
+    <Content Include="UserControls\ModuleEditionAction\Contact\Contact.ascx" />
+    <Content Include="UserControls\ModuleEditionAction\Contact\ContactAdd.ascx" />
+    <Content Include="UserControls\ModuleEditionAction\Contact\ContactEdit.ascx" />
+    <Content Include="UserControls\ModuleEditionAction\Contact\Contacts.ascx" />
+    <Content Include="UserControls\ModuleEditionAction\Discussion\PortalSetting.ascx" />
+    <Content Include="UserControls\ModuleEditionAction\File\File.ascx" />
+    <Content Include="UserControls\ModuleEditionAction\File\Files.ascx" />
+    <Content Include="UserControls\Payment\PaymentPassRuleCompany.ascx" />
+    <Content Include="UserControls\Payment\PaymentPass.ascx" />
+    <Content Include="UserControls\Payment\EditPaymentPassRule.ascx" />
+    <Content Include="UserControls\Payment\PaymentStatus.ascx" />
+    <Content Include="UserControls\Portal\PortalSettings.ascx" />
+    <Content Include="UserControls\Prompt.ascx" />
+    <Content Include="UserControls\PublicationCategories.ascx" />
+    <Content Include="UserControls\PublicationCommentDetail.ascx" />
+    <Content Include="UserControls\PublicationMark.ascx" />
+    <Content Include="UserControls\PublicationComment.ascx" />
+    <Content Include="UserControls\MenuConstructor.ascx" />
+    <Content Include="UserControls\PublicationTerms.ascx" />
+    <Content Include="UserControls\RelatedPublication.ascx" />
+    <Content Include="UserControls\EditAccessModuleRecord.ascx" />
+    <Content Include="UserControls\Order\OrderProducts.ascx" />
+    <Content Include="UserControls\Order\PriceListComboBox.ascx" />
+    <Content Include="UserControls\ProductPrice.ascx" />
+    <Content Include="UserControls\DictionaryComboBox.ascx" />
+    <Content Include="UserControls\NameCheckerTooltip.ascx" />
+    <Content Include="UserControls\ProductCategories.ascx" />
+    <Content Include="UserControls\ProductComplectation.ascx" />
+    <Content Include="UserControls\Requirement\AssignToRequirements.ascx" />
+    <Content Include="UserControls\Requirement\RegisterComment.ascx" />
+    <Content Include="UserControls\Requirement\ParentRequirement.ascx" />
+    <Content Include="UserControls\Requirement\RequirementStatus.ascx" />
+    <Content Include="UserControls\Requirement\SelectRequirementSeverityOfExposure.ascx" />
+    <Content Include="UserControls\Segment\Segment.ascx" />
+    <Content Include="UserControls\Segment\Segments.ascx" />
+    <Content Include="UserControls\SelectCategory.ascx" />
+    <Content Include="UserControls\SessionInfo.ascx" />
+    <Content Include="UserControls\Shared\ContentComments.ascx" />
+    <Content Include="UserControls\Shared\DictionaryOnDemandComboBox.ascx" />
+    <Content Include="UserControls\Shared\EnumDropDownList.ascx" />
+    <Content Include="UserControls\Shared\HtmlEditor.ascx" />
+    <Content Include="UserControls\Shared\NotificationMessage.ascx" />
+    <Content Include="UserControls\Shared\SearchResultContainer.ascx" />
+    <Content Include="UserControls\SiteActionLinkUsers.ascx" />
+    <Content Include="UserControls\SiteActionList.ascx" />
+    <Content Include="UserControls\SiteActionTemplate\EditorSiteActionTemplate.ascx" />
+    <Content Include="UserControls\SiteActionTemplate\SelectSiteActionTemplate.ascx" />
+    <Content Include="UserControls\SiteActionTemplate\SettingsSiteActionTemplate.ascx" />
+    <Content Include="UserControls\SiteActionTemplate\PopupSiteActionTemplate.ascx" />
+    <Content Include="UserControls\SiteActionTemplate\MessageSiteActionTemplate.ascx" />
+    <Content Include="UserControls\SiteActionTemplate\SiteActionTemplate.ascx" />
+    <Content Include="UserControls\SiteActionTemplate\SiteActionTemplates.ascx" />
+    <Content Include="UserControls\SiteActionTemplate\StatsSiteActionTemplate.ascx" />
+    <Content Include="UserControls\SiteActivityRule.ascx" />
+    <Content Include="UserControls\SiteActivityRules.ascx" />
+    <Content Include="UserControls\SiteColumnTooltip.ascx" />
+    <Content Include="UserControls\Order\OrderProductsComboBox.ascx" />
+    <Content Include="UserControls\SiteSettings\CheckSite.ascx" />
+    <Content Include="UserControls\SiteSettings\SiteDomains.ascx" />
+    <Content Include="UserControls\SiteSettings\WidgetSettings.ascx" />
+    <Content Include="UserControls\Task\MainTaskMember.ascx" />
+    <Content Include="UserControls\Task\ProgressBar.ascx" />
+    <Content Include="UserControls\Task\Reminder.ascx" />
+    <Content Include="UserControls\Task\SaveTaskDuration.ascx" />
+    <Content Include="UserControls\Task\SchedulerAdvancedForm\AdvancedForm.ascx" />
+    <Content Include="UserControls\Task\SelectEventTime.ascx" />
+    <Content Include="UserControls\Task\SelectMeetingTime.ascx" />
+    <Content Include="UserControls\Task\TaskDurations.ascx" />
+    <Content Include="UserControls\Task\TaskFilter.ascx" />
+    <Content Include="UserControls\Task\TaskHistories.ascx" />
+    <Content Include="UserControls\Task\TaskList.ascx" />
+    <Content Include="UserControls\Task\TaskMembers.ascx" />
+    <Content Include="UserControls\Shared\ExternalResources.ascx" />
+    <Content Include="UserControls\Widgets\BodyPrompt.ascx" />
+    <Content Include="UserControls\Widgets\ClientBaseGrowth.ascx" />
+    <Content Include="UserControls\Widgets\ClientBaseStatistic.ascx" />
+    <Content Include="UserControls\Widgets\ContactCategory.ascx" />
+    <Content Include="UserControls\Widgets\Domains.ascx" />
+    <Content Include="UserControls\Widgets\LoyaltyManagement.ascx" />
+    <Content Include="UserControls\Widgets\Master\LeftColumn.ascx" />
+    <Content Include="UserControls\Widgets\Master\MainModule.ascx" />
+    <Content Include="UserControls\Widgets\NewSalesInvoiceForPayment.ascx" />
+    <Content Include="UserControls\Widgets\NewSalesPotentialClient.ascx" />
+    <Content Include="UserControls\Widgets\Prompt.ascx" />
+    <Content Include="UserControls\Widgets\RepeatSalesInvoiceForPayment.ascx" />
+    <Content Include="UserControls\Widgets\RepeatSalesPotentialClient.ascx" />
+    <Content Include="UserControls\Widgets\VisitorSource.ascx" />
+    <Content Include="UserControls\Wizards\FormWizard\ActionAfterProcessing.ascx" />
+    <Content Include="UserControls\Wizards\FormWizard\LogicProcessing.ascx" />
+    <Content Include="UserControls\Wizards\FormWizard\Design.ascx" />
+    <Content Include="UserControls\Wizards\FormWizard\InstructionAndText.ascx" />
+    <Content Include="UserControls\Wizards\FormWizard\FormWizard.ascx" />
+    <Content Include="UserControls\Wizards\FormWizard\SelectFormType.ascx" />
+    <Content Include="UserControls\Wizards\LeadForceWizard\SelectWorkflowTemplate.ascx" />
+    <Content Include="UserControls\Wizards\LeadForceWizard\SelectSourceMonitoring.ascx" />
+    <Content Include="UserControls\Wizards\LeadForceWizard\SelectAccessProfile.ascx" />
+    <Content Include="UserControls\Wizards\LeadForceWizard\LeadForceWizard.ascx" />
+    <Content Include="UserControls\Wizards\LeadForceWizard\SelectDictionary.ascx" />
+    <Content Include="UserControls\Wizards\LeadForceWizard\SelectSiteActionTemplate.ascx" />
+    <Content Include="UserControls\Wizards\LeadForceWizard\SelectSiteTemplate.ascx" />
+    <Content Include="UserControls\Wizards\LeadForceWizard\SiteTemplateComboBox.ascx" />
+    <Content Include="UserControls\Wizards\WorkflowTemplateWizard\GeneralInformation.ascx" />
+    <Content Include="UserControls\Wizards\WorkflowTemplateWizard\Materials.ascx" />
+    <Content Include="UserControls\Wizards\WorkflowTemplateWizard\Qualification.ascx" />
+    <Content Include="UserControls\Wizards\WorkflowTemplateWizard\RunCondition.ascx" />
+    <Content Include="UserControls\Wizards\WorkflowTemplateWizard\SelectWorkflowTemplate.ascx" />
+    <Content Include="UserControls\Wizards\WorkflowTemplateWizard\WorkflowTemplateWizard.ascx" />
+    <Content Include="UserControls\WorkflowTemplate\SelectWorkflowTemplate.ascx" />
+    <Content Include="UserControls\WorkflowTemplate\WorkflowTemplateElementConditionEvent.ascx" />
+    <Content Include="UserControls\WorkflowTemplate\SaveWorkflowTemplateConditionEvent.ascx" />
+    <Content Include="UserControls\WorkflowTemplate\SaveWorkflowTemplateElement.ascx" />
+    <Content Include="UserControls\WorkflowTemplate\WorkflowTemplateConditionEvent.ascx" />
+    <Content Include="UserControls\WorkflowTemplate\WorkflowTemplateElement.ascx" />
+    <Content Include="UserControls\WorkflowTemplate\WorkflowTemplateElementRelation.ascx" />
+    <Content Include="UserControls\WorkflowTemplate\WorkflowTemplateElementResult.ascx" />
+    <Content Include="UserControls\WorkflowTemplate\WorkflowTemplateGoal.ascx" />
+    <Content Include="UserControls\WorkflowTemplate\WorkflowTemplateGoalElement.ascx" />
+    <Content Include="UserControls\WorkflowTemplate\WorkflowTemplateMaterial.ascx" />
+    <Content Include="UserControls\WorkflowTemplate\WorkflowTemplateParameter.ascx" />
+    <Content Include="UserEdit.aspx" />
+    <Content Include="Users.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Scripts\form.js" />
+    <Content Include="WebSite.aspx" />
+    <Content Include="WebSites.aspx" />
+    <Content Include="WebSitePage.aspx" />
+    <Content Include="Wizards\FormsWizard.aspx" />
+    <Content Include="Wizards\LeadForceWizard.aspx" />
+    <Content Include="Wizards\WorkflowTemplateWizard.aspx" />
+    <Content Include="Workflow.aspx" />
+    <Content Include="Workflows.aspx" />
+    <Content Include="WorkflowTemplate.aspx" />
+    <Content Include="WorkflowTemplates.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccessDenied.aspx.cs">
+      <DependentUpon>AccessDenied.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AccessDenied.aspx.designer.cs">
+      <DependentUpon>AccessDenied.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AccessProfiles.aspx.cs">
+      <DependentUpon>AccessProfiles.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AccessProfiles.aspx.designer.cs">
+      <DependentUpon>AccessProfiles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Analytics.aspx.cs">
+      <DependentUpon>Analytics.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Analytics.aspx.designer.cs">
+      <DependentUpon>Analytics.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\RadScheduler.Main.ru-RU.designer.cs">
+      <DependentUpon>RadScheduler.Main.ru-RU.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\RadFilter.Main.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RadFilter.Main.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\RadFilter.Main.ru-RU.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RadFilter.Main.ru-RU.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\RadGrid.Main.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RadGrid.Main.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\RadGrid.Main.ru-RU.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RadGrid.Main.ru-RU.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Companies.aspx.cs">
+      <DependentUpon>Companies.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Companies.aspx.designer.cs">
+      <DependentUpon>Companies.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Company.aspx.cs">
+      <DependentUpon>Company.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Company.aspx.designer.cs">
+      <DependentUpon>Company.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ContactSegments.aspx.cs">
+      <DependentUpon>ContactSegments.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ContactSegments.aspx.designer.cs">
+      <DependentUpon>ContactSegments.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ContactSegment.aspx.cs">
+      <DependentUpon>ContactSegment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ContactSegment.aspx.designer.cs">
+      <DependentUpon>ContactSegment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Shipment.aspx.cs">
+      <DependentUpon>Shipment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Shipment.aspx.designer.cs">
+      <DependentUpon>Shipment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Shipments.aspx.cs">
+      <DependentUpon>Shipments.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Shipments.aspx.designer.cs">
+      <DependentUpon>Shipments.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DomainSettings.aspx.cs">
+      <DependentUpon>DomainSettings.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DomainSettings.aspx.designer.cs">
+      <DependentUpon>DomainSettings.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Handlers\AutoCompleteBoxContactRole.aspx.cs">
+      <DependentUpon>AutoCompleteBoxContactRole.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Handlers\AutoCompleteBoxContactRole.aspx.designer.cs">
+      <DependentUpon>AutoCompleteBoxContactRole.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Handlers\Payments\RBKMoney\Fail.ashx.cs">
+      <DependentUpon>Fail.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Handlers\Payments\RBKMoney\Success.ashx.cs">
+      <DependentUpon>Success.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Link.aspx.cs">
+      <DependentUpon>Link.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Link.aspx.designer.cs">
+      <DependentUpon>Link.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Links.aspx.cs">
+      <DependentUpon>Links.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Links.aspx.designer.cs">
+      <DependentUpon>Links.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MassWorkflow.aspx.designer.cs">
+      <DependentUpon>MassWorkflow.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PaymentServices.aspx.cs">
+      <DependentUpon>PaymentServices.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaymentServices.aspx.designer.cs">
+      <DependentUpon>PaymentServices.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SiteActivityRuleForms.aspx.cs">
+      <DependentUpon>SiteActivityRuleForms.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SiteActivityRuleForms.aspx.designer.cs">
+      <DependentUpon>SiteActivityRuleForms.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SiteActivityRuleFiles.aspx.cs">
+      <DependentUpon>SiteActivityRuleFiles.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SiteActivityRuleFiles.aspx.designer.cs">
+      <DependentUpon>SiteActivityRuleFiles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Discussions.aspx.cs">
+      <DependentUpon>Discussions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Discussions.aspx.designer.cs">
+      <DependentUpon>Discussions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FormCode.aspx.cs">
+      <DependentUpon>FormCode.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FormCode.aspx.designer.cs">
+      <DependentUpon>FormCode.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GenerateSiteActionTemplateThumbnails.aspx.cs">
+      <DependentUpon>GenerateSiteActionTemplateThumbnails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GenerateSiteActionTemplateThumbnails.aspx.designer.cs">
+      <DependentUpon>GenerateSiteActionTemplateThumbnails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Handlers\ActivityRibbon.aspx.cs">
+      <DependentUpon>ActivityRibbon.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Handlers\ActivityRibbon.aspx.designer.cs">
+      <DependentUpon>ActivityRibbon.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Handlers\Comments.aspx.cs">
+      <DependentUpon>Comments.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Handlers\Comments.aspx.designer.cs">
+      <DependentUpon>Comments.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Handlers\CommentsFileUpload.ashx.cs">
+      <DependentUpon>CommentsFileUpload.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Handlers\SiteActionTemplateThumbnail.aspx.cs">
+      <DependentUpon>SiteActionTemplateThumbnail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Handlers\SiteActionTemplateThumbnail.aspx.designer.cs">
+      <DependentUpon>SiteActionTemplateThumbnail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Invoice.aspx.cs">
+      <DependentUpon>Invoice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Invoice.aspx.designer.cs">
+      <DependentUpon>Invoice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Invoices.aspx.cs">
+      <DependentUpon>Invoices.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Invoices.aspx.designer.cs">
+      <DependentUpon>Invoices.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KnowledgeBase.aspx.cs">
+      <DependentUpon>KnowledgeBase.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KnowledgeBase.aspx.designer.cs">
+      <DependentUpon>KnowledgeBase.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KnowledgeBases.aspx.cs">
+      <DependentUpon>KnowledgeBases.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KnowledgeBases.aspx.designer.cs">
+      <DependentUpon>KnowledgeBases.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Help.aspx.cs">
+      <DependentUpon>Help.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Help.aspx.designer.cs">
+      <DependentUpon>Help.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HelpTest.aspx.cs">
+      <DependentUpon>HelpTest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HelpTest.aspx.designer.cs">
+      <DependentUpon>HelpTest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MassMail.aspx.cs">
+      <DependentUpon>MassMail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MassMail.aspx.designer.cs">
+      <DependentUpon>MassMail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MassWorkflow.aspx.cs">
+      <DependentUpon>MassWorkflow.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MassWorkflows.aspx.cs">
+      <DependentUpon>MassWorkflows.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MassWorkflows.aspx.designer.cs">
+      <DependentUpon>MassWorkflows.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ModuleEditionAction.aspx.cs">
+      <DependentUpon>ModuleEditionAction.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ModuleEditionAction.aspx.designer.cs">
+      <DependentUpon>ModuleEditionAction.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Payment.aspx.cs">
+      <DependentUpon>Payment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Payment.aspx.designer.cs">
+      <DependentUpon>Payment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Payments.aspx.cs">
+      <DependentUpon>Payments.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Payments.aspx.designer.cs">
+      <DependentUpon>Payments.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PortalSetting.aspx.cs">
+      <DependentUpon>PortalSetting.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PortalSetting.aspx.designer.cs">
+      <DependentUpon>PortalSetting.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Publication.aspx.cs">
+      <DependentUpon>Publication.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Publication.aspx.designer.cs">
+      <DependentUpon>Publication.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Publications.aspx.cs">
+      <DependentUpon>Publications.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Publications.aspx.designer.cs">
+      <DependentUpon>Publications.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\RadScheduler.Main.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RadScheduler.Main.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\RadSchedulerRecurrenceEditor.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RadSchedulerRecurrenceEditor.resx</DependentUpon>
+    </Compile>
+    <Compile Include="CronJob.aspx.cs">
+      <DependentUpon>CronJob.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CronJob.aspx.designer.cs">
+      <DependentUpon>CronJob.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contact.aspx.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contact.aspx.designer.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ContactAdd.aspx.cs">
+      <DependentUpon>ContactAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ContactAdd.aspx.designer.cs">
+      <DependentUpon>ContactAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contacts.aspx.cs">
+      <DependentUpon>Contacts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contacts.aspx.designer.cs">
+      <DependentUpon>Contacts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Order.aspx.cs">
+      <DependentUpon>Order.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Order.aspx.designer.cs">
+      <DependentUpon>Order.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Orders.aspx.cs">
+      <DependentUpon>Orders.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Orders.aspx.designer.cs">
+      <DependentUpon>Orders.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Product.aspx.cs">
+      <DependentUpon>Product.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product.aspx.designer.cs">
+      <DependentUpon>Product.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Products.aspx.cs">
+      <DependentUpon>Products.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Products.aspx.designer.cs">
+      <DependentUpon>Products.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FIOTest.aspx.cs">
+      <DependentUpon>FIOTest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FIOTest.aspx.designer.cs">
+      <DependentUpon>FIOTest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ImportEdit.aspx.cs">
+      <DependentUpon>ImportEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ImportEdit.aspx.designer.cs">
+      <DependentUpon>ImportEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Imports.aspx.cs">
+      <DependentUpon>Imports.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Imports.aspx.designer.cs">
+      <DependentUpon>Imports.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dictionaries.aspx.cs">
+      <DependentUpon>Dictionaries.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dictionaries.aspx.designer.cs">
+      <DependentUpon>Dictionaries.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Handlers\MassMailSelectTemplate.aspx.cs">
+      <DependentUpon>MassMailSelectTemplate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Handlers\MassMailSelectTemplate.aspx.designer.cs">
+      <DependentUpon>MassMailSelectTemplate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Handlers\MassMailSelectContacts.aspx.cs">
+      <DependentUpon>MassMailSelectContacts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Handlers\MassMailSelectContacts.aspx.designer.cs">
+      <DependentUpon>MassMailSelectContacts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MassMail_old.aspx.cs">
+      <DependentUpon>MassMail_old.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MassMail_old.aspx.designer.cs">
+      <DependentUpon>MassMail_old.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MassMails.aspx.cs">
+      <DependentUpon>MassMails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MassMails.aspx.designer.cs">
+      <DependentUpon>MassMails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\RequiremetReports.aspx.cs">
+      <DependentUpon>RequiremetReports.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\RequiremetReports.aspx.designer.cs">
+      <DependentUpon>RequiremetReports.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Request.aspx.cs">
+      <DependentUpon>Request.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Request.aspx.designer.cs">
+      <DependentUpon>Request.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Requests.aspx.cs">
+      <DependentUpon>Requests.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Requests.aspx.designer.cs">
+      <DependentUpon>Requests.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Requirement.aspx.cs">
+      <DependentUpon>Requirement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Requirement.aspx.designer.cs">
+      <DependentUpon>Requirement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Requirements.aspx.cs">
+      <DependentUpon>Requirements.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Requirements.aspx.designer.cs">
+      <DependentUpon>Requirements.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ShowInvoiceReport.aspx.cs">
+      <DependentUpon>ShowInvoiceReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ShowInvoiceReport.aspx.designer.cs">
+      <DependentUpon>ShowInvoiceReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Settings.aspx.cs">
+      <DependentUpon>Settings.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Settings.aspx.designer.cs">
+      <DependentUpon>Settings.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SiteAction.aspx.cs">
+      <DependentUpon>SiteAction.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SiteAction.aspx.designer.cs">
+      <DependentUpon>SiteAction.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SiteActionMessage.aspx.cs">
+      <DependentUpon>SiteActionMessage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SiteActionMessage.aspx.designer.cs">
+      <DependentUpon>SiteActionMessage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SiteActionTemplate.aspx.cs">
+      <DependentUpon>SiteActionTemplate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SiteActionTemplate.aspx.designer.cs">
+      <DependentUpon>SiteActionTemplate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SiteDomain.aspx.cs">
+      <DependentUpon>SiteDomain.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SiteDomain.aspx.designer.cs">
+      <DependentUpon>SiteDomain.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SiteEdit.aspx.cs">
+      <DependentUpon>SiteEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SiteEdit.aspx.designer.cs">
+      <DependentUpon>SiteEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProfileSites.aspx.cs">
+      <DependentUpon>ProfileSites.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProfileSites.aspx.designer.cs">
+      <DependentUpon>ProfileSites.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SiteEventTemplate.aspx.cs">
+      <DependentUpon>SiteEventTemplate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SiteEventTemplate.aspx.designer.cs">
+      <DependentUpon>SiteEventTemplate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SiteEventTemplates.aspx.cs">
+      <DependentUpon>SiteEventTemplates.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SiteEventTemplates.aspx.designer.cs">
+      <DependentUpon>SiteEventTemplates.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sites.aspx.cs">
+      <DependentUpon>Sites.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sites.aspx.designer.cs">
+      <DependentUpon>Sites.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SiteActionTemplate_old.aspx.cs">
+      <DependentUpon>SiteActionTemplate_old.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SiteActionTemplate_old.aspx.designer.cs">
+      <DependentUpon>SiteActionTemplate_old.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SiteActionTemplates.aspx.cs">
+      <DependentUpon>SiteActionTemplates.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SiteActionTemplates.aspx.designer.cs">
+      <DependentUpon>SiteActionTemplates.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SiteActivityRule.aspx.cs">
+      <DependentUpon>SiteActivityRule.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SiteActivityRule.aspx.designer.cs">
+      <DependentUpon>SiteActivityRule.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SiteActivityRules.aspx.cs">
+      <DependentUpon>SiteActivityRules.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SiteActivityRules.aspx.designer.cs">
+      <DependentUpon>SiteActivityRules.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SiteColumn.aspx.cs">
+      <DependentUpon>SiteColumn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SiteColumn.aspx.designer.cs">
+      <DependentUpon>SiteColumn.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SiteColumns.aspx.cs">
+      <DependentUpon>SiteColumns.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SiteColumns.aspx.designer.cs">
+      <DependentUpon>SiteColumns.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ContactActivity.aspx.cs">
+      <DependentUpon>ContactActivity.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ContactActivity.aspx.designer.cs">
+      <DependentUpon>ContactActivity.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ContactSession.aspx.cs">
+      <DependentUpon>ContactSession.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ContactSession.aspx.designer.cs">
+      <DependentUpon>ContactSession.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SomeJobs.aspx.cs">
+      <DependentUpon>SomeJobs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SomeJobs.aspx.designer.cs">
+      <DependentUpon>SomeJobs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SourceMonitoring.aspx.cs">
+      <DependentUpon>SourceMonitoring.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SourceMonitoring.aspx.designer.cs">
+      <DependentUpon>SourceMonitoring.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SourceMonitorings.aspx.cs">
+      <DependentUpon>SourceMonitorings.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SourceMonitorings.aspx.designer.cs">
+      <DependentUpon>SourceMonitorings.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Task.aspx.cs">
+      <DependentUpon>Task.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Task.aspx.designer.cs">
+      <DependentUpon>Task.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tasks.aspx.cs">
+      <DependentUpon>Tasks.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tasks.aspx.designer.cs">
+      <DependentUpon>Tasks.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Test.aspx.cs">
+      <DependentUpon>Test.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Test.aspx.designer.cs">
+      <DependentUpon>Test.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ActivityRibbon\Code\RadListViewClientBindingExtender.cs" />
+    <Compile Include="UserControls\ActivityRibbon\CreatePublication.ascx.cs">
+      <DependentUpon>CreatePublication.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ActivityRibbon\CreatePublication.ascx.designer.cs">
+      <DependentUpon>CreatePublication.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ActivityRibbon\PublicationCategory.ascx.cs">
+      <DependentUpon>PublicationCategory.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ActivityRibbon\PublicationCategory.ascx.designer.cs">
+      <DependentUpon>PublicationCategory.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ActivityRibbon\PublicationFilter.ascx.cs">
+      <DependentUpon>PublicationFilter.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ActivityRibbon\PublicationFilter.ascx.designer.cs">
+      <DependentUpon>PublicationFilter.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ActivityRibbon\PublicationsRibbon.ascx.cs">
+      <DependentUpon>PublicationsRibbon.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ActivityRibbon\PublicationsRibbon.ascx.designer.cs">
+      <DependentUpon>PublicationsRibbon.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ActivityRibbon\PublicationTypes.ascx.cs">
+      <DependentUpon>PublicationTypes.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ActivityRibbon\PublicationTypes.ascx.designer.cs">
+      <DependentUpon>PublicationTypes.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Address.ascx.cs">
+      <DependentUpon>Address.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Address.ascx.designer.cs">
+      <DependentUpon>Address.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Analytics\AnalyticReportAxisValue.ascx.cs">
+      <DependentUpon>AnalyticReportAxisValue.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Analytics\AnalyticReportAxisValue.ascx.designer.cs">
+      <DependentUpon>AnalyticReportAxisValue.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Analytics\AnalyticReportFilters.ascx.cs">
+      <DependentUpon>AnalyticReportFilters.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Analytics\AnalyticReportFilters.ascx.designer.cs">
+      <DependentUpon>AnalyticReportFilters.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Analytics\Chart.ascx.cs">
+      <DependentUpon>Chart.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Analytics\Chart.ascx.designer.cs">
+      <DependentUpon>Chart.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Analytics\TableReport.ascx.cs">
+      <DependentUpon>TableReport.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Analytics\TableReport.ascx.designer.cs">
+      <DependentUpon>TableReport.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Analytics\XAxis.ascx.cs">
+      <DependentUpon>XAxis.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Analytics\XAxis.ascx.designer.cs">
+      <DependentUpon>XAxis.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Company\Companies.ascx.cs">
+      <DependentUpon>Companies.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Company\Companies.ascx.designer.cs">
+      <DependentUpon>Companies.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Company\Company.ascx.cs">
+      <DependentUpon>Company.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Company\Company.ascx.designer.cs">
+      <DependentUpon>Company.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Company\CompanyComboBox.ascx.cs">
+      <DependentUpon>CompanyComboBox.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Company\CompanyComboBox.ascx.designer.cs">
+      <DependentUpon>CompanyComboBox.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Company\CompanyLegalAccount.ascx.cs">
+      <DependentUpon>CompanyLegalAccount.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Company\CompanyLegalAccount.ascx.designer.cs">
+      <DependentUpon>CompanyLegalAccount.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Contact\Contact.ascx.cs">
+      <DependentUpon>Contact.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Contact\Contact.ascx.designer.cs">
+      <DependentUpon>Contact.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Contact\ContactActivityList.ascx.cs">
+      <DependentUpon>ContactActivityList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Contact\ContactActivityList.ascx.designer.cs">
+      <DependentUpon>ContactActivityList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Contact\ContactAdd.ascx.cs">
+      <DependentUpon>ContactAdd.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Contact\ContactAdd.ascx.designer.cs">
+      <DependentUpon>ContactAdd.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Contact\ContactComboBox.ascx.cs">
+      <DependentUpon>ContactComboBox.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Contact\ContactComboBox.ascx.designer.cs">
+      <DependentUpon>ContactComboBox.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Contact\ContactEdit.ascx.cs">
+      <DependentUpon>ContactEdit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Contact\ContactEdit.ascx.designer.cs">
+      <DependentUpon>ContactEdit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Contact\Contacts.ascx.cs">
+      <DependentUpon>Contacts.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Contact\Contacts.ascx.designer.cs">
+      <DependentUpon>Contacts.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Contact\SelectContacts.ascx.cs">
+      <DependentUpon>SelectContacts.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Contact\SelectContacts.ascx.designer.cs">
+      <DependentUpon>SelectContacts.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Contact\SimpleContact.ascx.cs">
+      <DependentUpon>SimpleContact.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Contact\SimpleContact.ascx.designer.cs">
+      <DependentUpon>SimpleContact.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Contact\ContactList.ascx.cs">
+      <DependentUpon>ContactList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Contact\ContactList.ascx.designer.cs">
+      <DependentUpon>ContactList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\DictionaryEditForm\ContactRoleEdit.ascx.cs">
+      <DependentUpon>ContactRoleEdit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\DictionaryEditForm\ContactRoleEdit.ascx.designer.cs">
+      <DependentUpon>ContactRoleEdit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Import\ImportTag.ascx.cs">
+      <DependentUpon>ImportTag.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Import\ImportTag.ascx.designer.cs">
+      <DependentUpon>ImportTag.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Invoice\InvoiceShipments.ascx.cs">
+      <DependentUpon>InvoiceShipments.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Invoice\InvoiceShipments.ascx.designer.cs">
+      <DependentUpon>InvoiceShipments.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Links.ascx.cs">
+      <DependentUpon>Links.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Links.ascx.designer.cs">
+      <DependentUpon>Links.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ModuleEditionAction\Product\Product.ascx.cs">
+      <DependentUpon>Product.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ModuleEditionAction\Product\Product.ascx.designer.cs">
+      <DependentUpon>Product.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ModuleEditionAction\Product\Products.ascx.cs">
+      <DependentUpon>Products.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ModuleEditionAction\Product\Products.ascx.designer.cs">
+      <DependentUpon>Products.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Shared\PeriodFilter.ascx.cs">
+      <DependentUpon>PeriodFilter.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Shared\PeriodFilter.ascx.designer.cs">
+      <DependentUpon>PeriodFilter.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Shipment\ShipmentInvoices.ascx.cs">
+      <DependentUpon>ShipmentInvoices.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Shipment\ShipmentInvoices.ascx.designer.cs">
+      <DependentUpon>ShipmentInvoices.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Shipment\ShipmentProducts.ascx.cs">
+      <DependentUpon>ShipmentProducts.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Shipment\ShipmentProducts.ascx.designer.cs">
+      <DependentUpon>ShipmentProducts.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\SiteActivityRuleForms.ascx.cs">
+      <DependentUpon>SiteActivityRuleForms.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\SiteActivityRuleForms.ascx.designer.cs">
+      <DependentUpon>SiteActivityRuleForms.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\SiteActivityRuleFile.ascx.cs">
+      <DependentUpon>SiteActivityRuleFile.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\SiteActivityRuleFile.ascx.designer.cs">
+      <DependentUpon>SiteActivityRuleFile.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\SiteActivityRuleFiles.ascx.cs">
+      <DependentUpon>SiteActivityRuleFiles.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\SiteActivityRuleFiles.ascx.designer.cs">
+      <DependentUpon>SiteActivityRuleFiles.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\CssEditor.ascx.cs">
+      <DependentUpon>CssEditor.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\CssEditor.ascx.designer.cs">
+      <DependentUpon>CssEditor.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\DictionaryEditForm\PaymentArticleEdit.ascx.cs">
+      <DependentUpon>PaymentArticleEdit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\DictionaryEditForm\PaymentArticleEdit.ascx.designer.cs">
+      <DependentUpon>PaymentArticleEdit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\DictionaryEditForm\PaymentCFOEdit.ascx.cs">
+      <DependentUpon>PaymentCFOEdit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\DictionaryEditForm\PaymentCFOEdit.ascx.designer.cs">
+      <DependentUpon>PaymentCFOEdit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\DictionaryEditForm\PaymentPassRuleEdit.ascx.cs">
+      <DependentUpon>PaymentPassRuleEdit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\DictionaryEditForm\PaymentPassRuleEdit.ascx.designer.cs">
+      <DependentUpon>PaymentPassRuleEdit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\DictionaryEditForm\ServiceLevelEdit.ascx.cs">
+      <DependentUpon>ServiceLevelEdit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\DictionaryEditForm\ServiceLevelEdit.ascx.designer.cs">
+      <DependentUpon>ServiceLevelEdit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Invoice\InvoiceProducts.ascx.cs">
+      <DependentUpon>InvoiceProducts.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Invoice\InvoiceProducts.ascx.designer.cs">
+      <DependentUpon>InvoiceProducts.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ModuleEditionAction\Contact\Contact.ascx.cs">
+      <DependentUpon>Contact.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ModuleEditionAction\Contact\Contact.ascx.designer.cs">
+      <DependentUpon>Contact.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ModuleEditionAction\Contact\ContactAdd.ascx.cs">
+      <DependentUpon>ContactAdd.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ModuleEditionAction\Contact\ContactAdd.ascx.designer.cs">
+      <DependentUpon>ContactAdd.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ModuleEditionAction\Contact\ContactEdit.ascx.cs">
+      <DependentUpon>ContactEdit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ModuleEditionAction\Contact\ContactEdit.ascx.designer.cs">
+      <DependentUpon>ContactEdit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ModuleEditionAction\Contact\Contacts.ascx.cs">
+      <DependentUpon>Contacts.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ModuleEditionAction\Contact\Contacts.ascx.designer.cs">
+      <DependentUpon>Contacts.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ModuleEditionAction\Discussion\PortalSetting.ascx.cs">
+      <DependentUpon>PortalSetting.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ModuleEditionAction\Discussion\PortalSetting.ascx.designer.cs">
+      <DependentUpon>PortalSetting.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ModuleEditionAction\File\File.ascx.cs">
+      <DependentUpon>File.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ModuleEditionAction\File\File.ascx.designer.cs">
+      <DependentUpon>File.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ModuleEditionAction\File\Files.ascx.cs">
+      <DependentUpon>Files.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ModuleEditionAction\File\Files.ascx.designer.cs">
+      <DependentUpon>Files.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Payment\PaymentPassRuleCompany.ascx.cs">
+      <DependentUpon>PaymentPassRuleCompany.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Payment\PaymentPassRuleCompany.ascx.designer.cs">
+      <DependentUpon>PaymentPassRuleCompany.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Payment\PaymentPass.ascx.cs">
+      <DependentUpon>PaymentPass.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Payment\PaymentPass.ascx.designer.cs">
+      <DependentUpon>PaymentPass.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Payment\EditPaymentPassRule.ascx.cs">
+      <DependentUpon>EditPaymentPassRule.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Payment\EditPaymentPassRule.ascx.designer.cs">
+      <DependentUpon>EditPaymentPassRule.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Payment\PaymentStatus.ascx.cs">
+      <DependentUpon>PaymentStatus.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Payment\PaymentStatus.ascx.designer.cs">
+      <DependentUpon>PaymentStatus.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Portal\PortalSettings.ascx.cs">
+      <DependentUpon>PortalSettings.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Portal\PortalSettings.ascx.designer.cs">
+      <DependentUpon>PortalSettings.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Prompt.ascx.cs">
+      <DependentUpon>Prompt.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Prompt.ascx.designer.cs">
+      <DependentUpon>Prompt.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\PublicationCategories.ascx.cs">
+      <DependentUpon>PublicationCategories.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\PublicationCategories.ascx.designer.cs">
+      <DependentUpon>PublicationCategories.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\PublicationCommentDetail.ascx.cs">
+      <DependentUpon>PublicationCommentDetail.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\PublicationCommentDetail.ascx.designer.cs">
+      <DependentUpon>PublicationCommentDetail.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\PublicationMark.ascx.cs">
+      <DependentUpon>PublicationMark.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\PublicationMark.ascx.designer.cs">
+      <DependentUpon>PublicationMark.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\PublicationComment.ascx.cs">
+      <DependentUpon>PublicationComment.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\PublicationComment.ascx.designer.cs">
+      <DependentUpon>PublicationComment.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\MenuConstructor.ascx.cs">
+      <DependentUpon>MenuConstructor.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\MenuConstructor.ascx.designer.cs">
+      <DependentUpon>MenuConstructor.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\PublicationTerms.ascx.cs">
+      <DependentUpon>PublicationTerms.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\PublicationTerms.ascx.designer.cs">
+      <DependentUpon>PublicationTerms.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\RelatedPublication.ascx.cs">
+      <DependentUpon>RelatedPublication.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\RelatedPublication.ascx.designer.cs">
+      <DependentUpon>RelatedPublication.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\EditAccessModuleRecord.ascx.cs">
+      <DependentUpon>EditAccessModuleRecord.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\EditAccessModuleRecord.ascx.designer.cs">
+      <DependentUpon>EditAccessModuleRecord.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Order\OrderProducts.ascx.cs">
+      <DependentUpon>OrderProducts.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Order\OrderProducts.ascx.designer.cs">
+      <DependentUpon>OrderProducts.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Order\PriceListComboBox.ascx.cs">
+      <DependentUpon>PriceListComboBox.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Order\PriceListComboBox.ascx.designer.cs">
+      <DependentUpon>PriceListComboBox.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ProductPrice.ascx.cs">
+      <DependentUpon>ProductPrice.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ProductPrice.ascx.designer.cs">
+      <DependentUpon>ProductPrice.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\DictionaryComboBox.ascx.cs">
+      <DependentUpon>DictionaryComboBox.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\DictionaryComboBox.ascx.designer.cs">
+      <DependentUpon>DictionaryComboBox.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\NameCheckerTooltip.ascx.cs">
+      <DependentUpon>NameCheckerTooltip.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\NameCheckerTooltip.ascx.designer.cs">
+      <DependentUpon>NameCheckerTooltip.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ProductCategories.ascx.cs">
+      <DependentUpon>ProductCategories.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ProductCategories.ascx.designer.cs">
+      <DependentUpon>ProductCategories.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ProductComplectation.ascx.cs">
+      <DependentUpon>ProductComplectation.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ProductComplectation.ascx.designer.cs">
+      <DependentUpon>ProductComplectation.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Requirement\AssignToRequirements.ascx.cs">
+      <DependentUpon>AssignToRequirements.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Requirement\AssignToRequirements.ascx.designer.cs">
+      <DependentUpon>AssignToRequirements.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Requirement\RegisterComment.ascx.cs">
+      <DependentUpon>RegisterComment.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Requirement\RegisterComment.ascx.designer.cs">
+      <DependentUpon>RegisterComment.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Requirement\ParentRequirement.ascx.cs">
+      <DependentUpon>ParentRequirement.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Requirement\ParentRequirement.ascx.designer.cs">
+      <DependentUpon>ParentRequirement.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Requirement\RequirementStatus.ascx.cs">
+      <DependentUpon>RequirementStatus.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Requirement\RequirementStatus.ascx.designer.cs">
+      <DependentUpon>RequirementStatus.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Requirement\SelectRequirementSeverityOfExposure.ascx.cs">
+      <DependentUpon>SelectRequirementSeverityOfExposure.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Requirement\SelectRequirementSeverityOfExposure.ascx.designer.cs">
+      <DependentUpon>SelectRequirementSeverityOfExposure.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Segment\Segment.ascx.cs">
+      <DependentUpon>Segment.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Segment\Segment.ascx.designer.cs">
+      <DependentUpon>Segment.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Segment\Segments.ascx.cs">
+      <DependentUpon>Segments.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Segment\Segments.ascx.designer.cs">
+      <DependentUpon>Segments.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\SelectCategory.ascx.cs">
+      <DependentUpon>SelectCategory.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\SelectCategory.ascx.designer.cs">
+      <DependentUpon>SelectCategory.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\SessionInfo.ascx.cs">
+      <DependentUpon>SessionInfo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\SessionInfo.ascx.designer.cs">
+      <DependentUpon>SessionInfo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Shared\ContentComments.ascx.cs">
+      <DependentUpon>ContentComments.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Shared\ContentComments.ascx.designer.cs">
+      <DependentUpon>ContentComments.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Shared\DictionaryOnDemandComboBox.ascx.cs">
+      <DependentUpon>DictionaryOnDemandComboBox.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Shared\DictionaryOnDemandComboBox.ascx.designer.cs">
+      <DependentUpon>DictionaryOnDemandComboBox.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Shared\EnumDropDownList.ascx.cs">
+      <DependentUpon>EnumDropDownList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Shared\EnumDropDownList.ascx.designer.cs">
+      <DependentUpon>EnumDropDownList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Shared\HtmlEditor.ascx.cs">
+      <DependentUpon>HtmlEditor.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Shared\HtmlEditor.ascx.designer.cs">
+      <DependentUpon>HtmlEditor.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Shared\NotificationMessage.ascx.cs">
+      <DependentUpon>NotificationMessage.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Shared\NotificationMessage.ascx.designer.cs">
+      <DependentUpon>NotificationMessage.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Shared\SearchResultContainer.ascx.cs">
+      <DependentUpon>SearchResultContainer.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Shared\SearchResultContainer.ascx.designer.cs">
+      <DependentUpon>SearchResultContainer.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\SiteActionLinkUsers.ascx.cs">
+      <DependentUpon>SiteActionLinkUsers.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\SiteActionLinkUsers.ascx.designer.cs">
+      <DependentUpon>SiteActionLinkUsers.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\SiteActionList.ascx.cs">
+      <DependentUpon>SiteActionList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\SiteActionList.ascx.designer.cs">
+      <DependentUpon>SiteActionList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\SiteActionTemplate\EditorSiteActionTemplate.ascx.cs">
+      <DependentUpon>EditorSiteActionTemplate.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\SiteActionTemplate\EditorSiteActionTemplate.ascx.designer.cs">
+      <DependentUpon>EditorSiteActionTemplate.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\SiteActionTemplate\SelectSiteActionTemplate.ascx.cs">
+      <DependentUpon>SelectSiteActionTemplate.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\SiteActionTemplate\SelectSiteActionTemplate.ascx.designer.cs">
+      <DependentUpon>SelectSiteActionTemplate.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\SiteActionTemplate\SettingsSiteActionTemplate.ascx.cs">
+      <DependentUpon>SettingsSiteActionTemplate.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\SiteActionTemplate\SettingsSiteActionTemplate.ascx.designer.cs">
+      <DependentUpon>SettingsSiteActionTemplate.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\SiteActionTemplate\PopupSiteActionTemplate.ascx.cs">
+      <DependentUpon>PopupSiteActionTemplate.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\SiteActionTemplate\PopupSiteActionTemplate.ascx.designer.cs">
+      <DependentUpon>PopupSiteActionTemplate.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\SiteActionTemplate\MessageSiteActionTemplate.ascx.cs">
+      <DependentUpon>MessageSiteActionTemplate.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\SiteActionTemplate\MessageSiteActionTemplate.ascx.designer.cs">
+      <DependentUpon>MessageSiteActionTemplate.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\SiteActionTemplate\SiteActionTemplate.ascx.cs">
+      <DependentUpon>SiteActionTemplate.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\SiteActionTemplate\SiteActionTemplate.ascx.designer.cs">
+      <DependentUpon>SiteActionTemplate.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\SiteActionTemplate\SiteActionTemplates.ascx.cs">
+      <DependentUpon>SiteActionTemplates.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\SiteActionTemplate\SiteActionTemplates.ascx.designer.cs">
+      <DependentUpon>SiteActionTemplates.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\SiteActionTemplate\StatsSiteActionTemplate.ascx.cs">
+      <DependentUpon>StatsSiteActionTemplate.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\SiteActionTemplate\StatsSiteActionTemplate.ascx.designer.cs">
+      <DependentUpon>StatsSiteActionTemplate.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\SiteActivityRule.ascx.cs">
+      <DependentUpon>SiteActivityRule.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\SiteActivityRule.ascx.designer.cs">
+      <DependentUpon>SiteActivityRule.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\SiteActivityRules.ascx.cs">
+      <DependentUpon>SiteActivityRules.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\SiteActivityRules.ascx.designer.cs">
+      <DependentUpon>SiteActivityRules.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\SiteColumnTooltip.ascx.cs">
+      <DependentUpon>SiteColumnTooltip.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\SiteColumnTooltip.ascx.designer.cs">
+      <DependentUpon>SiteColumnTooltip.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Order\OrderProductsComboBox.ascx.cs">
+      <DependentUpon>OrderProductsComboBox.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Order\OrderProductsComboBox.ascx.designer.cs">
+      <DependentUpon>OrderProductsComboBox.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\SiteSettings\CheckSite.ascx.cs">
+      <DependentUpon>CheckSite.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\SiteSettings\CheckSite.ascx.designer.cs">
+      <DependentUpon>CheckSite.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\SiteSettings\SiteDomains.ascx.cs">
+      <DependentUpon>SiteDomains.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\SiteSettings\SiteDomains.ascx.designer.cs">
+      <DependentUpon>SiteDomains.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\SiteSettings\WidgetSettings.ascx.cs">
+      <DependentUpon>WidgetSettings.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\SiteSettings\WidgetSettings.ascx.designer.cs">
+      <DependentUpon>WidgetSettings.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Task\MainTaskMember.ascx.cs">
+      <DependentUpon>MainTaskMember.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Task\MainTaskMember.ascx.designer.cs">
+      <DependentUpon>MainTaskMember.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Task\ProgressBar.ascx.cs">
+      <DependentUpon>ProgressBar.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Task\ProgressBar.ascx.designer.cs">
+      <DependentUpon>ProgressBar.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Task\Reminder.ascx.cs">
+      <DependentUpon>Reminder.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Task\Reminder.ascx.designer.cs">
+      <DependentUpon>Reminder.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Task\SaveTaskDuration.ascx.cs">
+      <DependentUpon>SaveTaskDuration.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Task\SaveTaskDuration.ascx.designer.cs">
+      <DependentUpon>SaveTaskDuration.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Task\SchedulerAdvancedForm\AdvancedForm.ascx.cs">
+      <DependentUpon>AdvancedForm.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Task\SchedulerAdvancedForm\AdvancedForm.ascx.designer.cs">
+      <DependentUpon>AdvancedForm.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Task\SelectEventTime.ascx.cs">
+      <DependentUpon>SelectEventTime.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Task\SelectEventTime.ascx.designer.cs">
+      <DependentUpon>SelectEventTime.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Task\SelectMeetingTime.ascx.cs">
+      <DependentUpon>SelectMeetingTime.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Task\SelectMeetingTime.ascx.designer.cs">
+      <DependentUpon>SelectMeetingTime.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Task\TaskDurations.ascx.cs">
+      <DependentUpon>TaskDurations.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Task\TaskDurations.ascx.designer.cs">
+      <DependentUpon>TaskDurations.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Task\TaskFilter.ascx.cs">
+      <DependentUpon>TaskFilter.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Task\TaskFilter.ascx.designer.cs">
+      <DependentUpon>TaskFilter.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Task\TaskHistories.ascx.cs">
+      <DependentUpon>TaskHistories.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Task\TaskHistories.ascx.designer.cs">
+      <DependentUpon>TaskHistories.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Task\TaskList.ascx.cs">
+      <DependentUpon>TaskList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Task\TaskList.ascx.designer.cs">
+      <DependentUpon>TaskList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Task\TaskMembers.ascx.cs">
+      <DependentUpon>TaskMembers.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Task\TaskMembers.ascx.designer.cs">
+      <DependentUpon>TaskMembers.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Shared\ExternalResources.ascx.cs">
+      <DependentUpon>ExternalResources.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Shared\ExternalResources.ascx.designer.cs">
+      <DependentUpon>ExternalResources.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Widgets\BodyPrompt.ascx.cs">
+      <DependentUpon>BodyPrompt.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Widgets\BodyPrompt.ascx.designer.cs">
+      <DependentUpon>BodyPrompt.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Widgets\ClientBaseGrowth.ascx.cs">
+      <DependentUpon>ClientBaseGrowth.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Widgets\ClientBaseGrowth.ascx.designer.cs">
+      <DependentUpon>ClientBaseGrowth.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Widgets\ClientBaseStatistic.ascx.cs">
+      <DependentUpon>ClientBaseStatistic.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Widgets\ClientBaseStatistic.ascx.designer.cs">
+      <DependentUpon>ClientBaseStatistic.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Widgets\ContactCategory.ascx.cs">
+      <DependentUpon>ContactCategory.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Widgets\ContactCategory.ascx.designer.cs">
+      <DependentUpon>ContactCategory.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Widgets\Domains.ascx.cs">
+      <DependentUpon>Domains.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Widgets\Domains.ascx.designer.cs">
+      <DependentUpon>Domains.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Widgets\LoyaltyManagement.ascx.cs">
+      <DependentUpon>LoyaltyManagement.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Widgets\LoyaltyManagement.ascx.designer.cs">
+      <DependentUpon>LoyaltyManagement.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Widgets\Master\LeftColumn.ascx.cs">
+      <DependentUpon>LeftColumn.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Widgets\Master\LeftColumn.ascx.designer.cs">
+      <DependentUpon>LeftColumn.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Widgets\Master\MainModule.ascx.cs">
+      <DependentUpon>MainModule.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Widgets\Master\MainModule.ascx.designer.cs">
+      <DependentUpon>MainModule.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Widgets\NewSalesInvoiceForPayment.ascx.cs">
+      <DependentUpon>NewSalesInvoiceForPayment.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Widgets\NewSalesInvoiceForPayment.ascx.designer.cs">
+      <DependentUpon>NewSalesInvoiceForPayment.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Widgets\NewSalesPotentialClient.ascx.cs">
+      <DependentUpon>NewSalesPotentialClient.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Widgets\NewSalesPotentialClient.ascx.designer.cs">
+      <DependentUpon>NewSalesPotentialClient.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Widgets\Prompt.ascx.cs">
+      <DependentUpon>Prompt.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Widgets\Prompt.ascx.designer.cs">
+      <DependentUpon>Prompt.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Widgets\RepeatSalesInvoiceForPayment.ascx.cs">
+      <DependentUpon>RepeatSalesInvoiceForPayment.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Widgets\RepeatSalesInvoiceForPayment.ascx.designer.cs">
+      <DependentUpon>RepeatSalesInvoiceForPayment.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Widgets\RepeatSalesPotentialClient.ascx.cs">
+      <DependentUpon>RepeatSalesPotentialClient.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Widgets\RepeatSalesPotentialClient.ascx.designer.cs">
+      <DependentUpon>RepeatSalesPotentialClient.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Widgets\VisitorSource.ascx.cs">
+      <DependentUpon>VisitorSource.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Widgets\VisitorSource.ascx.designer.cs">
+      <DependentUpon>VisitorSource.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Wizards\Controls\BaseWizardStep.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Wizards\Controls\WorkflowTemplateWizardStep.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Wizards\Controls\FormWizardStep.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Wizards\Controls\LeadForceWizardStep.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Wizards\FormWizard\ActionAfterProcessing.ascx.cs">
+      <DependentUpon>ActionAfterProcessing.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Wizards\FormWizard\ActionAfterProcessing.ascx.designer.cs">
+      <DependentUpon>ActionAfterProcessing.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Wizards\FormWizard\LogicProcessing.ascx.cs">
+      <DependentUpon>LogicProcessing.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Wizards\FormWizard\LogicProcessing.ascx.designer.cs">
+      <DependentUpon>LogicProcessing.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Wizards\FormWizard\Design.ascx.cs">
+      <DependentUpon>Design.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Wizards\FormWizard\Design.ascx.designer.cs">
+      <DependentUpon>Design.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Wizards\FormWizard\InstructionAndText.ascx.cs">
+      <DependentUpon>InstructionAndText.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Wizards\FormWizard\InstructionAndText.ascx.designer.cs">
+      <DependentUpon>InstructionAndText.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Wizards\FormWizard\FormWizard.ascx.cs">
+      <DependentUpon>FormWizard.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Wizards\FormWizard\FormWizard.ascx.designer.cs">
+      <DependentUpon>FormWizard.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Wizards\FormWizard\SelectFormType.ascx.cs">
+      <DependentUpon>SelectFormType.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Wizards\FormWizard\SelectFormType.ascx.designer.cs">
+      <DependentUpon>SelectFormType.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Wizards\LeadForceWizard\SelectWorkflowTemplate.ascx.cs">
+      <DependentUpon>SelectWorkflowTemplate.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Wizards\LeadForceWizard\SelectWorkflowTemplate.ascx.designer.cs">
+      <DependentUpon>SelectWorkflowTemplate.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Wizards\LeadForceWizard\SelectSourceMonitoring.ascx.cs">
+      <DependentUpon>SelectSourceMonitoring.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Wizards\LeadForceWizard\SelectSourceMonitoring.ascx.designer.cs">
+      <DependentUpon>SelectSourceMonitoring.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Wizards\LeadForceWizard\SelectAccessProfile.ascx.cs">
+      <DependentUpon>SelectAccessProfile.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Wizards\LeadForceWizard\SelectAccessProfile.ascx.designer.cs">
+      <DependentUpon>SelectAccessProfile.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Wizards\LeadForceWizard\LeadForceWizard.ascx.cs">
+      <DependentUpon>LeadForceWizard.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Wizards\LeadForceWizard\LeadForceWizard.ascx.designer.cs">
+      <DependentUpon>LeadForceWizard.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Wizards\LeadForceWizard\SelectDictionary.ascx.cs">
+      <DependentUpon>SelectDictionary.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Wizards\LeadForceWizard\SelectDictionary.ascx.designer.cs">
+      <DependentUpon>SelectDictionary.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Wizards\LeadForceWizard\SelectSiteActionTemplate.ascx.cs">
+      <DependentUpon>SelectSiteActionTemplate.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Wizards\LeadForceWizard\SelectSiteActionTemplate.ascx.designer.cs">
+      <DependentUpon>SelectSiteActionTemplate.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Wizards\LeadForceWizard\SelectSiteTemplate.ascx.cs">
+      <DependentUpon>SelectSiteTemplate.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Wizards\LeadForceWizard\SelectSiteTemplate.ascx.designer.cs">
+      <DependentUpon>SelectSiteTemplate.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Wizards\LeadForceWizard\SiteTemplateComboBox.ascx.cs">
+      <DependentUpon>SiteTemplateComboBox.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Wizards\LeadForceWizard\SiteTemplateComboBox.ascx.designer.cs">
+      <DependentUpon>SiteTemplateComboBox.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Wizards\WorkflowTemplateWizard\GeneralInformation.ascx.cs">
+      <DependentUpon>GeneralInformation.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Wizards\WorkflowTemplateWizard\GeneralInformation.ascx.designer.cs">
+      <DependentUpon>GeneralInformation.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Wizards\WorkflowTemplateWizard\Materials.ascx.cs">
+      <DependentUpon>Materials.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Wizards\WorkflowTemplateWizard\Materials.ascx.designer.cs">
+      <DependentUpon>Materials.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Wizards\WorkflowTemplateWizard\Qualification.ascx.cs">
+      <DependentUpon>Qualification.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Wizards\WorkflowTemplateWizard\Qualification.ascx.designer.cs">
+      <DependentUpon>Qualification.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Wizards\WorkflowTemplateWizard\RunCondition.ascx.cs">
+      <DependentUpon>RunCondition.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Wizards\WorkflowTemplateWizard\RunCondition.ascx.designer.cs">
+      <DependentUpon>RunCondition.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Wizards\WorkflowTemplateWizard\SelectWorkflowTemplate.ascx.cs">
+      <DependentUpon>SelectWorkflowTemplate.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Wizards\WorkflowTemplateWizard\SelectWorkflowTemplate.ascx.designer.cs">
+      <DependentUpon>SelectWorkflowTemplate.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Wizards\WorkflowTemplateWizard\WorkflowTemplateWizard.ascx.cs">
+      <DependentUpon>WorkflowTemplateWizard.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Wizards\WorkflowTemplateWizard\WorkflowTemplateWizard.ascx.designer.cs">
+      <DependentUpon>WorkflowTemplateWizard.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\WorkflowTemplate\SelectWorkflowTemplate.ascx.cs">
+      <DependentUpon>SelectWorkflowTemplate.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\WorkflowTemplate\SelectWorkflowTemplate.ascx.designer.cs">
+      <DependentUpon>SelectWorkflowTemplate.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\WorkflowTemplate\WorkflowTemplateElementConditionEvent.ascx.cs">
+      <DependentUpon>WorkflowTemplateElementConditionEvent.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\WorkflowTemplate\WorkflowTemplateElementConditionEvent.ascx.designer.cs">
+      <DependentUpon>WorkflowTemplateElementConditionEvent.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\WorkflowTemplate\SaveWorkflowTemplateConditionEvent.ascx.cs">
+      <DependentUpon>SaveWorkflowTemplateConditionEvent.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\WorkflowTemplate\SaveWorkflowTemplateConditionEvent.ascx.designer.cs">
+      <DependentUpon>SaveWorkflowTemplateConditionEvent.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\WorkflowTemplate\SaveWorkflowTemplateElement.ascx.cs">
+      <DependentUpon>SaveWorkflowTemplateElement.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\WorkflowTemplate\SaveWorkflowTemplateElement.ascx.designer.cs">
+      <DependentUpon>SaveWorkflowTemplateElement.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\WorkflowTemplate\WorkflowTemplateConditionEvent.ascx.cs">
+      <DependentUpon>WorkflowTemplateConditionEvent.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\WorkflowTemplate\WorkflowTemplateConditionEvent.ascx.designer.cs">
+      <DependentUpon>WorkflowTemplateConditionEvent.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\WorkflowTemplate\WorkflowTemplateElement.ascx.cs">
+      <DependentUpon>WorkflowTemplateElement.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\WorkflowTemplate\WorkflowTemplateElement.ascx.designer.cs">
+      <DependentUpon>WorkflowTemplateElement.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\WorkflowTemplate\WorkflowTemplateElementRelation.ascx.cs">
+      <DependentUpon>WorkflowTemplateElementRelation.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\WorkflowTemplate\WorkflowTemplateElementRelation.ascx.designer.cs">
+      <DependentUpon>WorkflowTemplateElementRelation.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\WorkflowTemplate\WorkflowTemplateElementResult.ascx.cs">
+      <DependentUpon>WorkflowTemplateElementResult.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\WorkflowTemplate\WorkflowTemplateElementResult.ascx.designer.cs">
+      <DependentUpon>WorkflowTemplateElementResult.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\WorkflowTemplate\WorkflowTemplateGoal.ascx.cs">
+      <DependentUpon>WorkflowTemplateGoal.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\WorkflowTemplate\WorkflowTemplateGoal.ascx.designer.cs">
+      <DependentUpon>WorkflowTemplateGoal.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\WorkflowTemplate\WorkflowTemplateGoalElement.ascx.cs">
+      <DependentUpon>WorkflowTemplateGoalElement.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\WorkflowTemplate\WorkflowTemplateGoalElement.ascx.designer.cs">
+      <DependentUpon>WorkflowTemplateGoalElement.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\WorkflowTemplate\WorkflowTemplateMaterial.ascx.cs">
+      <DependentUpon>WorkflowTemplateMaterial.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\WorkflowTemplate\WorkflowTemplateMaterial.ascx.designer.cs">
+      <DependentUpon>WorkflowTemplateMaterial.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\WorkflowTemplate\WorkflowTemplateParameter.ascx.cs">
+      <DependentUpon>WorkflowTemplateParameter.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\WorkflowTemplate\WorkflowTemplateParameter.ascx.designer.cs">
+      <DependentUpon>WorkflowTemplateParameter.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserEdit.aspx.cs">
+      <DependentUpon>UserEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserEdit.aspx.designer.cs">
+      <DependentUpon>UserEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Users.aspx.cs">
+      <DependentUpon>Users.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Users.aspx.designer.cs">
+      <DependentUpon>Users.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebSite.aspx.cs">
+      <DependentUpon>WebSite.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebSite.aspx.designer.cs">
+      <DependentUpon>WebSite.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebSites.aspx.cs">
+      <DependentUpon>WebSites.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebSites.aspx.designer.cs">
+      <DependentUpon>WebSites.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebSitePage.aspx.cs">
+      <DependentUpon>WebSitePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebSitePage.aspx.designer.cs">
+      <DependentUpon>WebSitePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Wizards\FormsWizard.aspx.cs">
+      <DependentUpon>FormsWizard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Wizards\FormsWizard.aspx.designer.cs">
+      <DependentUpon>FormsWizard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Wizards\LeadForceWizard.aspx.cs">
+      <DependentUpon>LeadForceWizard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Wizards\LeadForceWizard.aspx.designer.cs">
+      <DependentUpon>LeadForceWizard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Wizards\WorkflowTemplateWizard.aspx.cs">
+      <DependentUpon>WorkflowTemplateWizard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Wizards\WorkflowTemplateWizard.aspx.designer.cs">
+      <DependentUpon>WorkflowTemplateWizard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Workflow.aspx.cs">
+      <DependentUpon>Workflow.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Workflow.aspx.designer.cs">
+      <DependentUpon>Workflow.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Workflows.aspx.cs">
+      <DependentUpon>Workflows.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Workflows.aspx.designer.cs">
+      <DependentUpon>Workflows.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WorkflowTemplate.aspx.cs">
+      <DependentUpon>WorkflowTemplate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WorkflowTemplate.aspx.designer.cs">
+      <DependentUpon>WorkflowTemplate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WorkflowTemplates.aspx.cs">
+      <DependentUpon>WorkflowTemplates.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WorkflowTemplates.aspx.designer.cs">
+      <DependentUpon>WorkflowTemplates.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Labitec.LeadForce.CronJobs\Labitec.LeadForce.CronJobs.csproj">
+      <Project>{172F2C6C-4818-4DC7-9B09-6EA0D755F633}</Project>
+      <Name>Labitec.LeadForce.CronJobs</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Labitec.LeadForce.Report\Labitec.LeadForce.Report.csproj">
+      <Project>{405B7B2D-902C-491B-B031-ECEA0D32A372}</Project>
+      <Name>Labitec.LeadForce.Report</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WebCounter.BusinessLogicLayer\WebCounter.BusinessLogicLayer.csproj">
+      <Project>{750A873E-E0C0-4A99-ABB7-410F74CBBD76}</Project>
+      <Name>WebCounter.BusinessLogicLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WebCounter.DataAccessLayer\WebCounter.DataAccessLayer.csproj">
+      <Project>{A049CEF2-3015-49A8-81D0-B4A460086BA2}</Project>
+      <Name>WebCounter.DataAccessLayer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Site.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\RadFilter.Main.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>RadFilter.Main.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\RadFilter.Main.ru-RU.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>RadFilter.Main.ru-RU.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\RadGrid.Main.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>RadGrid.Main.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\RadGrid.Main.ru-RU.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>RadGrid.Main.ru-RU.designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\RadScheduler.Main.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>RadScheduler.Main.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\RadSchedulerRecurrenceEditor.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>RadSchedulerRecurrenceEditor.designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\RadScheduler.Main.ru-RU.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>RadScheduler.Main.ru-RU.designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="PublicationFiles\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Handlers\CommentsFileUpload.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Handlers\Payments\RBKMoney\Success.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Handlers\Payments\RBKMoney\Fail.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="connectionstrings.config" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>52960</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/leadforce</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

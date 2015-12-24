@@ -1,0 +1,12 @@
+C:\LeadForceRepository\WebCounter\Labitec.LeadForce.API.Client\bin\Release\Labitec.LeadForce.API.Client.exe.config
+C:\LeadForceRepository\WebCounter\Labitec.LeadForce.API.Client\bin\Release\Labitec.LeadForce.API.Client.exe
+C:\LeadForceRepository\WebCounter\Labitec.LeadForce.API.Client\bin\Release\Labitec.LeadForce.API.Client.pdb
+C:\LeadForceRepository\WebCounter\Labitec.LeadForce.API.Client\obj\x86\Release\ResolveAssemblyReference.cache
+C:\LeadForceRepository\WebCounter\Labitec.LeadForce.API.Client\obj\x86\Release\Labitec.LeadForce.API.Client.exe
+C:\LeadForceRepository\WebCounter\Labitec.LeadForce.API.Client\obj\x86\Release\Labitec.LeadForce.API.Client.pdb
+D:\LeadForceRepository\WebCounter\Labitec.LeadForce.API.Client\bin\Release\Labitec.LeadForce.API.Client.exe.config
+D:\LeadForceRepository\WebCounter\Labitec.LeadForce.API.Client\bin\Release\Labitec.LeadForce.API.Client.exe
+D:\LeadForceRepository\WebCounter\Labitec.LeadForce.API.Client\bin\Release\Labitec.LeadForce.API.Client.pdb
+D:\LeadForceRepository\WebCounter\Labitec.LeadForce.API.Client\obj\x86\Release\Labitec.LeadForce.API.Client.exe
+D:\LeadForceRepository\WebCounter\Labitec.LeadForce.API.Client\obj\x86\Release\Labitec.LeadForce.API.Client.pdb
+D:\LeadForceRepository\WebCounter\Labitec.LeadForce.API.Client\obj\x86\Release\Labitec.LeadForce.API.Client.csprojResolveAssemblyReference.cache

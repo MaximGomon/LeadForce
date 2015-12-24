@@ -1,0 +1,237 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EA0D5DA4-4E2F-4475-8285-B954204AFA7D}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Labitec.LeadForce.API.Client</RootNamespace>
+    <AssemblyName>Labitec.LeadForce.API.Client</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service References\ActionClientReference\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ContactClientReference\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\InvoiceClientReference\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ProductClientReference\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\RequirementClientReference\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\UserClientReference\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ActionClientReference\Action.wsdl" />
+    <None Include="Service References\ActionClientReference\Action.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ActionClientReference\Action1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ContactClientReference\Contact.wsdl" />
+    <None Include="Service References\ContactClientReference\Contact.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ContactClientReference\Contact1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\InvoiceClientReference\Invoice.wsdl" />
+    <None Include="Service References\InvoiceClientReference\Invoice.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\InvoiceClientReference\Invoice1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ProductClientReference\Product.wsdl" />
+    <None Include="Service References\ProductClientReference\Product.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ProductClientReference\Product1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\RequirementClientReference\Requirement.wsdl" />
+    <None Include="Service References\RequirementClientReference\Requirement.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\RequirementClientReference\Requirement1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UserClientReference\User.wsdl" />
+    <None Include="Service References\UserClientReference\User.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UserClientReference\User1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\ActionClientReference\" />
+    <WCFMetadataStorage Include="Service References\ContactClientReference\" />
+    <WCFMetadataStorage Include="Service References\InvoiceClientReference\" />
+    <WCFMetadataStorage Include="Service References\ProductClientReference\" />
+    <WCFMetadataStorage Include="Service References\RequirementClientReference\" />
+    <WCFMetadataStorage Include="Service References\UserClientReference\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ContactClientReference\Contact.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ContactClientReference\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ContactClientReference\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ContactClientReference\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ActionClientReference\Action.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ActionClientReference\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ActionClientReference\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ActionClientReference\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\RequirementClientReference\Requirement.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\RequirementClientReference\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\RequirementClientReference\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\RequirementClientReference\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\UserClientReference\User.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\UserClientReference\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\UserClientReference\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\UserClientReference\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ProductClientReference\Product.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ProductClientReference\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ProductClientReference\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ProductClientReference\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\InvoiceClientReference\Invoice.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\InvoiceClientReference\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\InvoiceClientReference\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\InvoiceClientReference\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

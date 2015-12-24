@@ -1,0 +1,5 @@
+D:\LeadForceRepository\WebCounter\Labitec.LeadForce.CLR\bin\Release\Labitec.LeadForce.CLR.dll
+D:\LeadForceRepository\WebCounter\Labitec.LeadForce.CLR\bin\Release\Labitec.LeadForce.CLR.pdb
+D:\LeadForceRepository\WebCounter\Labitec.LeadForce.CLR\obj\Release\Labitec.LeadForce.CLR.dll
+D:\LeadForceRepository\WebCounter\Labitec.LeadForce.CLR\obj\Release\Labitec.LeadForce.CLR.pdb
+D:\LeadForceRepository\WebCounter\Labitec.LeadForce.CLR\obj\Release\Labitec.LeadForce.CLR.csprojResolveAssemblyReference.cache

@@ -1,0 +1,913 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+    <platform>
+        <!-- Mobile OS -->
+        <item pattern="iPad">
+            <name>iPad</name>
+            <isMobile>true</isMobile>
+        </item>
+        <item pattern="iPod">
+            <name>iPod</name>
+            <isMobile>true</isMobile>
+        </item>
+        <item pattern="iPhone">
+            <name>iPhone</name>
+            <isMobile>true</isMobile>
+        </item>
+        <item pattern="iPhone">
+            <name>iPhone</name>
+            <isMobile>true</isMobile>
+        </item>
+        <item pattern="Maemo">
+            <name>Linux</name>
+            <isMobile>true</isMobile>
+        </item>
+        <item pattern="Android">
+            <name>Android</name>
+            <isMobile>true</isMobile>
+        </item>
+        <item pattern="SymbOS">
+            <name>SymbianOS</name>
+            <isMobile>true</isMobile>
+        </item>
+        <item pattern="SymbianOS">
+            <name>SymbianOS</name>
+            <isMobile>true</isMobile>
+        </item>
+        <item pattern="BlackBerry">
+            <name>BlackBerry</name>
+            <isMobile>true</isMobile>
+        </item>
+        <item pattern="Blazer">
+            <name>Palm OS</name>
+            <isMobile>true</isMobile>
+        </item>
+        <item pattern="Bolt">
+            <name>Java ME</name>
+            <isMobile>true</isMobile>
+        </item>
+        <item pattern="Doris">
+            <name>SymbianOS</name>
+            <isMobile>true</isMobile>
+        </item>
+        <item pattern="Windows CE">
+            <name>Windows</name>
+            <version>Mobile</version>
+        </item>
+        <item pattern="GoBrowser">
+            <name>SymbianOS</name>
+            <isMobile>true</isMobile>
+        </item>
+        <item pattern="Windows Phone OS">
+            <name>Windows Phone OS</name>
+            <isMobile>true</isMobile>
+        </item>
+        <item pattern="J2ME">
+            <name>J2ME</name>
+            <isMobile>true</isMobile>
+        </item>
+        <item pattern="Minimo">
+            <name>Linux</name>
+            <isMobile>true</isMobile>
+        </item>
+        <item pattern="Iris">
+            <name>Windows</name>
+            <isMobile>true</isMobile>
+        </item>
+        <item pattern="NetFront">
+            <name>Linux</name>
+            <isMobile>true</isMobile>
+        </item>
+        <item pattern="SEMC-Browser">
+            <name>J2ME</name>
+            <isMobile>true</isMobile>
+        </item>
+        <item pattern="Skyfire">
+            <name>Android</name>
+            <isMobile>true</isMobile>
+        </item>
+        <item pattern="PalmOS">
+            <name>Palm OS</name>
+            <isMobile>true</isMobile>
+        </item>
+
+
+        <!-- PC OS -->
+        <item pattern="Windows 95">
+            <name>Windows</name>
+            <version>95</version>
+            <isMobile>false</isMobile>
+        </item>
+        <item pattern="Windows 98">
+            <name>Windows</name>
+            <version>98</version>
+        </item>
+        <item pattern="Windows 98; Win 9x 4.90">
+            <name>Windows</name>
+            <version>Millennium Edition (Windows Me)</version>
+            <isMobile>false</isMobile>
+        </item>
+        <item pattern="Windows NT 4.0">
+            <name>Windows</name>
+            <version>NT 4.0</version>
+            <isMobile>false</isMobile>
+        </item>
+        <item pattern="WinNT4.0">
+            <name>Windows</name>
+            <version>NT 4.0</version>
+            <isMobile>false</isMobile>
+        </item>
+        <item pattern="Windows NT 5.0">
+            <name>Windows</name>
+            <version>2000</version>
+            <isMobile>false</isMobile>
+        </item>
+        <item pattern="Windows 2000">
+            <name>Windows</name>
+            <version>2000</version>
+            <isMobile>false</isMobile>
+        </item>
+        <item pattern="Windows NT 5.01">
+            <name>Windows</name>
+            <version>2000, Service Pack 1 (SP1)</version>
+            <isMobile>false</isMobile>
+        </item>
+        <item pattern="Windows NT 5.1">
+            <name>Windows</name>
+            <version>XP</version>
+            <isMobile>false</isMobile>
+        </item>
+        <item pattern="Windows XP">
+            <name>Windows</name>
+            <version>XP</version>
+            <isMobile>false</isMobile>
+        </item>
+        <item pattern="Windows NT 5.2; WOW64">
+            <name>Windows</name>
+            <version>XP 64-bit</version>
+            <isMobile>false</isMobile>
+        </item>
+        <item pattern="Windows NT 5.2">
+            <name>Windows</name>
+            <version>Server 2003</version>
+            <isMobile>false</isMobile>
+        </item>
+        <item pattern="Windows NT 6.0">
+            <name>Windows</name>
+            <version>Vista</version>
+            <isMobile>false</isMobile>
+        </item>
+        <item pattern="Windows NT 6.1">
+            <name>Windows</name>
+            <version>7</version>
+            <isMobile>false</isMobile>
+        </item>
+
+
+        <item pattern="SunOS">
+            <name>SunOS</name>
+        </item>
+        <item pattern="Linux">
+            <name>Linux</name>
+        </item>
+        <item pattern="Mac_PowerPC">
+            <name>Mac OS</name>
+        </item>
+        <item pattern="Macintosh">
+            <name>Mac OS</name>
+        </item>
+        <item pattern="Mas OS X">
+            <name>Mac OS</name>
+        </item>
+        <item pattern="QNX">
+            <name>QNX</name>
+        </item>
+        <item pattern="BeOS">
+            <name>BeOS</name>
+        </item>
+        <item pattern="OS/2">
+            <name>OS/2</name>
+        </item>
+        <item pattern="BeOS">
+            <name>BeOS</name>
+        </item>
+        <item pattern="OpenBSD">
+            <name>OpenBSD</name>
+        </item>
+        <item pattern="FreeBSD">
+            <name>FreeBSD</name>
+        </item>
+        <item pattern="NetBSD">
+            <name>NetBSD</name>
+        </item>
+        <item pattern="RISC OS">
+            <name>RISC OS</name>
+        </item>
+        <item pattern="UNIX">
+            <name>Unix</name>
+        </item>
+        <item pattern="X11">
+            <name>Linux</name>
+        </item>
+        <item pattern="Windows">
+            <name>Windows</name>
+        </item>
+    </platform>
+
+    <browsers>
+        <!-- Mobile browsers -->
+        <item pattern="Android">
+            <regexes>
+                <regex></regex>
+            </regexes>
+            <name>Android Browser</name>
+        </item>
+        <item pattern="BlackBerry">
+            <regexes>
+                <regex></regex>
+            </regexes>
+            <name>BlackBerry</name>
+        </item>
+        <item pattern="Blazer">
+            <regexes>
+                <regex>Blazer ([\d?\w?\.?]+)</regex>
+            </regexes>
+            <name>Blazer</name>
+        </item>
+        <item pattern="Bolt">
+            <regexes>
+                <regex>Bolt/([\d?\w?\.?]+)</regex>
+            </regexes>
+            <name>Bolt</name>
+        </item>
+        <item pattern="Series60">
+            <regexes>
+                <regex></regex>
+            </regexes>
+            <name>Web Browser для S60</name>
+        </item>
+        <item pattern="Doris">
+            <regexes>
+                <regex>Doris/([\d?\w?\.?]+)</regex>
+            </regexes>
+            <name>Doris</name>
+        </item>
+        <item pattern="Dorothy">
+            <regexes>
+                <regex>Version/([\d?\w?\.?]+)</regex>
+            </regexes>
+            <name>Dorothy</name>
+        </item>
+        <item pattern="Fennec">
+            <regexes>
+                <regex>Fennec/([\d?\w?\.?]+)</regex>
+            </regexes>
+            <name>Fennec</name>
+        </item>
+        <item pattern="GoBrowser">
+            <regexes>
+                <regex>GoBrowser/([\d?\w?\.?]+)</regex>
+            </regexes>
+            <name>Go Browser</name>
+        </item>
+        <item pattern="IEMobile">
+            <regexes>
+                <regex>IEMobile/([\d?\w?\.?]+)</regex>
+                <regex>IEMobile ([\d?\w?\.?]+)</regex>
+            </regexes>
+            <name>IE Mobile</name>
+        </item>
+        <item pattern="Iris">
+            <regexes>
+                <regex>Iris/([\d?\w?\.?]+)</regex>
+            </regexes>
+            <name>Iris</name>
+        </item>
+        <item pattern="Maemo Browser">
+            <regexes>
+                <regex>Maemo Browser ([\d?\w?\.?]+)</regex>
+            </regexes>
+            <name>Maemo Browser</name>
+        </item>
+        <item pattern="MIB">
+            <regexes>
+                <regex>MIB/([\d?\w?\.?]+)</regex>
+            </regexes>
+            <name>MIB</name>
+        </item>
+        <item pattern="Minimo">
+            <regexes>
+                <regex>Minimo/([\d?\w?\.?]+)</regex>
+            </regexes>
+            <name>Minimo</name>
+        </item>
+        <item pattern="NetFront">
+            <regexes>
+                <regex>NetFront/([\d?\w?\.?]+)</regex>
+            </regexes>
+            <name>NetFront</name>
+        </item>
+        <item pattern="Opera Mini">
+            <regexes>
+                <regex>Opera Mini/([\d?\w?\.?]+)</regex>
+            </regexes>
+            <name>Opera Mini</name>
+        </item>
+        <item pattern="Opera Mobi">
+            <regexes>
+                <regex>Version/([\d?\w?\.?]+)</regex>
+                <regex>Opera ([\d?\w?\.?]+)</regex>
+            </regexes>
+            <name>Opera Mobile</name>
+        </item>
+        <item pattern="SEMC-Browser">
+            <regexes>
+                <regex>SEMC-Browser/([\d?\w?\.?]+)</regex>
+            </regexes>
+            <name>SEMC-Browser</name>
+        </item>
+        <item pattern="Skyfire">
+            <regexes>
+                <regex>Skyfire/([\d?\w?\.?]+)</regex>
+            </regexes>
+            <name>Skyfire</name>
+        </item>
+        <item pattern="TeaShark">
+            <regexes>
+                <regex>TeaShark/([\d?\w?\.?]+)</regex>
+            </regexes>
+            <name>TeaShark</name>
+        </item>
+        <item pattern="Teleca Q7">
+            <regexes>
+                <regex>(Teleca Q7)</regex>
+            </regexes>
+            <name>Teleca-Obigo</name>
+        </item>
+        <item pattern="uZardWeb">
+            <regexes>
+                <regex>uZardWeb/([\d?\w?\.?]+)</regex>
+            </regexes>
+            <name>uZard Web</name>
+        </item>
+
+
+        <!-- Web browsers -->
+        <item pattern="ABrowse">
+            <regexes>
+                <regex>ABrowse ([\d?\w?\.?]+)</regex>
+            </regexes>
+            <name>ABrowse</name>
+        </item>
+        <item pattern="America Online Browser">
+            <regexes>
+                <regex>America Online Browser ([\d?\w?\.?]+)</regex>
+            </regexes>
+            <name>America Online Browser</name>
+        </item>
+        <item pattern="AmigaVoyager">
+            <regexes>
+                <regex>AmigaVoyager/([\d?\w?\.?]+)</regex>
+            </regexes>
+            <name>AmigaVoyager</name>
+        </item>
+        <item pattern="AOL">
+            <regexes>
+                <regex>AOL ([\d?\w?\.?]+)</regex>
+            </regexes>
+            <name>AOL</name>
+        </item>
+        <item pattern="Arora">
+            <regexes>
+                <regex>Arora/([\d?\w?\.?]+)</regex>
+            </regexes>
+            <name>Arora</name>
+        </item>
+        <item pattern="Beonex">
+            <regexes>
+                <regex>Beonex/([\d?\w?\.?]+)</regex>
+            </regexes>
+            <name>Beonex</name>
+        </item>
+        <item pattern="BonEcho">
+            <regexes>
+                <regex>BonEcho/([\d?\w?\.?]+)</regex>
+            </regexes>
+            <name>BonEcho</name>
+        </item>
+        <item pattern="Camino">
+            <regexes>
+                <regex>Camino/([\d?\w?\.?]+)</regex>
+            </regexes>
+            <name>Camino</name>
+        </item>
+        <item pattern="Cheshire">
+            <regexes>
+                <regex>Cheshire/([\d?\w?\.?]+)</regex>
+            </regexes>
+            <name>Cheshire</name>
+        </item>
+        <item pattern="Chimera">
+            <regexes>
+                <regex>Chimera/([\d?\w?\.?]+)</regex>
+            </regexes>
+            <name>Chimera</name>
+        </item>
+        <item pattern="Cyberdog">
+            <regexes>
+                <regex>Cyberdog/([\d?\w?\.?]+)</regex>
+            </regexes>
+            <name>Cyberdog</name>
+        </item>
+        <item pattern="DeskBrowse">
+            <regexes>
+                <regex>DeskBrowse/([\d?\w?\.?]+)</regex>
+            </regexes>
+            <name>DeskBrowse</name>
+        </item>
+        <item pattern="Dillo">
+            <regexes>
+                <regex>Dillo/([\d?\w?\.?]+)</regex>
+            </regexes>
+            <name>Dillo</name>
+        </item>
+        <item pattern="Dooble">
+            <regexes>
+                <regex>Dooble/([\d?\w?\.?]+)</regex>
+            </regexes>
+            <name>Dooble</name>
+        </item>
+        <item pattern="Element Browser">
+            <regexes>
+                <regex>Element Browser ([\d?\w?\.?]+)</regex>
+            </regexes>
+            <name>Element Browser</name>
+        </item>
+        <item pattern="Elinks">
+            <regexes>
+                <regex>Elinks/([\d?\w?\.?]+)</regex>
+            </regexes>
+            <name>Elinks</name>
+        </item>
+        <item pattern="Epiphany">
+            <regexes>
+                <regex>Epiphany/([\d?\w?\.?]+)</regex>
+            </regexes>
+            <name>Epiphany</name>
+        </item>
+        <item pattern="Escape">
+            <regexes>
+                <regex>Escape/([\d?\w?\.?]+)</regex>
+            </regexes>
+            <name>Escape</name>
+        </item>
+        <item pattern="Firebird">
+            <regexes>
+                <regex>Firebird/([\d?\w?\.?]+)</regex>
+            </regexes>
+            <name>Firebird</name>
+        </item>
+        <item pattern="Flock">
+            <regexes>
+                <regex>Flock/([\d?\w?\.?]+)</regex>
+            </regexes>
+            <name>Flock</name>
+        </item>
+        <item pattern="Fluid">
+            <regexes>
+                <regex>Fluid/([\d?\w?\.?]+)</regex>
+            </regexes>
+            <name>Fluid</name>
+        </item>
+        <item pattern="Galaxy">
+            <regexes>
+                <regex>Galaxy/([\d?\w?\.?]+)</regex>
+            </regexes>
+            <name>Galaxy</name>
+        </item>
+        <item pattern="Galeon">
+            <regexes>
+                <regex>Galeon/([\d?\w?\.?]+)</regex>
+            </regexes>
+            <name>Galeon</name>
+        </item>
+        <item pattern="GranParadiso">
+            <regexes>
+                <regex>GranParadiso/([\d?\w?\.?]+)</regex>
+            </regexes>
+            <name>GranParadiso</name>
+        </item>
+        <item pattern="Hana">
+            <regexes>
+                <regex>Hana/([\d?\w?\.?]+)</regex>
+            </regexes>
+            <name>Hana</name>
+        </item>
+        <item pattern="HotJava">
+            <regexes>
+                <regex>HotJava/([\d?\w?\.?]+)</regex>
+            </regexes>
+            <name>HotJava</name>
+        </item>
+        <item pattern="IBM WebExplorer">
+            <regexes>
+                <regex>IBM WebExplorer /([\d?\w?\.?]+)</regex>
+            </regexes>
+            <name>IBM WebExplorer</name>
+        </item>
+        <item pattern="IBrowse">
+            <regexes>
+                <regex>IBrowse/([\d?\w?\.?]+)</regex>
+            </regexes>
+            <name>IBrowse</name>
+        </item>
+        <item pattern="iCab">
+            <regexes>
+                <regex>iCab/([\d?\w?\.?]+)</regex>
+            </regexes>
+            <name>iCab</name>
+        </item>
+        <item pattern="Iceape">
+            <regexes>
+                <regex>Iceape/([\d?\w?\.?]+)</regex>
+            </regexes>
+            <name>Iceape</name>
+        </item>
+        <item pattern="IceCat">
+            <regexes>
+                <regex>IceCat/([\d?\w?\.?]+)</regex>
+            </regexes>
+            <name>IceCat</name>
+        </item>
+        <item pattern="Iceweasel">
+            <regexes>
+                <regex>Iceweasel/([\d?\w?\.?]+)</regex>
+            </regexes>
+            <name>Iceweasel</name>
+        </item>
+        <item pattern="iNet Browser">
+            <regexes>
+                <regex>iNet Browser ([\d?\w?\.?]+)</regex>
+            </regexes>
+            <name>iNet Browser</name>
+        </item>
+        <item pattern="Iron">
+            <regexes>
+                <regex>Iron/([\d?\w?\.?]+)</regex>
+            </regexes>
+            <name>Iron</name>
+        </item>
+        <item pattern="K-Meleon">
+            <regexes>
+                <regex>K-Meleon/([\d?\w?\.?]+)</regex>
+            </regexes>
+            <name>K-Meleon</name>
+        </item>
+        <item pattern="K-Ninja">
+            <regexes>
+                <regex>K-Ninja/([\d?\w?\.?]+)</regex>
+            </regexes>
+            <name>K-Ninja</name>
+        </item>
+        <item pattern="Kapiko">
+            <regexes>
+                <regex>Kapiko/([\d?\w?\.?]+)</regex>
+            </regexes>
+            <name>Kapiko</name>
+        </item>
+        <item pattern="Kazehakase">
+            <regexes>
+                <regex>Kazehakase/([\d?\w?\.?]+)</regex>
+            </regexes>
+            <name>Kazehakase</name>
+        </item>
+        <item pattern="KMLite">
+            <regexes>
+                <regex>KMLite/([\d?\w?\.?]+)</regex>
+            </regexes>
+            <name>KMLite</name>
+        </item>
+        <item pattern="Konqueror">
+            <regexes>
+                <regex>Konqueror/([\d?\w?\.?]+)</regex>
+            </regexes>
+            <name>Konqueror</name>
+        </item>
+        <item pattern="LeechCraft">
+            <regexes>
+                <regex>LeechCraft/([\d?\w?\.?]+)</regex>
+            </regexes>
+            <name>LeechCraft</name>
+        </item>
+        <item pattern="Links">
+            <regexes>
+                <regex>Links \(([\d?\w?\.?]+)</regex>
+            </regexes>
+            <name>Links</name>
+        </item>
+        <item pattern="lolifox">
+            <regexes>
+                <regex>lolifox/([\d?\w?\.?]+)</regex>
+            </regexes>
+            <name>lolifox</name>
+        </item>
+        <item pattern="Lorentz">
+            <regexes>
+                <regex>Lorentz/([\d?\w?\.?]+)</regex>
+            </regexes>
+            <name>Lorentz</name>
+        </item>
+        <item pattern="Lunascape">
+            <regexes>
+                <regex>Lunascape/([\d?\w?\.?]+)</regex>
+                <regex>Lunascape ([\d?\w?\.?]+)</regex>
+            </regexes>
+            <name>Lunascape</name>
+        </item>
+        <item pattern="Lynx">
+            <regexes>
+                <regex>Lynx/([\d?\w?\.?]+)</regex>
+            </regexes>
+            <name>Lynx</name>
+        </item>
+        <item pattern="Madfox">
+            <regexes>
+                <regex>Madfox/([\d?\w?\.?]+)</regex>
+            </regexes>
+            <name>Madfox</name>
+        </item>
+        <item pattern="Maxthon">
+            <regexes>
+                <regex>Maxthon/([\d?\w?\.?]+)</regex>
+                <regex>Maxthon ([\d?\w?\.?]+)</regex>
+            </regexes>
+            <name>Maxthon</name>
+        </item>
+        <item pattern="Midori">
+            <regexes>
+                <regex>Midori/([\d?\w?\.?]+)</regex>
+            </regexes>
+            <name>Midori</name>
+        </item>
+        <item pattern="Minefield">
+            <regexes>
+                <regex>Minefield/([\d?\w?\.?]+)</regex>
+            </regexes>
+            <name>Minefield</name>
+        </item>
+        <item pattern="Namoroka">
+            <regexes>
+                <regex>Namoroka/([\d?\w?\.?]+)</regex>
+            </regexes>
+            <name>Namoroka</name>
+        </item>
+        <item pattern="Navscape">
+            <regexes>
+                <regex>Navscape/([\d?\w?\.?]+)</regex>
+            </regexes>
+            <name>Navscape</name>
+        </item>
+        <item pattern="NCSA">
+            <regexes>
+                <regex>NCSA_Mosaic/([\d?\w?\.?]+)</regex>
+                <regex>NCSA Mosaic/([\d?\w?\.?]+)</regex>
+            </regexes>
+            <name>NCSA Mosaic</name>
+        </item>
+        <item pattern="NetNewsWire">
+            <regexes>
+                <regex>NetNewsWire/([\d?\w?\.?]+)</regex>
+            </regexes>
+            <name>NetNewsWire</name>
+        </item>
+        <item pattern="NetPositive">
+            <regexes>
+                <regex>NetPositive/([\d?\w?\.?]+)</regex>
+            </regexes>
+            <name>NetPositive</name>
+        </item>
+        <item pattern="OmniWeb">
+            <regexes>
+                <regex>OmniWeb/([\d?\w?\.?]+)</regex>
+            </regexes>
+            <name>OmniWeb</name>
+        </item>
+        <item pattern="Orca">
+            <regexes>
+                <regex>Orca/([\d?\w?\.?]+)</regex>
+            </regexes>
+            <name>Orca</name>
+        </item>
+        <item pattern="Oregano">
+            <regexes>
+                <regex>Oregano ([\d?\w?\.?]+)</regex>
+            </regexes>
+            <name>Oregano</name>
+        </item>
+        <item pattern="osb-browser">
+            <regexes>
+                <regex>osb-browser/([\d?\w?\.?]+)</regex>
+            </regexes>
+            <name>osb-browser</name>
+        </item>
+        <item pattern="Palemoon">
+            <regexes>
+                <regex>Palemoon/([\d?\w?\.?]+)</regex>
+            </regexes>
+            <name>Palemoon</name>
+        </item>
+        <item pattern="Phoenix">
+            <regexes>
+                <regex>Phoenix/([\d?\w?\.?]+)</regex>
+            </regexes>
+            <name>Phoenix</name>
+        </item>
+        <item pattern="Pogo">
+            <regexes>
+                <regex>Pogo/([\d?\w?\.?]+)</regex>
+            </regexes>
+            <name>Pogo</name>
+        </item>
+        <item pattern="Prism">
+            <regexes>
+                <regex>Prism/([\d?\w?\.?]+)</regex>
+            </regexes>
+            <name>Prism</name>
+        </item>
+        <item pattern="QtWeb Internet Browser">
+            <regexes>
+                <regex>QtWeb Internet Browser/([\d?\w?\.?]+)</regex>
+            </regexes>
+            <name>QtWeb Internet Browser</name>
+        </item>
+        <item pattern="retawq">
+            <regexes>
+                <regex>retawq/([\d?\w?\.?]+)</regex>
+            </regexes>
+            <name>retawq</name>
+        </item>
+        <item pattern="RockMelt">
+            <regexes>
+                <regex>RockMelt/([\d?\w?\.?]+)</regex>
+            </regexes>
+            <name>RockMelt</name>
+        </item>
+        <item pattern="SeaMonkey">
+            <regexes>
+                <regex>SeaMonkey/([\d?\w?\.?]+)</regex>
+            </regexes>
+            <name>SeaMonkey</name>
+        </item>
+        <item pattern="Shiira">
+            <regexes>
+                <regex>Shiira/([\d?\w?\.?]+)</regex>
+            </regexes>
+            <name>Shiira</name>
+        </item>
+        <item pattern="Shiretoko">
+            <regexes>
+                <regex>Shiretoko/([\d?\w?\.?]+)</regex>
+            </regexes>
+            <name>Shiretoko</name>
+        </item>
+        <item pattern="Sleipnir">
+            <regexes>
+                <regex>Sleipnir/([\d?\w?\.?]+)</regex>
+            </regexes>
+            <name>Sleipnir</name>
+        </item>
+        <item pattern="Stainless">
+            <regexes>
+                <regex>Stainless/([\d?\w?\.?]+)</regex>
+            </regexes>
+            <name>Stainless</name>
+        </item>
+        <item pattern="Sunrise">
+            <regexes>
+                <regex>Sunrise/([\d?\w?\.?]+)</regex>
+                <regex>SunriseBrowser/([\d?\w?\.?]+)</regex>
+            </regexes>
+            <name>Sunrise</name>
+        </item>
+        <item pattern="surf">
+            <regexes>
+                <regex>surf/([\d?\w?\.?]+)</regex>
+            </regexes>
+            <name>surf</name>
+        </item>
+        <item pattern="Sylera">
+            <regexes>
+                <regex>Sylera/([\d?\w?\.?]+)</regex>
+            </regexes>
+            <name>Sylera</name>
+        </item>
+        <item pattern="Vimprobable">
+            <regexes>
+                <regex>Vimprobable/([\d?\w?\.?]+)</regex>
+            </regexes>
+            <name>Vimprobable</name>
+        </item>
+        <item pattern="Vonkeror">
+            <regexes>
+                <regex>Vonkeror/([\d?\w?\.?]+)</regex>
+            </regexes>
+            <name>Vonkeror</name>
+        </item>
+        <item pattern="w3m">
+            <regexes>
+                <regex>w3m/([\d?\w?\.?]+)</regex>
+            </regexes>
+            <name>w3m</name>
+        </item>
+        <item pattern="WeltweitimnetzBrowser">
+            <regexes>
+                <regex>WeltweitimnetzBrowser/([\d?\w?\.?]+)</regex>
+            </regexes>
+            <name>WeltweitimnetzBrowser</name>
+        </item>
+        <item pattern="Wyzo">
+            <regexes>
+                <regex>Wyzo/([\d?\w?\.?]+)</regex>
+            </regexes>
+            <name>Wyzo</name>
+        </item>
+
+
+
+        <item pattern="Opera">
+            <regexes>
+                <regex>Version/([\d?\w?\.?]+)</regex>
+                <regex>Opera/([\d?\w?\.?]+)</regex>
+                <regex>Opera ([\d?\w?\.?]+)</regex>
+            </regexes>
+            <name>Opera</name>
+        </item>
+        <item pattern="MSIE">
+            <regexes>
+                <regex>MSIE ([\d?\w?\.?]+)</regex>
+            </regexes>
+            <name>IE</name>
+        </item>
+        <item pattern="Chrome">
+            <regexes>
+                <regex>Chrome/([\d?\w?\.?]+)</regex>
+            </regexes>
+            <name>Chrome</name>
+        </item>
+        <item pattern="Safari">
+            <regexes>
+                <regex>Version/([\d?\w?\.?]+)</regex>
+                <regex>Safari/([\d?\w?\.?]+)</regex>
+            </regexes>
+            <name>Safari</name>
+        </item>
+        <item pattern="Firefox">
+            <regexes>
+                <regex>Firefox/([\d?\w?\.?]+)</regex>
+            </regexes>
+            <name>Firefox</name>
+        </item>
+        <item pattern="Netscape">
+            <regexes>
+                <regex>Netscape/([\d?\w?\.?]+)</regex>
+            </regexes>
+            <name>Netscape</name>
+        </item>
+        <item pattern="Mozilla">
+            <regexes>
+                <regex>Mozilla/([\d?\w?\.?]+)</regex>
+            </regexes>
+            <name>Mozilla</name>
+        </item>
+    </browsers>
+
+    <mobiles>
+        <item pattern="iPad">
+            <name>iPad</name>
+        </item>
+        <item pattern="iPod">
+            <name>iPod</name>
+        </item>
+        <item pattern="iPhone">
+            <name>iPhone</name>
+        </item>
+        <item pattern="HTC">
+            <name>HTC</name>
+        </item>
+        <item pattern="LG">
+            <name>LG</name>
+        </item>
+        <item pattern="SonyEricsson">
+            <name>SonyEricsson</name>
+        </item>
+        <item pattern="BlackBerry">
+            <name>BlackBerry</name>
+        </item>
+        <item pattern="Samsung">
+            <name>Samsung</name>
+        </item>
+        <item pattern="Nokia">
+            <name>Nokia</name>
+        </item>
+    </mobiles>
+</root>

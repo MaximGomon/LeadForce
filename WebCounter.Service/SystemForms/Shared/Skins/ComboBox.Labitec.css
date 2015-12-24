@@ -1,0 +1,73 @@
+div.RadComboBox_Labitec table td.rcbInputCell { height: 27px; line-height:27px; }
+
+/*global*/
+.RadComboBox_Labitec, .RadComboBox_Labitec .rcbInput, .RadComboBoxDropDown_Labitec { font: 12px "Segoe UI", Arial, sans-serif;color: #333;}
+
+/* combobox */
+.RadComboBox_Labitec .rcbInputCellLeft,
+.RadComboBox_Labitec .rcbInputCellRight,
+.RadComboBox_Labitec .rcbArrowCellLeft,
+.RadComboBox_Labitec .rcbArrowCellRight { background-image: url('ComboBox/rcbSprite.png'); }
+.RadComboBox_Labitec td.rcbInputCellLeft { background-position: 0 0; }
+.RadComboBox_Labitec td.rcbInputCellRight { background-position: 100% 0; }
+.RadComboBox_Labitec .rcbHovered .rcbInputCellLeft { background-position: 0 0; }
+.RadComboBox_Labitec .rcbHovered .rcbInputCellRight { background-position: 100% 0; }
+.RadComboBox_Labitec .rcbFocused .rcbInputCellLeft { background-position: 0 0; }
+.RadComboBox_Labitec .rcbFocused .rcbInputCellRight { background-position: 100% 0; }
+.RadComboBox_Labitec .rcbHovered .rcbReadOnly td.rcbInputCellLeft { background-position: 0 -27px; }
+.RadComboBox_Labitec .rcbHovered .rcbReadOnly td.rcbInputCellRight { background-position: 100% -27px; }
+.RadComboBox_Labitec .rcbFocused .rcbReadOnly td.rcbInputCellLeft { background-position: 0 -54px; }
+.RadComboBox_Labitec .rcbFocused .rcbReadOnly td.rcbInputCellRight { background-position: 100% -54px; }
+.RadComboBox_Labitec .rcbInputCell .rcbEmptyMessage { color: #d5d5e6; }
+.RadComboBox_Labitec .rcbHovered .rcbInputCell .rcbInput { color: #000;}
+.RadComboBox_Labitec td.rcbArrowCellLeft { background-position: -18px -108px; }
+.RadComboBox_Labitec td.rcbArrowCellRight { background-position: 0 -108px; }
+.RadComboBox_Labitec .rcbHovered .rcbArrowCellLeft { background-position: -54px -108px; }
+.RadComboBox_Labitec .rcbHovered .rcbArrowCellRight { background-position: -36px -108px; }
+.RadComboBox_Labitec .rcbFocused .rcbArrowCellLeft { background-position: -90px -108px; }
+.RadComboBox_Labitec .rcbFocused .rcbArrowCellRight { background-position: -72px -108px; }
+.RadComboBox_Labitec td.rcbArrowCellHidden,
+.RadComboBox_Labitec .rcbHovered td.rcbArrowCellHidden,
+.RadComboBox_Labitec .rcbFocused td.rcbArrowCellHidden { background-position: -15px -108px; }
+.RadComboBox_Labitec_rtl td.rcbArrowCellHidden,
+.RadComboBox_Labitec_rtl .rcbHovered td.rcbArrowCellHidden,
+.RadComboBox_Labitec_rtl .rcbFocused td.rcbArrowCellHidden { background-position: -18px -108px; }
+
+/* Read-only styles */
+.RadComboBox_Labitec .rcbReadOnly td.rcbArrowCellLeft { background-position: -18px -108px; }
+.RadComboBox_Labitec .rcbReadOnly td.rcbArrowCellRight { background-position: -2px -108px; }
+.RadComboBox_Labitec .rcbHovered .rcbReadOnly .rcbArrowCellLeft { background-position: -54px -108px; }
+.RadComboBox_Labitec .rcbHovered .rcbReadOnly .rcbArrowCellRight { background-position: -38px -108px; }
+.RadComboBox_Labitec .rcbFocused .rcbReadOnly .rcbArrowCellLeft { background-position: -90px -108px; }
+.RadComboBox_Labitec .rcbFocused .rcbReadOnly .rcbArrowCellRight { background-position: -74px -108px; }
+.RadComboBox_Labitec .rcbReadOnly td.rcbArrowCellHidden { background-position: -15px -108px; }
+.RadComboBox_Labitec .rcbHovered .rcbReadOnly td.rcbArrowCellHidden { background-position: -51px -108px; }
+.RadComboBox_Labitec .rcbFocused .rcbReadOnly td.rcbArrowCellHidden { background-position: -87px -108px; }
+.RadComboBox_Labitec_rtl .rcbReadOnly td.rcbArrowCellHidden { background-position: -18px -108px; }
+.RadComboBox_Labitec_rtl .rcbHovered .rcbReadOnly td.rcbArrowCellHidden { background-position: -54px -108px; }
+.RadComboBox_Labitec_rtl .rcbFocused .rcbReadOnly td.rcbArrowCellHidden { background-position: -90px -108px; }
+
+/* dropdown */
+.RadComboBoxDropDown_Labitec .rcbHeader,
+.RadComboBoxDropDown_Labitec .rcbFooter,
+.RadComboBoxDropDown_Labitec .rcbMoreResults a { background-image: url('ComboBox/rcbSprite.png');}
+.RadComboBoxDropDown_Labitec { background: #fff;border-color: #868686;color: #000;}
+.RadComboBoxDropDown_Labitec .rcbHeader, .RadComboBoxDropDown_Labitec .rcbFooter { background-color: #f1f2f4;background-position: 0 -110px;}
+.RadComboBoxDropDown_Labitec .rcbHeader { border-bottom-color: #d5d5d5;}
+.RadComboBoxDropDown_Labitec .rcbFooter { border-top-color: #d5d5d5;}
+.RadComboBoxDropDown_Labitec .rcbItem em { background: #e5e5e5; }
+.RadComboBoxDropDown_Labitec .rcbHovered { background: #3399ff;	color: #fff;}
+.RadComboBoxDropDown_Labitec .rcbSeparator { background: #3399ff;color: #fff;}
+.RadComboBox_Labitec .rcbDisabled .rcbInputCell .rcbInput, .RadComboBoxDropDown_Labitec .rcbDisabled { color: #999;}
+.RadComboBox_Labitec .rcbDisabled td.rcbInputCellLeft { background-position: 0 -81px; }
+.RadComboBox_Labitec .rcbDisabled td.rcbInputCellRight { background-position: 100% -81px; }
+.RadComboBox_Labitec .rcbDisabled td.rcbArrowCellLeft { background-position: -126px -108px; }
+.RadComboBox_Labitec .rcbDisabled td.rcbArrowCellRight { background-position: -108px -108px; }
+.RadComboBox_Labitec .rcbDisabled .rcbReadOnly td.rcbArrowCellRight { background-position: -110px -108px; }
+.RadComboBox_Labitec table.rcbDisabled td.rcbArrowCellHidden,
+.RadComboBox_Labitec .rcbDisabled .rcbReadOnly td.rcbArrowCellHidden { background-position: -123px -108px; }
+.RadComboBox_Labitec_rtl table.rcbDisabled td.rcbArrowCellHidden,
+.RadComboBox_Labitec_rtl .rcbDisabled .rcbReadOnly td.rcbArrowCellHidden { background-position: -126px -108px; }
+.RadComboBoxDropDown_Labitec .rcbLoading { background: #f0f0f0;}
+.RadComboBoxDropDown_Labitec .rcbMoreResults { border-top-color: #c6c7d2; background-color: #fff; color: #8d8d8d;}
+.RadComboBoxDropDown_Labitec .rcbMoreResults a { background-position: -157px -94px;}

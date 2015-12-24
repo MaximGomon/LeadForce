@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Contact" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:52861/Contact.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:52861/Contact.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IContact_GetContacts_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetContacts" />
+  </wsdl:message>
+  <wsdl:message name="IContact_GetContacts_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetContactsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IContact_UpdateContact_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateContact" />
+  </wsdl:message>
+  <wsdl:message name="IContact_UpdateContact_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateContactResponse" />
+  </wsdl:message>
+  <wsdl:message name="IContact_CheckName_InputMessage">
+    <wsdl:part name="parameters" element="tns:CheckName" />
+  </wsdl:message>
+  <wsdl:message name="IContact_CheckName_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CheckNameResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IContact">
+    <wsdl:operation name="GetContacts">
+      <wsdl:input wsaw:Action="http://tempuri.org/IContact/GetContacts" message="tns:IContact_GetContacts_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IContact/GetContactsResponse" message="tns:IContact_GetContacts_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateContact">
+      <wsdl:input wsaw:Action="http://tempuri.org/IContact/UpdateContact" message="tns:IContact_UpdateContact_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IContact/UpdateContactResponse" message="tns:IContact_UpdateContact_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckName">
+      <wsdl:input wsaw:Action="http://tempuri.org/IContact/CheckName" message="tns:IContact_CheckName_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IContact/CheckNameResponse" message="tns:IContact_CheckName_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IContact" type="tns:IContact">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetContacts">
+      <soap:operation soapAction="http://tempuri.org/IContact/GetContacts" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateContact">
+      <soap:operation soapAction="http://tempuri.org/IContact/UpdateContact" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckName">
+      <soap:operation soapAction="http://tempuri.org/IContact/CheckName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Contact">
+    <wsdl:port name="BasicHttpBinding_IContact" binding="tns:BasicHttpBinding_IContact">
+      <soap:address location="http://localhost:52861/Contact.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

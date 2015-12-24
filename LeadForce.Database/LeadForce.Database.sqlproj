@@ -1,0 +1,337 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <Name>LeadForce.Database</Name>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>4.1</ProjectVersion>
+    <ProjectGuid>{3725d898-5ef7-4c1e-bc44-e85faaa3fb4a}</ProjectGuid>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql110DatabaseSchemaProvider</DSP>
+    <OutputType>Database</OutputType>
+    <RootPath>
+    </RootPath>
+    <RootNamespace>LeadForce.Database</RootNamespace>
+    <AssemblyName>LeadForce.Database</AssemblyName>
+    <ModelCollation>1033, CI</ModelCollation>
+    <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
+    <DeployToDatabase>True</DeployToDatabase>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetLanguage>CS</TargetLanguage>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <SqlServerVerification>False</SqlServerVerification>
+    <IncludeCompositeObjects>True</IncludeCompositeObjects>
+    <TargetDatabaseSet>True</TargetDatabaseSet>
+    <TargetFrameworkProfile />
+    <Trustworthy>True</Trustworthy>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <!-- VS10 without SP1 will not have VisualStudioVersion set, so do that here -->
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <!-- Default to the v10.0 targets path if the targets file for the current VS version is not found -->
+    <SSDTExists Condition="Exists('$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets')">True</SSDTExists>
+    <VisualStudioVersion Condition="'$(SSDTExists)' == ''">10.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <ItemGroup>
+    <Folder Include="Properties" />
+    <Folder Include="dbo\" />
+    <Folder Include="dbo\Tables\" />
+    <Folder Include="Scripts\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="dbo\Tables\tbl_AccessProfile.sql" />
+    <Build Include="dbo\Tables\tbl_AccessProfileModule.sql" />
+    <Build Include="dbo\Tables\tbl_AccessProfileRecord.sql" />
+    <Build Include="dbo\Tables\tbl_ActionStatus.sql" />
+    <Build Include="dbo\Tables\tbl_ActionTypes.sql" />
+    <Build Include="dbo\Tables\tbl_ActivityTypes.sql" />
+    <Build Include="dbo\Tables\tbl_Address.sql" />
+    <Build Include="dbo\Tables\tbl_AdvertisingCampaign.sql" />
+    <Build Include="dbo\Tables\tbl_AdvertisingPlatform.sql" />
+    <Build Include="dbo\Tables\tbl_AdvertisingType.sql" />
+    <Build Include="dbo\Tables\tbl_AdvertisingTypeCategory.sql" />
+    <Build Include="dbo\Tables\tbl_Analytic.sql" />
+    <Build Include="dbo\Tables\tbl_AnalyticAxis.sql" />
+    <Build Include="dbo\Tables\tbl_AnalyticAxisFilterValues.sql" />
+    <Build Include="dbo\Tables\tbl_AnalyticReport.sql" />
+    <Build Include="dbo\Tables\tbl_AnalyticReportSystem.sql" />
+    <Build Include="dbo\Tables\tbl_AnalyticReportUserSettings.sql" />
+    <Build Include="dbo\Tables\tbl_Bank.sql" />
+    <Build Include="dbo\Tables\tbl_Brand.sql" />
+    <Build Include="dbo\Tables\tbl_Browsers.sql" />
+    <Build Include="dbo\Tables\tbl_City.sql" />
+    <Build Include="dbo\Tables\tbl_CityIP.sql" />
+    <Build Include="dbo\Tables\tbl_ColumnCategories.sql" />
+    <Build Include="dbo\Tables\tbl_ColumnTypes.sql" />
+    <Build Include="dbo\Tables\tbl_ColumnTypesExpression.sql" />
+    <Build Include="dbo\Tables\tbl_Company.sql" />
+    <Build Include="dbo\Tables\tbl_CompanyLegalAccount.sql" />
+    <Build Include="dbo\Tables\tbl_CompanySector.sql" />
+    <Build Include="dbo\Tables\tbl_CompanySize.sql" />
+    <Build Include="dbo\Tables\tbl_CompanyType.sql" />
+    <Build Include="dbo\Tables\tbl_Contact.sql" />
+    <Build Include="dbo\Tables\tbl_ContactActivity.sql" />
+    <Build Include="dbo\Tables\tbl_ContactActivityScore.sql" />
+    <Build Include="dbo\Tables\tbl_ContactActivityScoreHistory.sql" />
+    <Build Include="dbo\Tables\tbl_ContactColumnValues.sql" />
+    <Build Include="dbo\Tables\tbl_ContactCommunication.sql" />
+    <Build Include="dbo\Tables\tbl_ContactFunctionInCompany.sql" />
+    <Build Include="dbo\Tables\tbl_ContactJobLevel.sql" />
+    <Build Include="dbo\Tables\tbl_ContactRole.sql" />
+    <Build Include="dbo\Tables\tbl_ContactRoleType.sql" />
+    <Build Include="dbo\Tables\tbl_ContactSessions.sql" />
+    <Build Include="dbo\Tables\tbl_ContactToContactRole.sql" />
+    <Build Include="dbo\Tables\tbl_ContactType.sql" />
+    <Build Include="dbo\Tables\tbl_Contract.sql" />
+    <Build Include="dbo\Tables\tbl_Country.sql" />
+    <Build Include="dbo\Tables\tbl_CountryIP.sql" />
+    <Build Include="dbo\Tables\tbl_CronJob.sql" />
+    <Build Include="dbo\Tables\tbl_Currency.sql" />
+    <Build Include="dbo\Tables\tbl_CurrencyCourse.sql" />
+    <Build Include="dbo\Tables\tbl_Dictionary.sql" />
+    <Build Include="dbo\Tables\tbl_DictionaryGroup.sql" />
+    <Build Include="dbo\Tables\tbl_Direction.sql" />
+    <Build Include="dbo\Tables\tbl_District.sql" />
+    <Build Include="dbo\Tables\tbl_EmailActions.sql" />
+    <Build Include="dbo\Tables\tbl_EmailStats.sql" />
+    <Build Include="dbo\Tables\tbl_EmailStatsUnsubscribe.sql" />
+    <Build Include="dbo\Tables\tbl_EmailToAnalysis.sql" />
+    <Build Include="dbo\Tables\tbl_EventCategories.sql" />
+    <Build Include="dbo\Tables\tbl_ExpirationAction.sql" />
+    <Build Include="dbo\Tables\tbl_ExternalResource.sql" />
+    <Build Include="dbo\Tables\tbl_Filters.sql" />
+    <Build Include="dbo\Tables\tbl_Formula.sql" />
+    <Build Include="dbo\Tables\tbl_Import.sql" />
+    <Build Include="dbo\Tables\tbl_ImportColumn.sql" />
+    <Build Include="dbo\Tables\tbl_ImportColumnRule.sql" />
+    <Build Include="dbo\Tables\tbl_ImportField.sql" />
+    <Build Include="dbo\Tables\tbl_ImportFieldDictionary.sql" />
+    <Build Include="dbo\Tables\tbl_ImportKey.sql" />
+    <Build Include="dbo\Tables\tbl_ImportTag.sql" />
+    <Build Include="dbo\Tables\tbl_Invoice.sql" />
+    <Build Include="dbo\Tables\tbl_InvoiceComment.sql" />
+    <Build Include="dbo\Tables\tbl_InvoiceCommentMark.sql" />
+    <Build Include="dbo\Tables\tbl_InvoiceHistory.sql" />
+    <Build Include="dbo\Tables\tbl_InvoiceInformCatalog.sql" />
+    <Build Include="dbo\Tables\tbl_InvoiceInformForm.sql" />
+    <Build Include="dbo\Tables\tbl_InvoiceProducts.sql" />
+    <Build Include="dbo\Tables\tbl_InvoiceStatus.sql" />
+    <Build Include="dbo\Tables\tbl_InvoiceType.sql" />
+    <Build Include="dbo\Tables\tbl_Links.sql" />
+    <Build Include="dbo\Tables\tbl_LogicConditions.sql" />
+    <Build Include="dbo\Tables\tbl_MassMail.sql" />
+    <Build Include="dbo\Tables\tbl_MassMailContact.sql" />
+    <Build Include="dbo\Tables\tbl_MassMailStatus.sql" />
+    <Build Include="dbo\Tables\tbl_MassWorkflow.sql" />
+    <Build Include="dbo\Tables\tbl_MassWorkflowContact.sql" />
+    <Build Include="dbo\Tables\tbl_MassWorkflowType.sql" />
+    <Build Include="dbo\Tables\tbl_Material.sql" />
+    <Build Include="dbo\Tables\tbl_Menu.sql" />
+    <Build Include="dbo\Tables\tbl_MobileDevices.sql" />
+    <Build Include="dbo\Tables\tbl_Module.sql" />
+    <Build Include="dbo\Tables\tbl_ModuleEdition.sql" />
+    <Build Include="dbo\Tables\tbl_ModuleEditionAction.sql" />
+    <Build Include="dbo\Tables\tbl_ModuleEditionOption.sql" />
+    <Build Include="dbo\Tables\tbl_NamesList.sql" />
+    <Build Include="dbo\Tables\tbl_Numerator.sql" />
+    <Build Include="dbo\Tables\tbl_NumeratorPeriod.sql" />
+    <Build Include="dbo\Tables\tbl_NumeratorUsage.sql" />
+    <Build Include="dbo\Tables\tbl_ObjectTypes.sql" />
+    <Build Include="dbo\Tables\tbl_OperatingSystems.sql" />
+    <Build Include="dbo\Tables\tbl_Operations.sql" />
+    <Build Include="dbo\Tables\tbl_Order.sql" />
+    <Build Include="dbo\Tables\tbl_OrderProducts.sql" />
+    <Build Include="dbo\Tables\tbl_OrderStatus.sql" />
+    <Build Include="dbo\Tables\tbl_OrderType.sql" />
+    <Build Include="dbo\Tables\tbl_Payment.sql" />
+    <Build Include="dbo\Tables\tbl_PaymentArticle.sql" />
+    <Build Include="dbo\Tables\tbl_PaymentBalance.sql" />
+    <Build Include="dbo\Tables\tbl_PaymentCFO.sql" />
+    <Build Include="dbo\Tables\tbl_PaymentPass.sql" />
+    <Build Include="dbo\Tables\tbl_PaymentPassCategory.sql" />
+    <Build Include="dbo\Tables\tbl_PaymentPassRule.sql" />
+    <Build Include="dbo\Tables\tbl_PaymentPassRuleCompany.sql" />
+    <Build Include="dbo\Tables\tbl_PaymentPassRulePass.sql" />
+    <Build Include="dbo\Tables\tbl_PaymentStatus.sql" />
+    <Build Include="dbo\Tables\tbl_PaymentTransition.sql" />
+    <Build Include="dbo\Tables\tbl_PaymentType.sql" />
+    <Build Include="dbo\Tables\tbl_PortalSettings.sql" />
+    <Build Include="dbo\Tables\tbl_PriceList.sql" />
+    <Build Include="dbo\Tables\tbl_PriceListStatus.sql" />
+    <Build Include="dbo\Tables\tbl_PriceListType.sql" />
+    <Build Include="dbo\Tables\tbl_Priorities.sql" />
+    <Build Include="dbo\Tables\tbl_Product.sql" />
+    <Build Include="dbo\Tables\tbl_ProductCategory.sql" />
+    <Build Include="dbo\Tables\tbl_ProductComplectation.sql" />
+    <Build Include="dbo\Tables\tbl_ProductPhoto.sql" />
+    <Build Include="dbo\Tables\tbl_ProductPrice.sql" />
+    <Build Include="dbo\Tables\tbl_ProductStatus.sql" />
+    <Build Include="dbo\Tables\tbl_ProductType.sql" />
+    <Build Include="dbo\Tables\tbl_ProductWorkWithComplectation.sql" />
+    <Build Include="dbo\Tables\tbl_Publication.sql" />
+    <Build Include="dbo\Tables\tbl_PublicationAccessComment.sql" />
+    <Build Include="dbo\Tables\tbl_PublicationAccessRecord.sql" />
+    <Build Include="dbo\Tables\tbl_PublicationCategory.sql" />
+    <Build Include="dbo\Tables\tbl_PublicationComment.sql" />
+    <Build Include="dbo\Tables\tbl_PublicationKind.sql" />
+    <Build Include="dbo\Tables\tbl_PublicationMark.sql" />
+    <Build Include="dbo\Tables\tbl_PublicationStatus.sql" />
+    <Build Include="dbo\Tables\tbl_PublicationStatusToPublicationType.sql" />
+    <Build Include="dbo\Tables\tbl_PublicationTerms.sql" />
+    <Build Include="dbo\Tables\tbl_PublicationType.sql" />
+    <Build Include="dbo\Tables\tbl_ReadyToSell.sql" />
+    <Build Include="dbo\Tables\tbl_Region.sql" />
+    <Build Include="dbo\Tables\tbl_RelatedPublication.sql" />
+    <Build Include="dbo\Tables\tbl_Reminder.sql" />
+    <Build Include="dbo\Tables\tbl_Request.sql" />
+    <Build Include="dbo\Tables\tbl_RequestComment.sql" />
+    <Build Include="dbo\Tables\tbl_RequestCommentMark.sql" />
+    <Build Include="dbo\Tables\tbl_RequestFile.sql" />
+    <Build Include="dbo\Tables\tbl_RequestHistory.sql" />
+    <Build Include="dbo\Tables\tbl_RequestSourceCategory.sql" />
+    <Build Include="dbo\Tables\tbl_RequestSourceType.sql" />
+    <Build Include="dbo\Tables\tbl_RequestStatus.sql" />
+    <Build Include="dbo\Tables\tbl_Requirement.sql" />
+    <Build Include="dbo\Tables\tbl_RequirementComment.sql" />
+    <Build Include="dbo\Tables\tbl_RequirementCommentMark.sql" />
+    <Build Include="dbo\Tables\tbl_RequirementComplexity.sql" />
+    <Build Include="dbo\Tables\tbl_RequirementHistory.sql" />
+    <Build Include="dbo\Tables\tbl_RequirementImplementationComplete.sql" />
+    <Build Include="dbo\Tables\tbl_RequirementPriority.sql" />
+    <Build Include="dbo\Tables\tbl_RequirementSatisfaction.sql" />
+    <Build Include="dbo\Tables\tbl_RequirementSeverityOfExposure.sql" />
+    <Build Include="dbo\Tables\tbl_RequirementSpeedTime.sql" />
+    <Build Include="dbo\Tables\tbl_RequirementStatus.sql" />
+    <Build Include="dbo\Tables\tbl_RequirementTransition.sql" />
+    <Build Include="dbo\Tables\tbl_RequirementType.sql" />
+    <Build Include="dbo\Tables\tbl_Resolutions.sql" />
+    <Build Include="dbo\Tables\tbl_Responsible.sql" />
+    <Build Include="dbo\Tables\tbl_RuleTypes.sql" />
+    <Build Include="dbo\Tables\tbl_ServiceLevel.sql" />
+    <Build Include="dbo\Tables\tbl_ServiceLevelClient.sql" />
+    <Build Include="dbo\Tables\tbl_ServiceLevelContact.sql" />
+    <Build Include="dbo\Tables\tbl_ServiceLevelIncludeToInform.sql" />
+    <Build Include="dbo\Tables\tbl_ServiceLevelInform.sql" />
+    <Build Include="dbo\Tables\tbl_ServiceLevelInformComment.sql" />
+    <Build Include="dbo\Tables\tbl_ServiceLevelOutOfListServiceContacts.sql" />
+    <Build Include="dbo\Tables\tbl_ServiceLevelRole.sql" />
+    <Build Include="dbo\Tables\tbl_SessionSourceRule.sql" />
+    <Build Include="dbo\Tables\tbl_Shipment.sql" />
+    <Build Include="dbo\Tables\tbl_ShipmentComment.sql" />
+    <Build Include="dbo\Tables\tbl_ShipmentCommentMark.sql" />
+    <Build Include="dbo\Tables\tbl_ShipmentHistory.sql" />
+    <Build Include="dbo\Tables\tbl_ShipmentProducts.sql" />
+    <Build Include="dbo\Tables\tbl_ShipmentStatus.sql" />
+    <Build Include="dbo\Tables\tbl_ShipmentType.sql" />
+    <Build Include="dbo\Tables\tbl_SiteAction.sql" />
+    <Build Include="dbo\Tables\tbl_SiteActionAttachment.sql" />
+    <Build Include="dbo\Tables\tbl_SiteActionLink.sql" />
+    <Build Include="dbo\Tables\tbl_SiteActionTagValue.sql" />
+    <Build Include="dbo\Tables\tbl_SiteActionTemplate.sql" />
+    <Build Include="dbo\Tables\tbl_SiteActionTemplateRecipient.sql" />
+    <Build Include="dbo\Tables\tbl_SiteActionTemplateUserColumn.sql" />
+    <Build Include="dbo\Tables\tbl_SiteActivityRuleExternalFormFields.sql" />
+    <Build Include="dbo\Tables\tbl_SiteActivityRuleExternalForms.sql" />
+    <Build Include="dbo\Tables\tbl_SiteActivityRuleFormColumns.sql" />
+    <Build Include="dbo\Tables\tbl_SiteActivityRuleLayout.sql" />
+    <Build Include="dbo\Tables\tbl_SiteActivityRuleOption.sql" />
+    <Build Include="dbo\Tables\tbl_SiteActivityRules.sql" />
+    <Build Include="dbo\Tables\tbl_SiteActivityScoreType.sql" />
+    <Build Include="dbo\Tables\tbl_SiteColumns.sql" />
+    <Build Include="dbo\Tables\tbl_SiteColumnValues.sql" />
+    <Build Include="dbo\Tables\tbl_SiteDomain.sql" />
+    <Build Include="dbo\Tables\tbl_SiteEventActionTemplate.sql" />
+    <Build Include="dbo\Tables\tbl_SiteEventTemplateActivity.sql" />
+    <Build Include="dbo\Tables\tbl_SiteEventTemplates.sql" />
+    <Build Include="dbo\Tables\tbl_SiteEventTemplateScore.sql" />
+    <Build Include="dbo\Tables\tbl_Sites.sql" />
+    <Build Include="dbo\Tables\tbl_SiteTagObjects.sql" />
+    <Build Include="dbo\Tables\tbl_SiteTags.sql" />
+    <Build Include="dbo\Tables\tbl_SocialAuthorizationToken.sql" />
+    <Build Include="dbo\Tables\tbl_SourceMonitoring.sql" />
+    <Build Include="dbo\Tables\tbl_SourceMonitoringFilter.sql" />
+    <Build Include="dbo\Tables\tbl_StartAfterTypes.sql" />
+    <Build Include="dbo\Tables\tbl_StatisticData.sql" />
+    <Build Include="dbo\Tables\tbl_Status.sql" />
+    <Build Include="dbo\Tables\tbl_Task.sql" />
+    <Build Include="dbo\Tables\tbl_TaskDuration.sql" />
+    <Build Include="dbo\Tables\tbl_TaskHistory.sql" />
+    <Build Include="dbo\Tables\tbl_TaskMember.sql" />
+    <Build Include="dbo\Tables\tbl_TaskMembersCount.sql" />
+    <Build Include="dbo\Tables\tbl_TaskPersonalComment.sql" />
+    <Build Include="dbo\Tables\tbl_TaskResult.sql" />
+    <Build Include="dbo\Tables\tbl_TaskType.sql" />
+    <Build Include="dbo\Tables\tbl_TaskTypeAdjustDuration.sql" />
+    <Build Include="dbo\Tables\tbl_TaskTypeCategory.sql" />
+    <Build Include="dbo\Tables\tbl_TaskTypePaymentScheme.sql" />
+    <Build Include="dbo\Tables\tbl_Term.sql" />
+    <Build Include="dbo\Tables\tbl_Unit.sql" />
+    <Build Include="dbo\Tables\tbl_User.sql" />
+    <Build Include="dbo\Tables\tbl_UserSettings.sql" />
+    <Build Include="dbo\Tables\tbl_ViewTypes.sql" />
+    <Build Include="dbo\Tables\tbl_WebSite.sql" />
+    <Build Include="dbo\Tables\tbl_WebSitePage.sql" />
+    <Build Include="dbo\Tables\tbl_Widget.sql" />
+    <Build Include="dbo\Tables\tbl_WidgetCategory.sql" />
+    <Build Include="dbo\Tables\tbl_WidgetToAccessProfile.sql" />
+    <Build Include="dbo\Tables\tbl_Workflow.sql" />
+    <Build Include="dbo\Tables\tbl_WorkflowElement.sql" />
+    <Build Include="dbo\Tables\tbl_WorkflowParameter.sql" />
+    <Build Include="dbo\Tables\tbl_WorkflowTemplate.sql" />
+    <Build Include="dbo\Tables\tbl_WorkflowTemplateConditionEvent.sql" />
+    <Build Include="dbo\Tables\tbl_WorkflowTemplateElement.sql" />
+    <Build Include="dbo\Tables\tbl_WorkflowTemplateElementEvent.sql" />
+    <Build Include="dbo\Tables\tbl_WorkflowTemplateElementExternalRequest.sql" />
+    <Build Include="dbo\Tables\tbl_WorkflowTemplateElementParameter.sql" />
+    <Build Include="dbo\Tables\tbl_WorkflowTemplateElementPeriod.sql" />
+    <Build Include="dbo\Tables\tbl_WorkflowTemplateElementRelation.sql" />
+    <Build Include="dbo\Tables\tbl_WorkflowTemplateElementResult.sql" />
+    <Build Include="dbo\Tables\tbl_WorkflowTemplateElementTag.sql" />
+    <Build Include="dbo\Tables\tbl_WorkflowTemplateGoal.sql" />
+    <Build Include="dbo\Tables\tbl_WorkflowTemplateParameter.sql" />
+    <Build Include="dbo\Tables\tbl_WorkflowTemplateRole.sql" />
+    <Build Include="dbo\Tables\tbl_AccessProfileModuleEditionOption.sql" />
+    <Build Include="dbo\Tables\tbl_InvoiceToShipment.sql" />
+    <Build Include="dbo\Tables\tbl_RequestToRequirement.sql" />
+    <Build Include="dbo\Tables\tbl_WebSitePageExternalResource.sql" />
+    <Build Include="dbo\Tables\tbl_WorkflowTemplateGoalElement.sql" />
+    <None Include="Scripts\ScriptsIgnoredOnImport.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Labitec.LeadForce.CLR\Labitec.LeadForce.CLR.csproj">
+      <Name>Labitec.LeadForce.CLR</Name>
+      <Project>{2e3ac325-a73f-4008-b7b5-3cc9a61bac21}</Project>
+      <Private>True</Private>
+      <IsModelAware>True</IsModelAware>
+      <GenerateSqlClrDdl>False</GenerateSqlClrDdl>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="LeadForce.Database.publish.xml" />
+  </ItemGroup>
+</Project>

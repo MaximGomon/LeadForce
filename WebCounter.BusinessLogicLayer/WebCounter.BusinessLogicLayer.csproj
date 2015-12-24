@@ -1,0 +1,507 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{750A873E-E0C0-4A99-ABB7-410F74CBBD76}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebCounter.BusinessLogicLayer</RootNamespace>
+    <AssemblyName>WebCounter.BusinessLogicLayer</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="HtmlAgilityPack">
+      <HintPath>..\Libs\HtmlAgilityPack.dll</HintPath>
+    </Reference>
+    <Reference Include="Labitec.DataFeed">
+      <HintPath>..\Libs\Labitec.DataFeed.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\Libs\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Administration, Version=7.9.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libs\Microsoft.Web.Administration.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\Libs\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WufooSharp">
+      <HintPath>..\Libs\WufooSharp.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AnalyticReportRepository.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Common\AddSiteUserParams.cs" />
+    <Compile Include="Common\Access.cs" />
+    <Compile Include="Common\AnalyticReportFilter.cs" />
+    <Compile Include="Common\ClassWSThumb.cs" />
+    <Compile Include="Common\ContactData.cs" />
+    <Compile Include="Common\CounterServiceHelper.cs" />
+    <Compile Include="Common\DateTimeHelper.cs" />
+    <Compile Include="Common\DropDownListExtension.cs" />
+    <Compile Include="Common\EnumHelper.cs" />
+    <Compile Include="Common\LayoutParams.cs" />
+    <Compile Include="Common\LeadForceBasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\LeadForceCache.cs" />
+    <Compile Include="Common\LeadForceCMSBasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\LeadForcePortalBasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\MonthlyStats.cs" />
+    <Compile Include="Common\ReminderExtended.cs" />
+    <Compile Include="Common\SessionSource.cs" />
+    <Compile Include="Common\SiteActivityRuleLayoutParams.cs" />
+    <Compile Include="Common\SqlTableCreator.cs" />
+    <Compile Include="Common\StringExtension.cs" />
+    <Compile Include="Common\UnitConverter.cs" />
+    <Compile Include="Common\WidgetBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\WorkflowProcessing.cs" />
+    <Compile Include="Common\WorkflowTemplateWizard.cs" />
+    <Compile Include="Configuration\PortalTemplates.cs" />
+    <Compile Include="Configuration\Settings.cs" />
+    <Compile Include="Configuration\Log.cs" />
+    <Compile Include="Configuration\ScriptTemplates.cs" />
+    <Compile Include="Configuration\SiteActionTemplates.cs" />
+    <Compile Include="Configuration\UrlsData.cs" />
+    <Compile Include="ColumnCategoriesRepository.cs" />
+    <Compile Include="ColumnTypesRepository.cs" />
+    <Compile Include="ActivityTypesRepository.cs" />
+    <Compile Include="ActionTypesRepository.cs" />
+    <Compile Include="ActionStatusRepository.cs" />
+    <Compile Include="ContentCommentRepository.cs" />
+    <Compile Include="Controls\DropDownListExt.cs" />
+    <Compile Include="Controls\TextBoxExt.cs" />
+    <Compile Include="BrowsersRepository.cs" />
+    <Compile Include="CompanyRepository.cs" />
+    <Compile Include="AccessProfileRepository.cs" />
+    <Compile Include="AccessProfileModuleRepository.cs" />
+    <Compile Include="AccessProfileRecordRepository.cs" />
+    <Compile Include="AnalyticAxisRepository.cs" />
+    <Compile Include="AnalyticReportSystemRepository.cs" />
+    <Compile Include="AnalyticAxisFilterValuesRepository.cs" />
+    <Compile Include="AnalyticReportUserSettingsRepository.cs" />
+    <Compile Include="ContactRoleRepository.cs" />
+    <Compile Include="ContactToContactRoleRepository.cs" />
+    <Compile Include="ColumnTypesExpressionRepository.cs" />
+    <Compile Include="Enumerations\ActionOnFillForm.cs" />
+    <Compile Include="Mapping\ShipmentMap.cs" />
+    <Compile Include="Mapping\InvoiceMap.cs" />
+    <Compile Include="Mapping\ShipmentProductsMap.cs" />
+    <Compile Include="ShipmentProductsRepository.cs" />
+    <Compile Include="ShipmentHistoryRepository.cs" />
+    <Compile Include="ShipmentRepository.cs" />
+    <Compile Include="ShipmentTypeRepository.cs" />
+    <Compile Include="ShipmentCommentRepository.cs" />
+    <Compile Include="Enumerations\Shipment\ShipmentStatus.cs" />
+    <Compile Include="Enumerations\Skin.cs" />
+    <Compile Include="Enumerations\WebSite\ExternalResourceType.cs" />
+    <Compile Include="Enumerations\WebSite\ResourcePlace.cs" />
+    <Compile Include="Mapping\ExternalResourceMap.cs" />
+    <Compile Include="ExternalResourceRepository.cs" />
+    <Compile Include="Enumerations\ImportType.cs" />
+    <Compile Include="LinksRepository.cs" />
+    <Compile Include="Enumerations\MaterialType.cs" />
+    <Compile Include="Mapping\ContactColumnValueMap.cs" />
+    <Compile Include="Mapping\MaterialMap.cs" />
+    <Compile Include="MaterialRepository.cs" />
+    <Compile Include="EmailStatsRepository.cs" />
+    <Compile Include="Services\RecalculateStatisticService.cs" />
+    <Compile Include="TermRepository.cs" />
+    <Compile Include="ImportKeyRepository.cs" />
+    <Compile Include="Enumerations\WufooUpdatePeriod.cs" />
+    <Compile Include="Services\ExternalFormService.cs" />
+    <Compile Include="WebSitePageRepository.cs" />
+    <Compile Include="Mapping\WebSiteStructureMap.cs" />
+    <Compile Include="Enumerations\WebSite\WebSiteElementStatus.cs" />
+    <Compile Include="Enumerations\WebSite\WebSiteStructureType.cs" />
+    <Compile Include="WebSiteRepository.cs" />
+    <Compile Include="ResponsibleRepository.cs" />
+    <Compile Include="SiteActionTemplateRecipientRepository.cs" />
+    <Compile Include="Enumerations\ContactRoleType.cs" />
+    <Compile Include="Enumerations\DataBaseStatus.cs" />
+    <Compile Include="Enumerations\Invoice\InvoiceInformCatalog.cs" />
+    <Compile Include="Enumerations\Invoice\InvoiceInformForm.cs" />
+    <Compile Include="InvoiceCommentRepository.cs" />
+    <Compile Include="Enumerations\ContactCategory.cs" />
+    <Compile Include="Enumerations\RegistrationSource.cs" />
+    <Compile Include="Enumerations\Workflow\MassWorkflowType.cs" />
+    <Compile Include="Mapping\SiteActionTemplateRecipientMap.cs" />
+    <Compile Include="Services\InvoiceCommentNotificationService.cs" />
+    <Compile Include="Services\InvoiceNotificationService.cs" />
+    <Compile Include="Services\TemplateTagsReplacers\InvoiceNotificationTagsReplacer.cs" />
+    <Compile Include="Services\TemplateTagsReplacers\InvoiceCommentNotificationTagsReplacer.cs" />
+    <Compile Include="StatisticDataRepository.cs" />
+    <Compile Include="ObjectTypesRepository.cs" />
+    <Compile Include="WidgetToAccessProfileRepository.cs" />
+    <Compile Include="WidgetRepository.cs" />
+    <Compile Include="WidgetCategoryRepository.cs" />
+    <Compile Include="Enumerations\SiteDomainStatus.cs" />
+    <Compile Include="Mapping\CounterServiceDomainAccessMap.cs" />
+    <Compile Include="Providers\Payments\RBKMoney\RBKMoneyProvider.cs" />
+    <Compile Include="SiteDomainRepository.cs" />
+    <Compile Include="ImportTagRepository.cs" />
+    <Compile Include="Enumerations\FormCode\ShowTextBlockInMaster.cs" />
+    <Compile Include="Mapping\ImportTagMap.cs" />
+    <Compile Include="WorkflowTemplateElementExternalRequestRepository.cs" />
+    <Compile Include="SiteActionTagValueRepository.cs" />
+    <Compile Include="Mapping\WorkflowTemplateElementExternalRequestMap.cs" />
+    <Compile Include="Mapping\WorkflowTemplateElementPeriodMap.cs" />
+    <Compile Include="WorkflowTemplateElementPeriodRepository.cs" />
+    <Compile Include="Enumerations\ActionTemplate.cs" />
+    <Compile Include="Enumerations\MassMailStatus.cs" />
+    <Compile Include="Enumerations\FormCode\FormContactCategory.cs" />
+    <Compile Include="Enumerations\FormCode\FormFeedBackKnowledgeBase.cs" />
+    <Compile Include="Enumerations\FormCode\FormFeedBackSteps.cs" />
+    <Compile Include="Enumerations\FormCode\PopupAlign.cs" />
+    <Compile Include="Enumerations\FormCode\FloatingButtonPosition.cs" />
+    <Compile Include="Enumerations\FormCode\PopupEffectAppear.cs" />
+    <Compile Include="ModuleEditionActionRepository.cs" />
+    <Compile Include="ModuleEditionOptionRepository.cs" />
+    <Compile Include="ModuleEditionRepository.cs" />
+    <Compile Include="PaymentBalanceRepository.cs" />
+    <Compile Include="PaymentPassRepository.cs" />
+    <Compile Include="Enumerations\PaymentPassFormula.cs" />
+    <Compile Include="Enumerations\PaymentType.cs" />
+    <Compile Include="InvoiceHistoryRepository.cs" />
+    <Compile Include="Enumerations\Analytic\FilterType.cs" />
+    <Compile Include="Enumerations\LogicConditionType.cs" />
+    <Compile Include="Enumerations\OperationType.cs" />
+    <Compile Include="LogicConditionsRepository.cs" />
+    <Compile Include="Mapping\SiteActionTemplateUserColumnMap.cs" />
+    <Compile Include="Mapping\SiteEventActionTemplateMap.cs" />
+    <Compile Include="Mapping\SiteEventTemplateActivityMap.cs" />
+    <Compile Include="Mapping\SiteEventTemplateScoreMap.cs" />
+    <Compile Include="Mapping\WorkflowConversion.cs" />
+    <Compile Include="MassWorkflowContactRepository.cs" />
+    <Compile Include="Enumerations\Workflow\WorkflowStatus.cs" />
+    <Compile Include="MassWorkflowRepository.cs" />
+    <Compile Include="AdvertisingPlatformRepository.cs" />
+    <Compile Include="AdvertisingCampaignRepository.cs" />
+    <Compile Include="AdvertisingTypeRepository.cs" />
+    <Compile Include="Enumerations\ProductWorkWithComplectation.cs" />
+    <Compile Include="Mapping\WorkflowTemplateGoalMap.cs" />
+    <Compile Include="OperationsRepository.cs" />
+    <Compile Include="PaymentArticleRepository.cs" />
+    <Compile Include="PaymentCFORepository.cs" />
+    <Compile Include="PaymentPassCategoryRepository.cs" />
+    <Compile Include="PaymentPassRuleCompanyRepository.cs" />
+    <Compile Include="PaymentPassRulePassRepository.cs" />
+    <Compile Include="PaymentPassRuleRepository.cs" />
+    <Compile Include="PaymentRepository.cs" />
+    <Compile Include="PaymentStatusRepository.cs" />
+    <Compile Include="PaymentTransitionRepository.cs" />
+    <Compile Include="SiteEventActionTemplateRepository.cs" />
+    <Compile Include="SiteEventTemplateActivityRepository.cs" />
+    <Compile Include="SiteEventTemplateScoreRepository.cs" />
+    <Compile Include="SiteEventTemplatesRepository.cs" />
+    <Compile Include="WorkflowTemplateGoalRepository.cs" />
+    <Compile Include="RequestHistoryRepository.cs" />
+    <Compile Include="Enumerations\Analytic\AxisRole.cs" />
+    <Compile Include="Enumerations\Analytic\AxisType.cs" />
+    <Compile Include="Enumerations\MassWorkflowStatus.cs" />
+    <Compile Include="Enumerations\ScoreCategory.cs" />
+    <Compile Include="Mapping\WorkflowTemplateElementTagMap.cs" />
+    <Compile Include="WorkflowTemplateElementTagRepository.cs" />
+    <Compile Include="Enumerations\FilterOperator.cs" />
+    <Compile Include="Enumerations\DateTimePeriod.cs" />
+    <Compile Include="RequestCommentRepository.cs" />
+    <Compile Include="Services\RequestCommentNotificationService.cs" />
+    <Compile Include="Services\TemplateTagsReplacers\RequestCommentNotificationTagsReplacer.cs" />
+    <Compile Include="WorkflowTemplateElementResultRepository.cs" />
+    <Compile Include="Mapping\WorkflowTemplateElementResultMap.cs" />
+    <Compile Include="RequirementCommentRepository.cs" />
+    <Compile Include="CronJobRepository.cs" />
+    <Compile Include="Enumerations\CronJob\CronJobStatus.cs" />
+    <Compile Include="Enumerations\Request\ServiceLevelInformComment.cs" />
+    <Compile Include="Enumerations\Request\ServiceLevelInform.cs" />
+    <Compile Include="Enumerations\Request\ServiceLevelIncludeToInform.cs" />
+    <Compile Include="Enumerations\Request\OutOfListServiceContacts.cs" />
+    <Compile Include="Mapping\ContentCommentAuthor.cs" />
+    <Compile Include="ServiceLevelContactRepository.cs" />
+    <Compile Include="Interfaces\TemplateTagsReplacer.cs" />
+    <Compile Include="ServiceLevelClientRepository.cs" />
+    <Compile Include="RequestFileRepository.cs" />
+    <Compile Include="Enumerations\CommentTables.cs" />
+    <Compile Include="Enumerations\ContentCommentMarkType.cs" />
+    <Compile Include="Mapping\ContentComment.cs" />
+    <Compile Include="RequirementStatusRepository.cs" />
+    <Compile Include="RequirementTransitionRepository.cs" />
+    <Compile Include="RequirementHistoryRepository.cs" />
+    <Compile Include="RequirementTypeRepository.cs" />
+    <Compile Include="RequirementRepository.cs" />
+    <Compile Include="RequirementSeverityOfExposureRepository.cs" />
+    <Compile Include="RequestSourceTypeRepository.cs" />
+    <Compile Include="ServiceLevelRepository.cs" />
+    <Compile Include="RequestRepository.cs" />
+    <Compile Include="DocumentManagement\DocumentNumerator.cs" />
+    <Compile Include="Enumerations\FileType.cs" />
+    <Compile Include="Enumerations\HtmlEditorMode.cs" />
+    <Compile Include="Enumerations\Request\RequestStatus.cs" />
+    <Compile Include="Enumerations\Request\RequestSourceCategory.cs" />
+    <Compile Include="Enumerations\SiteActionTemplateCategory.cs" />
+    <Compile Include="Enumerations\Workflow\WorkflowElementStatus.cs" />
+    <Compile Include="Services\RequestNotificationService.cs" />
+    <Compile Include="Services\RequirementCommentNotificationService.cs" />
+    <Compile Include="Services\TemplateTagsReplacers\RequirementCommentNotificationTagsReplacer.cs" />
+    <Compile Include="Services\TemplateTagsReplacers\TaskNotificationTagsReplacer.cs" />
+    <Compile Include="Services\TemplateTagsReplacers\RequestNotificationTagsReplacer.cs" />
+    <Compile Include="WorkflowTemplateElementParameterRepository.cs" />
+    <Compile Include="WorkflowElementRepository.cs" />
+    <Compile Include="WorkflowRepository.cs" />
+    <Compile Include="ContactCommunicationRepository.cs" />
+    <Compile Include="CompanyLegalAccountRepository.cs" />
+    <Compile Include="BankRepository.cs" />
+    <Compile Include="InvoiceTypeRepository.cs" />
+    <Compile Include="InvoiceRepository.cs" />
+    <Compile Include="InvoiceProductsRepository.cs" />
+    <Compile Include="Enumerations\Invoice\InvoiceStatus.cs" />
+    <Compile Include="Mapping\CompanyLegalAccountMap.cs" />
+    <Compile Include="Mapping\InvoiceProductsMap.cs" />
+    <Compile Include="SocialAuthorizationTokenRepository.cs" />
+    <Compile Include="SiteTagsRepository.cs" />
+    <Compile Include="Enumerations\CommunicationType.cs" />
+    <Compile Include="Mapping\UserMap.cs" />
+    <Compile Include="Mapping\WorkflowTemplateElementRelationMap.cs" />
+    <Compile Include="Providers\SocialNetwork\Facebook\FacebookAccesTokenInfo.cs" />
+    <Compile Include="Providers\SocialNetwork\Facebook\FacebookAPIException.cs" />
+    <Compile Include="Providers\SocialNetwork\Facebook\FacebookAPI.cs" />
+    <Compile Include="Providers\SocialNetwork\Facebook\FacebookProfile.cs" />
+    <Compile Include="Providers\SocialNetwork\Vkontakte\VkontakteAccessTokenInfo.cs" />
+    <Compile Include="Providers\SocialNetwork\Vkontakte\VkontakteAPI.cs" />
+    <Compile Include="Providers\SocialNetwork\Vkontakte\VKontakteAPIException.cs" />
+    <Compile Include="Providers\SocialNetwork\Vkontakte\VkontakteLocation.cs" />
+    <Compile Include="Providers\SocialNetwork\Vkontakte\VkontakteProfile.cs" />
+    <Compile Include="WorkflowTemplateElementRelationRepository.cs" />
+    <Compile Include="Mapping\PortalSettingsMap.cs" />
+    <Compile Include="PortalSettingsRepository.cs" />
+    <Compile Include="Mapping\WorkflowTemplateElementMap.cs" />
+    <Compile Include="WorkflowTemplateElementRepository.cs" />
+    <Compile Include="Enumerations\Workflow\WorkflowTemplateElementType.cs" />
+    <Compile Include="WorkflowTemplateParameterRepository.cs" />
+    <Compile Include="Mapping\WorkflowTemplateParameterMap.cs" />
+    <Compile Include="WorkflowTemplateRepository.cs" />
+    <Compile Include="Enumerations\Workflow\WorkflowTemplateConditionEventCategory.cs" />
+    <Compile Include="Files\FileSystemProvider.cs" />
+    <Compile Include="Mapping\ActivityCommentMap.cs" />
+    <Compile Include="Mapping\ActivityPublicationMap.cs" />
+    <Compile Include="WorkflowTemplateConditionEventRepository.cs" />
+    <Compile Include="Enumerations\ContactGender.cs" />
+    <Compile Include="Enumerations\ReplaceLinks.cs" />
+    <Compile Include="Enumerations\TaskMembersCount.cs" />
+    <Compile Include="Enumerations\Workflow\WorkflowTemplateCondition.cs" />
+    <Compile Include="Enumerations\Workflow\WorkflowTemplateEvent.cs" />
+    <Compile Include="Enumerations\Workflow\WorkflowTemplateAutomaticMethod.cs" />
+    <Compile Include="Enumerations\Workflow\WorkflowTemplateStatus.cs" />
+    <Compile Include="Mapping\OrderProductsMap.cs" />
+    <Compile Include="Mapping\LinkProcessingMap.cs" />
+    <Compile Include="Mapping\WorkflowTemplateConditionEventMap.cs" />
+    <Compile Include="PublicationStatusRepository.cs" />
+    <Compile Include="TaskPersonalCommentRepository.cs" />
+    <Compile Include="Enumerations\PublicationKind.cs" />
+    <Compile Include="MenuRepository.cs" />
+    <Compile Include="PublicationTypeRepository.cs" />
+    <Compile Include="Enumerations\PublicationMarkType.cs" />
+    <Compile Include="PublicationMarkRepository.cs" />
+    <Compile Include="PublicationCommentRepository.cs" />
+    <Compile Include="Enumerations\PublicationAccessComment.cs" />
+    <Compile Include="Enumerations\PublicationAccessRecord.cs" />
+    <Compile Include="ReminderRepository.cs" />
+    <Compile Include="Mapping\TaskDurationMap.cs" />
+    <Compile Include="Mapping\TaskMap.cs" />
+    <Compile Include="Mapping\TaskMemberMap.cs" />
+    <Compile Include="UserSettingsRepository.cs" />
+    <Compile Include="PublicationTermsRepository.cs" />
+    <Compile Include="RelatedPublicationRepository.cs" />
+    <Compile Include="PublicationCategoryRepository.cs" />
+    <Compile Include="PublicationRepository.cs" />
+    <Compile Include="Enumerations\PublicationStatus.cs" />
+    <Compile Include="Enumerations\TaskTypePaymentScheme.cs" />
+    <Compile Include="TaskHistoryRepository.cs" />
+    <Compile Include="TaskDurationRepository.cs" />
+    <Compile Include="Enumerations\TaskMemberStatus.cs" />
+    <Compile Include="Enumerations\TaskMemberRole.cs" />
+    <Compile Include="TaskMemberRepository.cs" />
+    <Compile Include="TaskTypeRepository.cs" />
+    <Compile Include="TaskRepository.cs" />
+    <Compile Include="Enumerations\TaskTypeCategory.cs" />
+    <Compile Include="Enumerations\TaskTypeAdjustDuration.cs" />
+    <Compile Include="Enumerations\TaskStatus.cs" />
+    <Compile Include="ModuleRepository.cs" />
+    <Compile Include="CurrencyRepository.cs" />
+    <Compile Include="Enumerations\ExpirationAction.cs" />
+    <Compile Include="Enumerations\OrderStatus.cs" />
+    <Compile Include="OrderTypeRepository.cs" />
+    <Compile Include="OrderProductsRepository.cs" />
+    <Compile Include="OrderRepository.cs" />
+    <Compile Include="PriceListStatusRepository.cs" />
+    <Compile Include="PriceListTypeRepository.cs" />
+    <Compile Include="EmailToAnalysisRepository.cs" />
+    <Compile Include="Enumerations\AccessProfileRecordRule.cs" />
+    <Compile Include="SiteActionAttachmentRepository.cs" />
+    <Compile Include="Enumerations\ProcessingOfAutoReplies.cs" />
+    <Compile Include="Enumerations\ProcessingOfReturns.cs" />
+    <Compile Include="Enumerations\MonitoringAction.cs" />
+    <Compile Include="PriceListRepository.cs" />
+    <Compile Include="ProductPriceRepository.cs" />
+    <Compile Include="Enumerations\Direction.cs" />
+    <Compile Include="ProductComplectationRepository.cs" />
+    <Compile Include="Interfaces\ICronJob.cs" />
+    <Compile Include="SourceMonitoringFilterRepository.cs" />
+    <Compile Include="SourceMonitoringRepository.cs" />
+    <Compile Include="Enumerations\SenderProcessing.cs" />
+    <Compile Include="Enumerations\SourceEmailProperty.cs" />
+    <Compile Include="Enumerations\Status.cs" />
+    <Compile Include="Enumerations\SourceType.cs" />
+    <Compile Include="ImportFieldDictionaryRepository.cs" />
+    <Compile Include="ImportColumnRuleRepository.cs" />
+    <Compile Include="Enumerations\AccessLevel.cs" />
+    <Compile Include="Enumerations\EmailAction.cs" />
+    <Compile Include="Enumerations\ImportTable.cs" />
+    <Compile Include="Enumerations\MessageType.cs" />
+    <Compile Include="ImportRepository.cs" />
+    <Compile Include="ImportColumnRepository.cs" />
+    <Compile Include="ImportFieldRepository.cs" />
+    <Compile Include="CityRepository.cs" />
+    <Compile Include="AddressRepository.cs" />
+    <Compile Include="CompanyTypeRepository.cs" />
+    <Compile Include="CompanySizeRepository.cs" />
+    <Compile Include="CompanySectorRepository.cs" />
+    <Compile Include="ContactTypeRepository.cs" />
+    <Compile Include="ContactJobLevelRepository.cs" />
+    <Compile Include="ContactFunctionInCompanyRepository.cs" />
+    <Compile Include="BrandRepository.cs" />
+    <Compile Include="ProductPhotoRepository.cs" />
+    <Compile Include="UnitRepository.cs" />
+    <Compile Include="ProductTypeRepository.cs" />
+    <Compile Include="ProductCategoryRepository.cs" />
+    <Compile Include="ProductRepository.cs" />
+    <Compile Include="Enumerations\CellularPhoneStatus.cs" />
+    <Compile Include="Enumerations\PriceListStatus.cs" />
+    <Compile Include="Enumerations\PriceListType.cs" />
+    <Compile Include="Enumerations\ProductStatus.cs" />
+    <Compile Include="Enumerations\EmailStatus.cs" />
+    <Compile Include="RegionRepository.cs" />
+    <Compile Include="DistrictRepository.cs" />
+    <Compile Include="CountryRepository.cs" />
+    <Compile Include="UserRepository.cs" />
+    <Compile Include="EmailActionsRepository.cs" />
+    <Compile Include="Enumerations\FormMode.cs" />
+    <Compile Include="Enumerations\Period.cs" />
+    <Compile Include="Enumerations\Section.cs" />
+    <Compile Include="Enumerations\SessionRuleType.cs" />
+    <Compile Include="SiteActivityRuleExternalFormFieldsRepository.cs" />
+    <Compile Include="SiteActivityRuleExternalFormsRepository.cs" />
+    <Compile Include="DictionaryRepository.cs" />
+    <Compile Include="Enumerations\FormFieldType.cs" />
+    <Compile Include="Enumerations\OutputFormat.cs" />
+    <Compile Include="Enumerations\LayoutType.cs" />
+    <Compile Include="SiteActivityRuleLayoutRepository.cs" />
+    <Compile Include="Enumerations\OutputFormatFields.cs" />
+    <Compile Include="Enumerations\Orientation.cs" />
+    <Compile Include="SiteActionLinkRepository.cs" />
+    <Compile Include="MobileDevicesRepository.cs" />
+    <Compile Include="ResolutionsRepository.cs" />
+    <Compile Include="OperatingSystemsRepository.cs" />
+    <Compile Include="ContactSessionsRepository.cs" />
+    <Compile Include="MassMailContactRepository.cs" />
+    <Compile Include="MassMailStatusRepository.cs" />
+    <Compile Include="Enumerations\MassMailStatusType.cs" />
+    <Compile Include="MassMailRepository.cs" />
+    <Compile Include="Enumerations\ObjectType.cs" />
+    <Compile Include="Files\FSProvider.cs" />
+    <Compile Include="Files\IFileProvider.cs" />
+    <Compile Include="SiteTagObjectsRepository.cs" />
+    <Compile Include="PrioritiesRepository.cs" />
+    <Compile Include="SiteActionTemplateUserColumnRepository.cs" />
+    <Compile Include="ContactActivityScoreRepository.cs" />
+    <Compile Include="SiteActivityScoreTypeRepository.cs" />
+    <Compile Include="Enumerations\ActionStatus.cs" />
+    <Compile Include="SiteActionRepository.cs" />
+    <Compile Include="StartAfterTypesRepository.cs" />
+    <Compile Include="Enumerations\StartAfterType.cs" />
+    <Compile Include="SiteActionTemplateRepository.cs" />
+    <Compile Include="Enumerations\ActionType.cs" />
+    <Compile Include="FormulaRepository.cs" />
+    <Compile Include="Enumerations\FormulaType.cs" />
+    <Compile Include="EventCategoriesRepository.cs" />
+    <Compile Include="Enumerations\EventCategory.cs" />
+    <Compile Include="ContactColumnValuesRepository.cs" />
+    <Compile Include="Enumerations\RuleType.cs" />
+    <Compile Include="Enumerations\ActivityType.cs" />
+    <Compile Include="SiteActivityRuleFormColumnsRepository.cs" />
+    <Compile Include="RuleTypesRepository.cs" />
+    <Compile Include="SiteActivityRulesRepository.cs" />
+    <Compile Include="Providers\CurrentUser.cs" />
+    <Compile Include="SitesRepository.cs" />
+    <Compile Include="SiteColumnValuesRepository.cs" />
+    <Compile Include="SiteColumnsRepository.cs" />
+    <Compile Include="Enumerations\ColumnType.cs" />
+    <Compile Include="ReadyToSellRepository.cs" />
+    <Compile Include="StatusRepository.cs" />
+    <Compile Include="DataManager.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ContactRepository.cs" />
+    <Compile Include="ContactActivityRepository.cs" />
+    <Compile Include="WebCounterServiceRepository.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WebCounter.DataAccessLayer\WebCounter.DataAccessLayer.csproj">
+      <Project>{A049CEF2-3015-49A8-81D0-B4A460086BA2}</Project>
+      <Name>WebCounter.DataAccessLayer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="connectionstrings.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,3346 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="WebCounterModelStoreContainer" CdmEntityContainer="WebCounterEntities">
+    <EntitySetMapping Name="tbl_AccessProfile">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_AccessProfile">
+        <MappingFragment StoreEntitySet="tbl_AccessProfile">
+          <ScalarProperty Name="DurationPeriod" ColumnName="DurationPeriod" />
+          <ScalarProperty Name="EmailPerContactCount" ColumnName="EmailPerContactCount" />
+          <ScalarProperty Name="ActiveContactsCount" ColumnName="ActiveContactsCount" />
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="ContactsPageUrl" ColumnName="ContactsPageUrl" />
+          <ScalarProperty Name="DomainsCount" ColumnName="DomainsCount" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_AccessProfileModule">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_AccessProfileModule">
+        <MappingFragment StoreEntitySet="tbl_AccessProfileModule">
+          <ScalarProperty Name="ModuleEditionID" ColumnName="ModuleEditionID" />
+          <ScalarProperty Name="Delete" ColumnName="Delete" />
+          <ScalarProperty Name="Write" ColumnName="Write" />
+          <ScalarProperty Name="Read" ColumnName="Read" />
+          <ScalarProperty Name="ModuleID" ColumnName="ModuleID" />
+          <ScalarProperty Name="AccessProfileID" ColumnName="AccessProfileID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_AccessProfileRecord">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_AccessProfileRecord">
+        <MappingFragment StoreEntitySet="tbl_AccessProfileRecord">
+          <ScalarProperty Name="Delete" ColumnName="Delete" />
+          <ScalarProperty Name="Write" ColumnName="Write" />
+          <ScalarProperty Name="Read" ColumnName="Read" />
+          <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
+          <ScalarProperty Name="OwnerRuleID" ColumnName="OwnerRuleID" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="CompanyRuleID" ColumnName="CompanyRuleID" />
+          <ScalarProperty Name="ModuleID" ColumnName="ModuleID" />
+          <ScalarProperty Name="AccessProfileID" ColumnName="AccessProfileID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_ActionStatus">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_ActionStatus">
+        <MappingFragment StoreEntitySet="tbl_ActionStatus">
+          <ScalarProperty Name="Order" ColumnName="Order" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_ActionTypes">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_ActionTypes">
+        <MappingFragment StoreEntitySet="tbl_ActionTypes">
+          <ScalarProperty Name="Order" ColumnName="Order" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_ActivityTypes">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_ActivityTypes">
+        <MappingFragment StoreEntitySet="tbl_ActivityTypes">
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Address">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_Address">
+        <MappingFragment StoreEntitySet="tbl_Address">
+          <ScalarProperty Name="RegionID" ColumnName="RegionID" />
+          <ScalarProperty Name="DistrictID" ColumnName="DistrictID" />
+          <ScalarProperty Name="CityID" ColumnName="CityID" />
+          <ScalarProperty Name="CountryID" ColumnName="CountryID" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_AdvertisingCampaign">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_AdvertisingCampaign">
+        <MappingFragment StoreEntitySet="tbl_AdvertisingCampaign">
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_AdvertisingPlatform">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_AdvertisingPlatform">
+        <MappingFragment StoreEntitySet="tbl_AdvertisingPlatform">
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_AdvertisingType">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_AdvertisingType">
+        <MappingFragment StoreEntitySet="tbl_AdvertisingType">
+          <ScalarProperty Name="AdvertisingTypeCategoryID" ColumnName="AdvertisingTypeCategoryID" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_AdvertisingTypeCategory">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_AdvertisingTypeCategory">
+        <MappingFragment StoreEntitySet="tbl_AdvertisingTypeCategory">
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Analytic">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_Analytic">
+        <MappingFragment StoreEntitySet="tbl_Analytic">
+          <ScalarProperty Name="Query" ColumnName="Query" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_AnalyticAxis">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_AnalyticAxis">
+        <MappingFragment StoreEntitySet="tbl_AnalyticAxis">
+          <ScalarProperty Name="Query" ColumnName="Query" />
+          <ScalarProperty Name="DataSet" ColumnName="DataSet" />
+          <ScalarProperty Name="AxisRoleID" ColumnName="AxisRoleID" />
+          <ScalarProperty Name="SystemName" ColumnName="SystemName" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="AnalyticID" ColumnName="AnalyticID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_AnalyticAxisFilterValues">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_AnalyticAxisFilterValues">
+        <MappingFragment StoreEntitySet="tbl_AnalyticAxisFilterValues">
+          <ScalarProperty Name="Query" ColumnName="Query" />
+          <ScalarProperty Name="FilterType" ColumnName="FilterType" />
+          <ScalarProperty Name="IsDefault" ColumnName="IsDefault" />
+          <ScalarProperty Name="FilterOperatorID" ColumnName="FilterOperatorID" />
+          <ScalarProperty Name="DisplayOrder" ColumnName="DisplayOrder" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="ColumnName" ColumnName="ColumnName" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="AnalyticAxisID" ColumnName="AnalyticAxisID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_AnalyticReport">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_AnalyticReport">
+        <MappingFragment StoreEntitySet="tbl_AnalyticReport">
+          <ScalarProperty Name="ModuleID" ColumnName="ModuleID" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="AnalyticID" ColumnName="AnalyticID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_AnalyticReportSystem">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_AnalyticReportSystem">
+        <MappingFragment StoreEntitySet="tbl_AnalyticReportSystem">
+          <ScalarProperty Name="IsDefault" ColumnName="IsDefault" />
+          <ScalarProperty Name="AxisTypeID" ColumnName="AxisTypeID" />
+          <ScalarProperty Name="AnalyticAxisID" ColumnName="AnalyticAxisID" />
+          <ScalarProperty Name="AnalyticReportID" ColumnName="AnalyticReportID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_AnalyticReportUserSettings">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_AnalyticReportUserSettings">
+        <MappingFragment StoreEntitySet="tbl_AnalyticReportUserSettings">
+          <ScalarProperty Name="DataSetValues" ColumnName="DataSetValues" />
+          <ScalarProperty Name="AxisToBuildID" ColumnName="AxisToBuildID" />
+          <ScalarProperty Name="AnalyticReportID" ColumnName="AnalyticReportID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Bank">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_Bank">
+        <MappingFragment StoreEntitySet="tbl_Bank">
+          <ScalarProperty Name="CityID" ColumnName="CityID" />
+          <ScalarProperty Name="KS" ColumnName="KS" />
+          <ScalarProperty Name="BIK" ColumnName="BIK" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Brand">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_Brand">
+        <MappingFragment StoreEntitySet="tbl_Brand">
+          <ScalarProperty Name="IsDefault" ColumnName="IsDefault" />
+          <ScalarProperty Name="Order" ColumnName="Order" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Browsers">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_Browsers">
+        <MappingFragment StoreEntitySet="tbl_Browsers">
+          <ScalarProperty Name="Version" ColumnName="Version" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_City">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_City">
+        <MappingFragment StoreEntitySet="tbl_City">
+          <ScalarProperty Name="DistrictID" ColumnName="DistrictID" />
+          <ScalarProperty Name="RegionID" ColumnName="RegionID" />
+          <ScalarProperty Name="CountryID" ColumnName="CountryID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ImportDistrictID" ColumnName="ImportDistrictID" />
+          <ScalarProperty Name="ImportRegionID" ColumnName="ImportRegionID" />
+          <ScalarProperty Name="Longitude" ColumnName="Longitude" />
+          <ScalarProperty Name="Latitude" ColumnName="Latitude" />
+          <ScalarProperty Name="ImportCountryID" ColumnName="ImportCountryID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ImportID" ColumnName="ImportID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_CityIP">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_CityIP">
+        <MappingFragment StoreEntitySet="tbl_CityIP">
+          <ScalarProperty Name="CityID" ColumnName="CityID" />
+          <ScalarProperty Name="EndIP" ColumnName="EndIP" />
+          <ScalarProperty Name="BeginIP" ColumnName="BeginIP" />
+          <ScalarProperty Name="ImportCityID" ColumnName="ImportCityID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_ColumnCategories">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_ColumnCategories">
+        <MappingFragment StoreEntitySet="tbl_ColumnCategories">
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_ColumnTypes">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_ColumnTypes">
+        <MappingFragment StoreEntitySet="tbl_ColumnTypes">
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_ColumnTypesExpression">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_ColumnTypesExpression">
+        <MappingFragment StoreEntitySet="tbl_ColumnTypesExpression">
+          <ScalarProperty Name="Expression" ColumnName="Expression" />
+          <ScalarProperty Name="ColumnTypesID" ColumnName="ColumnTypesID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Company">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_Company">
+        <MappingFragment StoreEntitySet="tbl_Company">
+          <ScalarProperty Name="CharacteristicsScore" ColumnName="CharacteristicsScore" />
+          <ScalarProperty Name="BehaviorScore" ColumnName="BehaviorScore" />
+          <ScalarProperty Name="Score" ColumnName="Score" />
+          <ScalarProperty Name="StatusID" ColumnName="StatusID" />
+          <ScalarProperty Name="PriorityID" ColumnName="PriorityID" />
+          <ScalarProperty Name="ReadyToSellID" ColumnName="ReadyToSellID" />
+          <ScalarProperty Name="PostalAddressID" ColumnName="PostalAddressID" />
+          <ScalarProperty Name="LocationAddressID" ColumnName="LocationAddressID" />
+          <ScalarProperty Name="EmailStatusID" ColumnName="EmailStatusID" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Web" ColumnName="Web" />
+          <ScalarProperty Name="Fax" ColumnName="Fax" />
+          <ScalarProperty Name="Phone2" ColumnName="Phone2" />
+          <ScalarProperty Name="Phone1" ColumnName="Phone1" />
+          <ScalarProperty Name="CompanySectorID" ColumnName="CompanySectorID" />
+          <ScalarProperty Name="CompanySizeID" ColumnName="CompanySizeID" />
+          <ScalarProperty Name="ParentID" ColumnName="ParentID" />
+          <ScalarProperty Name="CompanyTypeID" ColumnName="CompanyTypeID" />
+          <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="CreatedAt" ColumnName="CreatedAt" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_CompanyLegalAccount">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_CompanyLegalAccount">
+        <MappingFragment StoreEntitySet="tbl_CompanyLegalAccount">
+          <ScalarProperty Name="StampFileName" ColumnName="StampFileName" />
+          <ScalarProperty Name="HeadID" ColumnName="HeadID" />
+          <ScalarProperty Name="AccountantSignatureFileName" ColumnName="AccountantSignatureFileName" />
+          <ScalarProperty Name="AccountantID" ColumnName="AccountantID" />
+          <ScalarProperty Name="HeadSignatureFileName" ColumnName="HeadSignatureFileName" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsPrimary" ColumnName="IsPrimary" />
+          <ScalarProperty Name="BankID" ColumnName="BankID" />
+          <ScalarProperty Name="RS" ColumnName="RS" />
+          <ScalarProperty Name="KPP" ColumnName="KPP" />
+          <ScalarProperty Name="INN" ColumnName="INN" />
+          <ScalarProperty Name="RegistrationDate" ColumnName="RegistrationDate" />
+          <ScalarProperty Name="OGRN" ColumnName="OGRN" />
+          <ScalarProperty Name="LegalAddress" ColumnName="LegalAddress" />
+          <ScalarProperty Name="OfficialTitle" ColumnName="OfficialTitle" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_CompanySector">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_CompanySector">
+        <MappingFragment StoreEntitySet="tbl_CompanySector">
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_CompanySize">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_CompanySize">
+        <MappingFragment StoreEntitySet="tbl_CompanySize">
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_CompanyType">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_CompanyType">
+        <MappingFragment StoreEntitySet="tbl_CompanyType">
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Contact">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_Contact">
+        <MappingFragment StoreEntitySet="tbl_Contact">
+          <ScalarProperty Name="CameFromURL" ColumnName="CameFromURL" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="RegistrationSourceID" ColumnName="RegistrationSourceID" />
+          <ScalarProperty Name="Category" ColumnName="Category" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="AdvertisingCampaignID" ColumnName="AdvertisingCampaignID" />
+          <ScalarProperty Name="AdvertisingPlatformID" ColumnName="AdvertisingPlatformID" />
+          <ScalarProperty Name="AdvertisingTypeID" ColumnName="AdvertisingTypeID" />
+          <ScalarProperty Name="RefferID" ColumnName="RefferID" />
+          <ScalarProperty Name="AddressID" ColumnName="AddressID" />
+          <ScalarProperty Name="ContactJobLevelID" ColumnName="ContactJobLevelID" />
+          <ScalarProperty Name="ContactFunctionInCompanyID" ColumnName="ContactFunctionInCompanyID" />
+          <ScalarProperty Name="BirthDate" ColumnName="BirthDate" />
+          <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="JobTitle" ColumnName="JobTitle" />
+          <ScalarProperty Name="ContactTypeID" ColumnName="ContactTypeID" />
+          <ScalarProperty Name="EmailStatusID" ColumnName="EmailStatusID" />
+          <ScalarProperty Name="CellularPhoneStatusID" ColumnName="CellularPhoneStatusID" />
+          <ScalarProperty Name="CellularPhone" ColumnName="CellularPhone" />
+          <ScalarProperty Name="Patronymic" ColumnName="Patronymic" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Surname" ColumnName="Surname" />
+          <ScalarProperty Name="IsNameChecked" ColumnName="IsNameChecked" />
+          <ScalarProperty Name="CharacteristicsScore" ColumnName="CharacteristicsScore" />
+          <ScalarProperty Name="BehaviorScore" ColumnName="BehaviorScore" />
+          <ScalarProperty Name="Score" ColumnName="Score" />
+          <ScalarProperty Name="StatusID" ColumnName="StatusID" />
+          <ScalarProperty Name="PriorityID" ColumnName="PriorityID" />
+          <ScalarProperty Name="ReadyToSellID" ColumnName="ReadyToSellID" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="UserFullName" ColumnName="UserFullName" />
+          <ScalarProperty Name="UserIP" ColumnName="UserIP" />
+          <ScalarProperty Name="RefferURL" ColumnName="RefferURL" />
+          <ScalarProperty Name="LastActivityAt" ColumnName="LastActivityAt" />
+          <ScalarProperty Name="CreatedAt" ColumnName="CreatedAt" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_ContactActivity">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_ContactActivity">
+        <MappingFragment StoreEntitySet="tbl_ContactActivity">
+          <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
+          <ScalarProperty Name="SourceMonitoringID" ColumnName="SourceMonitoringID" />
+          <ScalarProperty Name="ContactSessionID" ColumnName="ContactSessionID" />
+          <ScalarProperty Name="ActivityCode" ColumnName="ActivityCode" />
+          <ScalarProperty Name="ActivityTypeID" ColumnName="ActivityTypeID" />
+          <ScalarProperty Name="CreatedAt" ColumnName="CreatedAt" />
+          <ScalarProperty Name="ContactID" ColumnName="ContactID" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_ContactActivityScore">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_ContactActivityScore">
+        <MappingFragment StoreEntitySet="tbl_ContactActivityScore">
+          <ScalarProperty Name="ScoreCategory" ColumnName="ScoreCategory" />
+          <ScalarProperty Name="Score" ColumnName="Score" />
+          <ScalarProperty Name="ContactID" ColumnName="ContactID" />
+          <ScalarProperty Name="SiteActivityScoreTypeID" ColumnName="SiteActivityScoreTypeID" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_ContactActivityScoreHistory">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_ContactActivityScoreHistory">
+        <MappingFragment StoreEntitySet="tbl_ContactActivityScoreHistory">
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="ActivityDate" ColumnName="ActivityDate" />
+          <ScalarProperty Name="Score" ColumnName="Score" />
+          <ScalarProperty Name="Operation" ColumnName="Operation" />
+          <ScalarProperty Name="ContactActivityScoreID" ColumnName="ContactActivityScoreID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_ContactColumnValues">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_ContactColumnValues">
+        <MappingFragment StoreEntitySet="tbl_ContactColumnValues">
+          <ScalarProperty Name="LogicalValue" ColumnName="LogicalValue" />
+          <ScalarProperty Name="SiteColumnValueID" ColumnName="SiteColumnValueID" />
+          <ScalarProperty Name="DateValue" ColumnName="DateValue" />
+          <ScalarProperty Name="StringValue" ColumnName="StringValue" />
+          <ScalarProperty Name="SiteColumnID" ColumnName="SiteColumnID" />
+          <ScalarProperty Name="ContactID" ColumnName="ContactID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_ContactCommunication">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_ContactCommunication">
+        <MappingFragment StoreEntitySet="tbl_ContactCommunication">
+          <ScalarProperty Name="CommunicationNumber" ColumnName="CommunicationNumber" />
+          <ScalarProperty Name="CommunicationType" ColumnName="CommunicationType" />
+          <ScalarProperty Name="ContactID" ColumnName="ContactID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_ContactFunctionInCompany">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_ContactFunctionInCompany">
+        <MappingFragment StoreEntitySet="tbl_ContactFunctionInCompany">
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_ContactJobLevel">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_ContactJobLevel">
+        <MappingFragment StoreEntitySet="tbl_ContactJobLevel">
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_ContactRole">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_ContactRole">
+        <MappingFragment StoreEntitySet="tbl_ContactRole">
+          <ScalarProperty Name="LastAssignmentResponsible" ColumnName="LastAssignmentResponsible" />
+          <ScalarProperty Name="MethodAssigningResponsible" ColumnName="MethodAssigningResponsible" />
+          <ScalarProperty Name="SiteTagID" ColumnName="SiteTagID" />
+          <ScalarProperty Name="DisplayName" ColumnName="DisplayName" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="RoleTypeID" ColumnName="RoleTypeID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_ContactRoleType">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_ContactRoleType">
+        <MappingFragment StoreEntitySet="tbl_ContactRoleType">
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_ContactSessions">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_ContactSessions">
+        <MappingFragment StoreEntitySet="tbl_ContactSessions">
+          <ScalarProperty Name="CameFromURL" ColumnName="CameFromURL" />
+          <ScalarProperty Name="AdvertisingCampaignID" ColumnName="AdvertisingCampaignID" />
+          <ScalarProperty Name="AdvertisingPlatformID" ColumnName="AdvertisingPlatformID" />
+          <ScalarProperty Name="AdvertisingTypeID" ColumnName="AdvertisingTypeID" />
+          <ScalarProperty Name="RefferID" ColumnName="RefferID" />
+          <ScalarProperty Name="CountryID" ColumnName="CountryID" />
+          <ScalarProperty Name="CityID" ColumnName="CityID" />
+          <ScalarProperty Name="ImportCountryID" ColumnName="ImportCountryID" />
+          <ScalarProperty Name="ImportCityID" ColumnName="ImportCityID" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="Keywords" ColumnName="Keywords" />
+          <ScalarProperty Name="EnterPointUrl" ColumnName="EnterPointUrl" />
+          <ScalarProperty Name="UserSessionNumber" ColumnName="UserSessionNumber" />
+          <ScalarProperty Name="UserAgent" ColumnName="UserAgent" />
+          <ScalarProperty Name="MobileDeviceID" ColumnName="MobileDeviceID" />
+          <ScalarProperty Name="ResolutionID" ColumnName="ResolutionID" />
+          <ScalarProperty Name="OperatingSystemID" ColumnName="OperatingSystemID" />
+          <ScalarProperty Name="BrowserID" ColumnName="BrowserID" />
+          <ScalarProperty Name="UserIP" ColumnName="UserIP" />
+          <ScalarProperty Name="RefferURL" ColumnName="RefferURL" />
+          <ScalarProperty Name="SessionDate" ColumnName="SessionDate" />
+          <ScalarProperty Name="ContactID" ColumnName="ContactID" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_ContactToContactRole">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_ContactToContactRole">
+        <MappingFragment StoreEntitySet="tbl_ContactToContactRole">
+          <ScalarProperty Name="ContactID" ColumnName="ContactID" />
+          <ScalarProperty Name="ContactRoleID" ColumnName="ContactRoleID" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_ContactType">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_ContactType">
+        <MappingFragment StoreEntitySet="tbl_ContactType">
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Contract">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_Contract">
+        <MappingFragment StoreEntitySet="tbl_Contract">
+          <ScalarProperty Name="ClientID" ColumnName="ClientID" />
+          <ScalarProperty Name="SerialNumber" ColumnName="SerialNumber" />
+          <ScalarProperty Name="Number" ColumnName="Number" />
+          <ScalarProperty Name="CreatedAt" ColumnName="CreatedAt" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Country">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_Country">
+        <MappingFragment StoreEntitySet="tbl_Country">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ImportID" ColumnName="ImportID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_CountryIP">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_CountryIP">
+        <MappingFragment StoreEntitySet="tbl_CountryIP">
+          <ScalarProperty Name="CountryID" ColumnName="CountryID" />
+          <ScalarProperty Name="EndIP" ColumnName="EndIP" />
+          <ScalarProperty Name="BeginIP" ColumnName="BeginIP" />
+          <ScalarProperty Name="ImportCountryID" ColumnName="ImportCountryID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_CronJob">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_CronJob">
+        <MappingFragment StoreEntitySet="tbl_CronJob">
+          <ScalarProperty Name="ExecutionTime" ColumnName="ExecutionTime" />
+          <ScalarProperty Name="NextRunPlannedAt" ColumnName="NextRunPlannedAt" />
+          <ScalarProperty Name="LastRunStatusID" ColumnName="LastRunStatusID" />
+          <ScalarProperty Name="LastRunAt" ColumnName="LastRunAt" />
+          <ScalarProperty Name="Period" ColumnName="Period" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Assembly" ColumnName="Assembly" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Currency">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_Currency">
+        <MappingFragment StoreEntitySet="tbl_Currency">
+          <ScalarProperty Name="InternalCoursePercent" ColumnName="InternalCoursePercent" />
+          <ScalarProperty Name="IsUpdateInternalCourse" ColumnName="IsUpdateInternalCourse" />
+          <ScalarProperty Name="IsBaseCurrency" ColumnName="IsBaseCurrency" />
+          <ScalarProperty Name="Symbol" ColumnName="Symbol" />
+          <ScalarProperty Name="CharCode" ColumnName="CharCode" />
+          <ScalarProperty Name="NumCode" ColumnName="NumCode" />
+          <ScalarProperty Name="IsDefault" ColumnName="IsDefault" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_CurrencyCourse">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_CurrencyCourse">
+        <MappingFragment StoreEntitySet="tbl_CurrencyCourse">
+          <ScalarProperty Name="InternalCourse" ColumnName="InternalCourse" />
+          <ScalarProperty Name="Course" ColumnName="Course" />
+          <ScalarProperty Name="Nominal" ColumnName="Nominal" />
+          <ScalarProperty Name="CreatedAt" ColumnName="CreatedAt" />
+          <ScalarProperty Name="CurrencyID" ColumnName="CurrencyID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Dictionary">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_Dictionary">
+        <MappingFragment StoreEntitySet="tbl_Dictionary">
+          <ScalarProperty Name="EditFormUserControl" ColumnName="EditFormUserControl" />
+          <ScalarProperty Name="DictionaryGroupID" ColumnName="DictionaryGroupID" />
+          <ScalarProperty Name="AccessLevelID" ColumnName="AccessLevelID" />
+          <ScalarProperty Name="DataSet" ColumnName="DataSet" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_DictionaryGroup">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_DictionaryGroup">
+        <MappingFragment StoreEntitySet="tbl_DictionaryGroup">
+          <ScalarProperty Name="ModuleID" ColumnName="ModuleID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Direction">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_Direction">
+        <MappingFragment StoreEntitySet="tbl_Direction">
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_District">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_District">
+        <MappingFragment StoreEntitySet="tbl_District">
+          <ScalarProperty Name="RegionID" ColumnName="RegionID" />
+          <ScalarProperty Name="CountryID" ColumnName="CountryID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ImportCountryID" ColumnName="ImportCountryID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ImportID" ColumnName="ImportID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_EmailActions">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_EmailActions">
+        <MappingFragment StoreEntitySet="tbl_EmailActions">
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_EmailStats">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_EmailStats">
+        <MappingFragment StoreEntitySet="tbl_EmailStats">
+          <ScalarProperty Name="ReturnCount" ColumnName="ReturnCount" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_EmailStatsUnsubscribe">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_EmailStatsUnsubscribe">
+        <MappingFragment StoreEntitySet="tbl_EmailStatsUnsubscribe">
+          <ScalarProperty Name="CreatedAt" ColumnName="CreatedAt" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="EmailStatsID" ColumnName="EmailStatsID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_EmailToAnalysis">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_EmailToAnalysis">
+        <MappingFragment StoreEntitySet="tbl_EmailToAnalysis">
+          <ScalarProperty Name="POPMessageID" ColumnName="POPMessageID" />
+          <ScalarProperty Name="MessageText" ColumnName="MessageText" />
+          <ScalarProperty Name="Subject" ColumnName="Subject" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="From" ColumnName="From" />
+          <ScalarProperty Name="CreatedAt" ColumnName="CreatedAt" />
+          <ScalarProperty Name="SourceMonitoringID" ColumnName="SourceMonitoringID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_EventCategories">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_EventCategories">
+        <MappingFragment StoreEntitySet="tbl_EventCategories">
+          <ScalarProperty Name="Order" ColumnName="Order" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_ExpirationAction">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_ExpirationAction">
+        <MappingFragment StoreEntitySet="tbl_ExpirationAction">
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_ExternalResource">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_ExternalResource">
+        <MappingFragment StoreEntitySet="tbl_ExternalResource">
+          <ScalarProperty Name="Url" ColumnName="Url" />
+          <ScalarProperty Name="Text" ColumnName="Text" />
+          <ScalarProperty Name="File" ColumnName="File" />
+          <ScalarProperty Name="ExternalResourceTypeID" ColumnName="ExternalResourceTypeID" />
+          <ScalarProperty Name="ResourcePlaceID" ColumnName="ResourcePlaceID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="DestinationID" ColumnName="DestinationID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Filters">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_Filters">
+        <MappingFragment StoreEntitySet="tbl_Filters">
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="Expressions" ColumnName="Expressions" />
+          <ScalarProperty Name="ClassName" ColumnName="ClassName" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Formula">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_Formula">
+        <MappingFragment StoreEntitySet="tbl_Formula">
+          <ScalarProperty Name="Order" ColumnName="Order" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Import">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_Import">
+        <MappingFragment StoreEntitySet="tbl_Import">
+          <ScalarProperty Name="CsvSeparator" ColumnName="CsvSeparator" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
+          <ScalarProperty Name="IsFirstRowAsColumnNames" ColumnName="IsFirstRowAsColumnNames" />
+          <ScalarProperty Name="FirstColumn" ColumnName="FirstColumn" />
+          <ScalarProperty Name="FirstRow" ColumnName="FirstRow" />
+          <ScalarProperty Name="SheetName" ColumnName="SheetName" />
+          <ScalarProperty Name="ImportTable" ColumnName="ImportTable" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_ImportColumn">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_ImportColumn">
+        <MappingFragment StoreEntitySet="tbl_ImportColumn">
+          <ScalarProperty Name="Order" ColumnName="Order" />
+          <ScalarProperty Name="SecondaryKey" ColumnName="SecondaryKey" />
+          <ScalarProperty Name="PrimaryKey" ColumnName="PrimaryKey" />
+          <ScalarProperty Name="SystemName" ColumnName="SystemName" />
+          <ScalarProperty Name="Source" ColumnName="Source" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ImportID" ColumnName="ImportID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_ImportColumnRule">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_ImportColumnRule">
+        <MappingFragment StoreEntitySet="tbl_ImportColumnRule">
+          <ScalarProperty Name="ImportFieldDictionaryID" ColumnName="ImportFieldDictionaryID" />
+          <ScalarProperty Name="SQLCode" ColumnName="SQLCode" />
+          <ScalarProperty Name="IsRequired" ColumnName="IsRequired" />
+          <ScalarProperty Name="ImportColumnID" ColumnName="ImportColumnID" />
+          <ScalarProperty Name="ImportFieldID" ColumnName="ImportFieldID" />
+          <ScalarProperty Name="ImportID" ColumnName="ImportID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_ImportField">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_ImportField">
+        <MappingFragment StoreEntitySet="tbl_ImportField">
+          <ScalarProperty Name="ParentTableName" ColumnName="ParentTableName" />
+          <ScalarProperty Name="Order" ColumnName="Order" />
+          <ScalarProperty Name="IsAddress" ColumnName="IsAddress" />
+          <ScalarProperty Name="IsDictionary" ColumnName="IsDictionary" />
+          <ScalarProperty Name="FieldName" ColumnName="FieldName" />
+          <ScalarProperty Name="TableName" ColumnName="TableName" />
+          <ScalarProperty Name="FieldTitle" ColumnName="FieldTitle" />
+          <ScalarProperty Name="ImportTable" ColumnName="ImportTable" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_ImportFieldDictionary">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_ImportFieldDictionary">
+        <MappingFragment StoreEntitySet="tbl_ImportFieldDictionary">
+          <ScalarProperty Name="Order" ColumnName="Order" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="TableName" ColumnName="TableName" />
+          <ScalarProperty Name="ImportFieldID" ColumnName="ImportFieldID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_ImportKey">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_ImportKey">
+        <MappingFragment StoreEntitySet="tbl_ImportKey">
+          <ScalarProperty Name="LeadForceID" ColumnName="LeadForceID" />
+          <ScalarProperty Name="Key" ColumnName="Key" />
+          <ScalarProperty Name="TableName" ColumnName="TableName" />
+          <ScalarProperty Name="ImportID" ColumnName="ImportID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_ImportTag">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_ImportTag">
+        <MappingFragment StoreEntitySet="tbl_ImportTag">
+          <ScalarProperty Name="Operation" ColumnName="Operation" />
+          <ScalarProperty Name="SiteTagID" ColumnName="SiteTagID" />
+          <ScalarProperty Name="ImportID" ColumnName="ImportID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Invoice">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_Invoice">
+        <MappingFragment StoreEntitySet="tbl_Invoice">
+          <ScalarProperty Name="ModifiedAt" ColumnName="ModifiedAt" />
+          <ScalarProperty Name="IsPaymentDateFixedByContract" ColumnName="IsPaymentDateFixedByContract" />
+          <ScalarProperty Name="IsExistBuyerComplaint" ColumnName="IsExistBuyerComplaint" />
+          <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
+          <ScalarProperty Name="PriceListID" ColumnName="PriceListID" />
+          <ScalarProperty Name="OrderID" ColumnName="OrderID" />
+          <ScalarProperty Name="PaymentDateActual" ColumnName="PaymentDateActual" />
+          <ScalarProperty Name="PaymentDatePlanned" ColumnName="PaymentDatePlanned" />
+          <ScalarProperty Name="Paid" ColumnName="Paid" />
+          <ScalarProperty Name="InvoiceAmount" ColumnName="InvoiceAmount" />
+          <ScalarProperty Name="ExecutorContactID" ColumnName="ExecutorContactID" />
+          <ScalarProperty Name="ExecutorCompanyLegalAccountID" ColumnName="ExecutorCompanyLegalAccountID" />
+          <ScalarProperty Name="ExecutorCompanyID" ColumnName="ExecutorCompanyID" />
+          <ScalarProperty Name="BuyerContactID" ColumnName="BuyerContactID" />
+          <ScalarProperty Name="BuyerCompanyLegalAccountID" ColumnName="BuyerCompanyLegalAccountID" />
+          <ScalarProperty Name="BuyerCompanyID" ColumnName="BuyerCompanyID" />
+          <ScalarProperty Name="Note" ColumnName="Note" />
+          <ScalarProperty Name="InvoiceStatusID" ColumnName="InvoiceStatusID" />
+          <ScalarProperty Name="InvoiceTypeID" ColumnName="InvoiceTypeID" />
+          <ScalarProperty Name="CreatedAt" ColumnName="CreatedAt" />
+          <ScalarProperty Name="SerialNumber" ColumnName="SerialNumber" />
+          <ScalarProperty Name="Number" ColumnName="Number" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_InvoiceComment">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_InvoiceComment">
+        <MappingFragment StoreEntitySet="tbl_InvoiceComment">
+          <ScalarProperty Name="IsInternal" ColumnName="IsInternal" />
+          <ScalarProperty Name="ReplyToID" ColumnName="ReplyToID" />
+          <ScalarProperty Name="DestinationUserID" ColumnName="DestinationUserID" />
+          <ScalarProperty Name="IsOfficialAnswer" ColumnName="IsOfficialAnswer" />
+          <ScalarProperty Name="FileName" ColumnName="FileName" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="ContentID" ColumnName="ContentID" />
+          <ScalarProperty Name="CreatedAt" ColumnName="CreatedAt" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_InvoiceCommentMark">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_InvoiceCommentMark">
+        <MappingFragment StoreEntitySet="tbl_InvoiceCommentMark">
+          <ScalarProperty Name="Rank" ColumnName="Rank" />
+          <ScalarProperty Name="TypeID" ColumnName="TypeID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="ContentCommentID" ColumnName="ContentCommentID" />
+          <ScalarProperty Name="CreatedAt" ColumnName="CreatedAt" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_InvoiceHistory">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_InvoiceHistory">
+        <MappingFragment StoreEntitySet="tbl_InvoiceHistory">
+          <ScalarProperty Name="Note" ColumnName="Note" />
+          <ScalarProperty Name="IsExistBuyerComplaint" ColumnName="IsExistBuyerComplaint" />
+          <ScalarProperty Name="InvoiceStatusID" ColumnName="InvoiceStatusID" />
+          <ScalarProperty Name="InvoiceAmount" ColumnName="InvoiceAmount" />
+          <ScalarProperty Name="PaymentDateActual" ColumnName="PaymentDateActual" />
+          <ScalarProperty Name="PaymentDatePlanned" ColumnName="PaymentDatePlanned" />
+          <ScalarProperty Name="AuthorID" ColumnName="AuthorID" />
+          <ScalarProperty Name="InvoiceID" ColumnName="InvoiceID" />
+          <ScalarProperty Name="CreatedAt" ColumnName="CreatedAt" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_InvoiceInformCatalog">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_InvoiceInformCatalog">
+        <MappingFragment StoreEntitySet="tbl_InvoiceInformCatalog">
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_InvoiceInformForm">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_InvoiceInformForm">
+        <MappingFragment StoreEntitySet="tbl_InvoiceInformForm">
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_InvoiceProducts">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_InvoiceProducts">
+        <MappingFragment StoreEntitySet="tbl_InvoiceProducts">
+          <ScalarProperty Name="TaskID" ColumnName="TaskID" />
+          <ScalarProperty Name="TotalAmount" ColumnName="TotalAmount" />
+          <ScalarProperty Name="CurrencyTotalAmount" ColumnName="CurrencyTotalAmount" />
+          <ScalarProperty Name="DiscountAmount" ColumnName="DiscountAmount" />
+          <ScalarProperty Name="CurrencyDiscountAmount" ColumnName="CurrencyDiscountAmount" />
+          <ScalarProperty Name="Discount" ColumnName="Discount" />
+          <ScalarProperty Name="SpecialOfferPriceListID" ColumnName="SpecialOfferPriceListID" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="CurrencyAmount" ColumnName="CurrencyAmount" />
+          <ScalarProperty Name="CurrencyPrice" ColumnName="CurrencyPrice" />
+          <ScalarProperty Name="Rate" ColumnName="Rate" />
+          <ScalarProperty Name="CurrencyID" ColumnName="CurrencyID" />
+          <ScalarProperty Name="UnitID" ColumnName="UnitID" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="PriceListID" ColumnName="PriceListID" />
+          <ScalarProperty Name="SerialNumber" ColumnName="SerialNumber" />
+          <ScalarProperty Name="AnyProductName" ColumnName="AnyProductName" />
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="InvoiceID" ColumnName="InvoiceID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_InvoiceStatus">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_InvoiceStatus">
+        <MappingFragment StoreEntitySet="tbl_InvoiceStatus">
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_InvoiceType">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_InvoiceType">
+        <MappingFragment StoreEntitySet="tbl_InvoiceType">
+          <ScalarProperty Name="IsDefault" ColumnName="IsDefault" />
+          <ScalarProperty Name="DirectionID" ColumnName="DirectionID" />
+          <ScalarProperty Name="NumeratorID" ColumnName="NumeratorID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Links">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_Links">
+        <MappingFragment StoreEntitySet="tbl_Links">
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="FileSize" ColumnName="FileSize" />
+          <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
+          <ScalarProperty Name="URL" ColumnName="URL" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="RuleTypeID" ColumnName="RuleTypeID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_LogicConditions">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_LogicConditions">
+        <MappingFragment StoreEntitySet="tbl_LogicConditions">
+          <ScalarProperty Name="Order" ColumnName="Order" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_MassMail">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_MassMail">
+        <MappingFragment StoreEntitySet="tbl_MassMail">
+          <ScalarProperty Name="SiteTagID" ColumnName="SiteTagID" />
+          <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
+          <ScalarProperty Name="MessageText" ColumnName="MessageText" />
+          <ScalarProperty Name="FocusGroup" ColumnName="FocusGroup" />
+          <ScalarProperty Name="MassMailStatusID" ColumnName="MassMailStatusID" />
+          <ScalarProperty Name="SiteActionTemplateID" ColumnName="SiteActionTemplateID" />
+          <ScalarProperty Name="MailDate" ColumnName="MailDate" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_MassMailContact">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_MassMailContact">
+        <MappingFragment StoreEntitySet="tbl_MassMailContact">
+          <ScalarProperty Name="SiteActionID" ColumnName="SiteActionID" />
+          <ScalarProperty Name="ContactID" ColumnName="ContactID" />
+          <ScalarProperty Name="MassMailID" ColumnName="MassMailID" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_MassMailStatus">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_MassMailStatus">
+        <MappingFragment StoreEntitySet="tbl_MassMailStatus">
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_MassWorkflow">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_MassWorkflow">
+        <MappingFragment StoreEntitySet="tbl_MassWorkflow">
+          <ScalarProperty Name="MassWorkflowTypeID" ColumnName="MassWorkflowTypeID" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="WorkflowTemplateID" ColumnName="WorkflowTemplateID" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_MassWorkflowContact">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_MassWorkflowContact">
+        <MappingFragment StoreEntitySet="tbl_MassWorkflowContact">
+          <ScalarProperty Name="ContactID" ColumnName="ContactID" />
+          <ScalarProperty Name="MassWorkflowID" ColumnName="MassWorkflowID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_MassWorkflowType">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_MassWorkflowType">
+        <MappingFragment StoreEntitySet="tbl_MassWorkflowType">
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Material">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_Material">
+        <MappingFragment StoreEntitySet="tbl_Material">
+          <ScalarProperty Name="WorkflowTemplateID" ColumnName="WorkflowTemplateID" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Menu">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_Menu">
+        <MappingFragment StoreEntitySet="tbl_Menu">
+          <ScalarProperty Name="ModuleEditionActionID" ColumnName="ModuleEditionActionID" />
+          <ScalarProperty Name="Order" ColumnName="Order" />
+          <ScalarProperty Name="ModuleID" ColumnName="ModuleID" />
+          <ScalarProperty Name="TabName" ColumnName="TabName" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="AccessProfileID" ColumnName="AccessProfileID" />
+          <ScalarProperty Name="ParentID" ColumnName="ParentID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_MobileDevices">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_MobileDevices">
+        <MappingFragment StoreEntitySet="tbl_MobileDevices">
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Module">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_Module">
+        <MappingFragment StoreEntitySet="tbl_Module">
+          <ScalarProperty Name="TableName" ColumnName="TableName" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_ModuleEdition">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_ModuleEdition">
+        <MappingFragment StoreEntitySet="tbl_ModuleEdition">
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="ModuleID" ColumnName="ModuleID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_ModuleEditionAction">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_ModuleEditionAction">
+        <MappingFragment StoreEntitySet="tbl_ModuleEditionAction">
+          <ScalarProperty Name="UserControl" ColumnName="UserControl" />
+          <ScalarProperty Name="IconPath" ColumnName="IconPath" />
+          <ScalarProperty Name="SystemName" ColumnName="SystemName" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="ModuleEditionID" ColumnName="ModuleEditionID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_ModuleEditionOption">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_ModuleEditionOption">
+        <MappingFragment StoreEntitySet="tbl_ModuleEditionOption">
+          <ScalarProperty Name="ModuleEditionOptionType" ColumnName="ModuleEditionOptionType" />
+          <ScalarProperty Name="SystemName" ColumnName="SystemName" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="ModuleEditionID" ColumnName="ModuleEditionID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_NamesList">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_NamesList">
+        <MappingFragment StoreEntitySet="tbl_NamesList">
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="PatronymicMask" ColumnName="PatronymicMask" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Numerator">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_Numerator">
+        <MappingFragment StoreEntitySet="tbl_Numerator">
+          <ScalarProperty Name="NumeratorPeriodID" ColumnName="NumeratorPeriodID" />
+          <ScalarProperty Name="Mask" ColumnName="Mask" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_NumeratorPeriod">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_NumeratorPeriod">
+        <MappingFragment StoreEntitySet="tbl_NumeratorPeriod">
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_NumeratorUsage">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_NumeratorUsage">
+        <MappingFragment StoreEntitySet="tbl_NumeratorUsage">
+          <ScalarProperty Name="DataSet" ColumnName="DataSet" />
+          <ScalarProperty Name="NumeratorID" ColumnName="NumeratorID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_ObjectTypes">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_ObjectTypes">
+        <MappingFragment StoreEntitySet="tbl_ObjectTypes">
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_OperatingSystems">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_OperatingSystems">
+        <MappingFragment StoreEntitySet="tbl_OperatingSystems">
+          <ScalarProperty Name="Version" ColumnName="Version" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Operations">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_Operations">
+        <MappingFragment StoreEntitySet="tbl_Operations">
+          <ScalarProperty Name="Order" ColumnName="Order" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Order">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_Order">
+        <MappingFragment StoreEntitySet="tbl_Order">
+          <ScalarProperty Name="PriceListID" ColumnName="PriceListID" />
+          <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
+          <ScalarProperty Name="ActualDeliveryDate" ColumnName="ActualDeliveryDate" />
+          <ScalarProperty Name="PlannedDeliveryDate" ColumnName="PlannedDeliveryDate" />
+          <ScalarProperty Name="ExpirationDateEnd" ColumnName="ExpirationDateEnd" />
+          <ScalarProperty Name="ExpirationDateBegin" ColumnName="ExpirationDateBegin" />
+          <ScalarProperty Name="Shipped" ColumnName="Shipped" />
+          <ScalarProperty Name="Paid" ColumnName="Paid" />
+          <ScalarProperty Name="Ordered" ColumnName="Ordered" />
+          <ScalarProperty Name="ExecutorContactID" ColumnName="ExecutorContactID" />
+          <ScalarProperty Name="ExecutorCompanyID" ColumnName="ExecutorCompanyID" />
+          <ScalarProperty Name="BuyerContactID" ColumnName="BuyerContactID" />
+          <ScalarProperty Name="BuyerCompanyID" ColumnName="BuyerCompanyID" />
+          <ScalarProperty Name="Note" ColumnName="Note" />
+          <ScalarProperty Name="OrderStatusID" ColumnName="OrderStatusID" />
+          <ScalarProperty Name="OrderTypeID" ColumnName="OrderTypeID" />
+          <ScalarProperty Name="CreatedAt" ColumnName="CreatedAt" />
+          <ScalarProperty Name="SerialNumber" ColumnName="SerialNumber" />
+          <ScalarProperty Name="Number" ColumnName="Number" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_OrderProducts">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_OrderProducts">
+        <MappingFragment StoreEntitySet="tbl_OrderProducts">
+          <ScalarProperty Name="ParentOrderProductID" ColumnName="ParentOrderProductID" />
+          <ScalarProperty Name="TotalAmount" ColumnName="TotalAmount" />
+          <ScalarProperty Name="CurrencyTotalAmount" ColumnName="CurrencyTotalAmount" />
+          <ScalarProperty Name="DiscountAmount" ColumnName="DiscountAmount" />
+          <ScalarProperty Name="CurrencyDiscountAmount" ColumnName="CurrencyDiscountAmount" />
+          <ScalarProperty Name="Discount" ColumnName="Discount" />
+          <ScalarProperty Name="SpecialOfferPriceListID" ColumnName="SpecialOfferPriceListID" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="CurrencyAmount" ColumnName="CurrencyAmount" />
+          <ScalarProperty Name="CurrencyPrice" ColumnName="CurrencyPrice" />
+          <ScalarProperty Name="Rate" ColumnName="Rate" />
+          <ScalarProperty Name="CurrencyID" ColumnName="CurrencyID" />
+          <ScalarProperty Name="UnitID" ColumnName="UnitID" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="PriceListID" ColumnName="PriceListID" />
+          <ScalarProperty Name="SerialNumber" ColumnName="SerialNumber" />
+          <ScalarProperty Name="AnyProductName" ColumnName="AnyProductName" />
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="OrderID" ColumnName="OrderID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_OrderStatus">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_OrderStatus">
+        <MappingFragment StoreEntitySet="tbl_OrderStatus">
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_OrderType">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_OrderType">
+        <MappingFragment StoreEntitySet="tbl_OrderType">
+          <ScalarProperty Name="NumeratorID" ColumnName="NumeratorID" />
+          <ScalarProperty Name="IsDefault" ColumnName="IsDefault" />
+          <ScalarProperty Name="ExpirationActionID" ColumnName="ExpirationActionID" />
+          <ScalarProperty Name="IsPhysicalDelivery" ColumnName="IsPhysicalDelivery" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Payment">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_Payment">
+        <MappingFragment StoreEntitySet="tbl_Payment">
+          <ScalarProperty Name="InvoiceID" ColumnName="InvoiceID" />
+          <ScalarProperty Name="OrderID" ColumnName="OrderID" />
+          <ScalarProperty Name="PaymentPassRuleID" ColumnName="PaymentPassRuleID" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="Course" ColumnName="Course" />
+          <ScalarProperty Name="CurrencyID" ColumnName="CurrencyID" />
+          <ScalarProperty Name="RecipientLegalAccountID" ColumnName="RecipientLegalAccountID" />
+          <ScalarProperty Name="RecipientID" ColumnName="RecipientID" />
+          <ScalarProperty Name="PayerLegalAccountID" ColumnName="PayerLegalAccountID" />
+          <ScalarProperty Name="PayerID" ColumnName="PayerID" />
+          <ScalarProperty Name="StatusID" ColumnName="StatusID" />
+          <ScalarProperty Name="PaymentTypeID" ColumnName="PaymentTypeID" />
+          <ScalarProperty Name="DateFact" ColumnName="DateFact" />
+          <ScalarProperty Name="DatePlan" ColumnName="DatePlan" />
+          <ScalarProperty Name="Assignment" ColumnName="Assignment" />
+          <ScalarProperty Name="CreatedAt" ColumnName="CreatedAt" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_PaymentArticle">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_PaymentArticle">
+        <MappingFragment StoreEntitySet="tbl_PaymentArticle">
+          <ScalarProperty Name="Note" ColumnName="Note" />
+          <ScalarProperty Name="PaymentPassCategoryID" ColumnName="PaymentPassCategoryID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_PaymentBalance">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_PaymentBalance">
+        <MappingFragment StoreEntitySet="tbl_PaymentBalance">
+          <ScalarProperty Name="BalanceFact" ColumnName="BalanceFact" />
+          <ScalarProperty Name="BalancePlan" ColumnName="BalancePlan" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="PaymentArticleID" ColumnName="PaymentArticleID" />
+          <ScalarProperty Name="CFOID" ColumnName="CFOID" />
+          <ScalarProperty Name="PaymentPassCategoryID" ColumnName="PaymentPassCategoryID" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_PaymentCFO">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_PaymentCFO">
+        <MappingFragment StoreEntitySet="tbl_PaymentCFO">
+          <ScalarProperty Name="Note" ColumnName="Note" />
+          <ScalarProperty Name="PaymentPassCategoryID" ColumnName="PaymentPassCategoryID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_PaymentPass">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_PaymentPass">
+        <MappingFragment StoreEntitySet="tbl_PaymentPass">
+          <ScalarProperty Name="IsFact" ColumnName="IsFact" />
+          <ScalarProperty Name="OldCreatedAt" ColumnName="OldCreatedAt" />
+          <ScalarProperty Name="OldAmount" ColumnName="OldAmount" />
+          <ScalarProperty Name="OldOutgoPaymentArticleID" ColumnName="OldOutgoPaymentArticleID" />
+          <ScalarProperty Name="OldOutgoCFOID" ColumnName="OldOutgoCFOID" />
+          <ScalarProperty Name="OldOutgoPaymentPassCategoryID" ColumnName="OldOutgoPaymentPassCategoryID" />
+          <ScalarProperty Name="ToDelete" ColumnName="ToDelete" />
+          <ScalarProperty Name="ProcessedByCron" ColumnName="ProcessedByCron" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="FormulaID" ColumnName="FormulaID" />
+          <ScalarProperty Name="IncomePaymentArticleID" ColumnName="IncomePaymentArticleID" />
+          <ScalarProperty Name="IncomeCFOID" ColumnName="IncomeCFOID" />
+          <ScalarProperty Name="IncomePaymentPassCategoryID" ColumnName="IncomePaymentPassCategoryID" />
+          <ScalarProperty Name="OutgoPaymentArticleID" ColumnName="OutgoPaymentArticleID" />
+          <ScalarProperty Name="OutgoCFOID" ColumnName="OutgoCFOID" />
+          <ScalarProperty Name="OutgoPaymentPassCategoryID" ColumnName="OutgoPaymentPassCategoryID" />
+          <ScalarProperty Name="CreatedAt" ColumnName="CreatedAt" />
+          <ScalarProperty Name="PaymentID" ColumnName="PaymentID" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_PaymentPassCategory">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_PaymentPassCategory">
+        <MappingFragment StoreEntitySet="tbl_PaymentPassCategory">
+          <ScalarProperty Name="Note" ColumnName="Note" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_PaymentPassRule">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_PaymentPassRule">
+        <MappingFragment StoreEntitySet="tbl_PaymentPassRule">
+          <ScalarProperty Name="IsAutomatic" ColumnName="IsAutomatic" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="PaymentTypeID" ColumnName="PaymentTypeID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_PaymentPassRuleCompany">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_PaymentPassRuleCompany">
+        <MappingFragment StoreEntitySet="tbl_PaymentPassRuleCompany">
+          <ScalarProperty Name="RecipientLegalAccountID" ColumnName="RecipientLegalAccountID" />
+          <ScalarProperty Name="RecipientID" ColumnName="RecipientID" />
+          <ScalarProperty Name="PayerLegalAccountID" ColumnName="PayerLegalAccountID" />
+          <ScalarProperty Name="PayerID" ColumnName="PayerID" />
+          <ScalarProperty Name="PaymentPassRuleID" ColumnName="PaymentPassRuleID" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_PaymentPassRulePass">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_PaymentPassRulePass">
+        <MappingFragment StoreEntitySet="tbl_PaymentPassRulePass">
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="FormulaID" ColumnName="FormulaID" />
+          <ScalarProperty Name="IncomePaymentArticleID" ColumnName="IncomePaymentArticleID" />
+          <ScalarProperty Name="IncomeCFOID" ColumnName="IncomeCFOID" />
+          <ScalarProperty Name="IncomePaymentPassCategoryID" ColumnName="IncomePaymentPassCategoryID" />
+          <ScalarProperty Name="OutgoPaymentArticleID" ColumnName="OutgoPaymentArticleID" />
+          <ScalarProperty Name="OutgoCFOID" ColumnName="OutgoCFOID" />
+          <ScalarProperty Name="OutgoPaymentPassCategoryID" ColumnName="OutgoPaymentPassCategoryID" />
+          <ScalarProperty Name="PaymentPassRuleID" ColumnName="PaymentPassRuleID" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_PaymentStatus">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_PaymentStatus">
+        <MappingFragment StoreEntitySet="tbl_PaymentStatus">
+          <ScalarProperty Name="IsLast" ColumnName="IsLast" />
+          <ScalarProperty Name="IsDefault" ColumnName="IsDefault" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_PaymentTransition">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_PaymentTransition">
+        <MappingFragment StoreEntitySet="tbl_PaymentTransition">
+          <ScalarProperty Name="FinalPaymentStatusID" ColumnName="FinalPaymentStatusID" />
+          <ScalarProperty Name="InitialPaymentStatusID" ColumnName="InitialPaymentStatusID" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_PaymentType">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_PaymentType">
+        <MappingFragment StoreEntitySet="tbl_PaymentType">
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_PortalSettings">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_PortalSettings">
+        <MappingFragment StoreEntitySet="tbl_PortalSettings">
+          <ScalarProperty Name="TwitterProfile" ColumnName="TwitterProfile" />
+          <ScalarProperty Name="VkontakteProfile" ColumnName="VkontakteProfile" />
+          <ScalarProperty Name="FacebookProfile" ColumnName="FacebookProfile" />
+          <ScalarProperty Name="BlockTitleBackground" ColumnName="BlockTitleBackground" />
+          <ScalarProperty Name="MainMenuBackground" ColumnName="MainMenuBackground" />
+          <ScalarProperty Name="WelcomeMessage" ColumnName="WelcomeMessage" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="HeaderTemplate" ColumnName="HeaderTemplate" />
+          <ScalarProperty Name="CompanyMessage" ColumnName="CompanyMessage" />
+          <ScalarProperty Name="Logo" ColumnName="Logo" />
+          <ScalarProperty Name="Domain" ColumnName="Domain" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_PriceList">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_PriceList">
+        <MappingFragment StoreEntitySet="tbl_PriceList">
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="PriceListStatusID" ColumnName="PriceListStatusID" />
+          <ScalarProperty Name="PriceListTypeID" ColumnName="PriceListTypeID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_PriceListStatus">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_PriceListStatus">
+        <MappingFragment StoreEntitySet="tbl_PriceListStatus">
+          <ScalarProperty Name="IsDefault" ColumnName="IsDefault" />
+          <ScalarProperty Name="Order" ColumnName="Order" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_PriceListType">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_PriceListType">
+        <MappingFragment StoreEntitySet="tbl_PriceListType">
+          <ScalarProperty Name="IsDefault" ColumnName="IsDefault" />
+          <ScalarProperty Name="Order" ColumnName="Order" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Priorities">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_Priorities">
+        <MappingFragment StoreEntitySet="tbl_Priorities">
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="MaxScore" ColumnName="MaxScore" />
+          <ScalarProperty Name="MinScore" ColumnName="MinScore" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Product">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_Product">
+        <MappingFragment StoreEntitySet="tbl_Product">
+          <ScalarProperty Name="CreatedAt" ColumnName="CreatedAt" />
+          <ScalarProperty Name="ModifiedAt" ColumnName="ModifiedAt" />
+          <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="CountryID" ColumnName="CountryID" />
+          <ScalarProperty Name="ManufacturerID" ColumnName="ManufacturerID" />
+          <ScalarProperty Name="SupplierSKU" ColumnName="SupplierSKU" />
+          <ScalarProperty Name="SupplierID" ColumnName="SupplierID" />
+          <ScalarProperty Name="CostPrice" ColumnName="CostPrice" />
+          <ScalarProperty Name="WholesalePrice" ColumnName="WholesalePrice" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="UnitID" ColumnName="UnitID" />
+          <ScalarProperty Name="ProductTypeID" ColumnName="ProductTypeID" />
+          <ScalarProperty Name="BrandID" ColumnName="BrandID" />
+          <ScalarProperty Name="ProductCategoryID" ColumnName="ProductCategoryID" />
+          <ScalarProperty Name="ProductStatusID" ColumnName="ProductStatusID" />
+          <ScalarProperty Name="SKU" ColumnName="SKU" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_ProductCategory">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_ProductCategory">
+        <MappingFragment StoreEntitySet="tbl_ProductCategory">
+          <ScalarProperty Name="IsDefault" ColumnName="IsDefault" />
+          <ScalarProperty Name="Order" ColumnName="Order" />
+          <ScalarProperty Name="ParentID" ColumnName="ParentID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_ProductComplectation">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_ProductComplectation">
+        <MappingFragment StoreEntitySet="tbl_ProductComplectation">
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="BaseProductID" ColumnName="BaseProductID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_ProductPhoto">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_ProductPhoto">
+        <MappingFragment StoreEntitySet="tbl_ProductPhoto">
+          <ScalarProperty Name="IsMain" ColumnName="IsMain" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Preview" ColumnName="Preview" />
+          <ScalarProperty Name="Photo" ColumnName="Photo" />
+          <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_ProductPrice">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_ProductPrice">
+        <MappingFragment StoreEntitySet="tbl_ProductPrice">
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="Discount" ColumnName="Discount" />
+          <ScalarProperty Name="QuantityTo" ColumnName="QuantityTo" />
+          <ScalarProperty Name="QuantityFrom" ColumnName="QuantityFrom" />
+          <ScalarProperty Name="DateTo" ColumnName="DateTo" />
+          <ScalarProperty Name="DateFrom" ColumnName="DateFrom" />
+          <ScalarProperty Name="SupplierID" ColumnName="SupplierID" />
+          <ScalarProperty Name="PriceListID" ColumnName="PriceListID" />
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_ProductStatus">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_ProductStatus">
+        <MappingFragment StoreEntitySet="tbl_ProductStatus">
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_ProductType">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_ProductType">
+        <MappingFragment StoreEntitySet="tbl_ProductType">
+          <ScalarProperty Name="ProductWorkWithComplectationID" ColumnName="ProductWorkWithComplectationID" />
+          <ScalarProperty Name="IsDefault" ColumnName="IsDefault" />
+          <ScalarProperty Name="Order" ColumnName="Order" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_ProductWorkWithComplectation">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_ProductWorkWithComplectation">
+        <MappingFragment StoreEntitySet="tbl_ProductWorkWithComplectation">
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Publication">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_Publication">
+        <MappingFragment StoreEntitySet="tbl_Publication">
+          <ScalarProperty Name="AccessCompanyID" ColumnName="AccessCompanyID" />
+          <ScalarProperty Name="AccessComment" ColumnName="AccessComment" />
+          <ScalarProperty Name="AccessRecord" ColumnName="AccessRecord" />
+          <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
+          <ScalarProperty Name="Text" ColumnName="Text" />
+          <ScalarProperty Name="Noun" ColumnName="Noun" />
+          <ScalarProperty Name="FileName" ColumnName="FileName" />
+          <ScalarProperty Name="Img" ColumnName="Img" />
+          <ScalarProperty Name="PublicationCategoryID" ColumnName="PublicationCategoryID" />
+          <ScalarProperty Name="PublicationTypeID" ColumnName="PublicationTypeID" />
+          <ScalarProperty Name="PublicationStatusID" ColumnName="PublicationStatusID" />
+          <ScalarProperty Name="AuthorID" ColumnName="AuthorID" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_PublicationAccessComment">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_PublicationAccessComment">
+        <MappingFragment StoreEntitySet="tbl_PublicationAccessComment">
+          <ScalarProperty Name="IsDefault" ColumnName="IsDefault" />
+          <ScalarProperty Name="Order" ColumnName="Order" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_PublicationAccessRecord">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_PublicationAccessRecord">
+        <MappingFragment StoreEntitySet="tbl_PublicationAccessRecord">
+          <ScalarProperty Name="IsDefault" ColumnName="IsDefault" />
+          <ScalarProperty Name="Order" ColumnName="Order" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_PublicationCategory">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_PublicationCategory">
+        <MappingFragment StoreEntitySet="tbl_PublicationCategory">
+          <ScalarProperty Name="IsDefault" ColumnName="IsDefault" />
+          <ScalarProperty Name="Order" ColumnName="Order" />
+          <ScalarProperty Name="InHelp" ColumnName="InHelp" />
+          <ScalarProperty Name="ParentID" ColumnName="ParentID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_PublicationComment">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_PublicationComment">
+        <MappingFragment StoreEntitySet="tbl_PublicationComment">
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="isOfficialAnswer" ColumnName="isOfficialAnswer" />
+          <ScalarProperty Name="FileName" ColumnName="FileName" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="PublicationID" ColumnName="PublicationID" />
+          <ScalarProperty Name="CreatedAt" ColumnName="CreatedAt" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_PublicationKind">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_PublicationKind">
+        <MappingFragment StoreEntitySet="tbl_PublicationKind">
+          <ScalarProperty Name="IsDefault" ColumnName="IsDefault" />
+          <ScalarProperty Name="Order" ColumnName="Order" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_PublicationMark">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_PublicationMark">
+        <MappingFragment StoreEntitySet="tbl_PublicationMark">
+          <ScalarProperty Name="Rank" ColumnName="Rank" />
+          <ScalarProperty Name="TypeID" ColumnName="TypeID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="PublicationCommentID" ColumnName="PublicationCommentID" />
+          <ScalarProperty Name="PublicationID" ColumnName="PublicationID" />
+          <ScalarProperty Name="CreatedAt" ColumnName="CreatedAt" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_PublicationStatus">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_PublicationStatus">
+        <MappingFragment StoreEntitySet="tbl_PublicationStatus">
+          <ScalarProperty Name="IsDefault" ColumnName="IsDefault" />
+          <ScalarProperty Name="Order" ColumnName="Order" />
+          <ScalarProperty Name="isLast" ColumnName="isLast" />
+          <ScalarProperty Name="isActive" ColumnName="isActive" />
+          <ScalarProperty Name="isFirst" ColumnName="isFirst" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_PublicationStatusToPublicationType">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_PublicationStatusToPublicationType">
+        <MappingFragment StoreEntitySet="tbl_PublicationStatusToPublicationType">
+          <ScalarProperty Name="PublicationTypeID" ColumnName="PublicationTypeID" />
+          <ScalarProperty Name="PublicationStatusID" ColumnName="PublicationStatusID" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_PublicationTerms">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_PublicationTerms">
+        <MappingFragment StoreEntitySet="tbl_PublicationTerms">
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="ElementCode" ColumnName="ElementCode" />
+          <ScalarProperty Name="PublicationCode" ColumnName="PublicationCode" />
+          <ScalarProperty Name="Term" ColumnName="Term" />
+          <ScalarProperty Name="PublicationID" ColumnName="PublicationID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_PublicationType">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_PublicationType">
+        <MappingFragment StoreEntitySet="tbl_PublicationType">
+          <ScalarProperty Name="RequestSourceTypeID" ColumnName="RequestSourceTypeID" />
+          <ScalarProperty Name="IsSearchable" ColumnName="IsSearchable" />
+          <ScalarProperty Name="IsDefault" ColumnName="IsDefault" />
+          <ScalarProperty Name="Order" ColumnName="Order" />
+          <ScalarProperty Name="PublicationAccessCommentID" ColumnName="PublicationAccessCommentID" />
+          <ScalarProperty Name="PublicationAccessRecordID" ColumnName="PublicationAccessRecordID" />
+          <ScalarProperty Name="PublicationKindID" ColumnName="PublicationKindID" />
+          <ScalarProperty Name="TextLikeComment" ColumnName="TextLikeComment" />
+          <ScalarProperty Name="TextLike" ColumnName="TextLike" />
+          <ScalarProperty Name="TextMarkToAdd" ColumnName="TextMarkToAdd" />
+          <ScalarProperty Name="TextAdd" ColumnName="TextAdd" />
+          <ScalarProperty Name="Logo" ColumnName="Logo" />
+          <ScalarProperty Name="NumeratorID" ColumnName="NumeratorID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_ReadyToSell">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_ReadyToSell">
+        <MappingFragment StoreEntitySet="tbl_ReadyToSell">
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="MaxScore" ColumnName="MaxScore" />
+          <ScalarProperty Name="MinScore" ColumnName="MinScore" />
+          <ScalarProperty Name="IsDefault" ColumnName="IsDefault" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Region">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_Region">
+        <MappingFragment StoreEntitySet="tbl_Region">
+          <ScalarProperty Name="CountryID" ColumnName="CountryID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ImportID" ColumnName="ImportID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_RelatedPublication">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_RelatedPublication">
+        <MappingFragment StoreEntitySet="tbl_RelatedPublication">
+          <ScalarProperty Name="RecordID" ColumnName="RecordID" />
+          <ScalarProperty Name="ModuleID" ColumnName="ModuleID" />
+          <ScalarProperty Name="PublicationID" ColumnName="PublicationID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Reminder">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_Reminder">
+        <MappingFragment StoreEntitySet="tbl_Reminder">
+          <ScalarProperty Name="ObjectID" ColumnName="ObjectID" />
+          <ScalarProperty Name="ModuleID" ColumnName="ModuleID" />
+          <ScalarProperty Name="ContactID" ColumnName="ContactID" />
+          <ScalarProperty Name="ReminderDate" ColumnName="ReminderDate" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Request">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_Request">
+        <MappingFragment StoreEntitySet="tbl_Request">
+          <ScalarProperty Name="ShortDescription" ColumnName="ShortDescription" />
+          <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
+          <ScalarProperty Name="LongDescription" ColumnName="LongDescription" />
+          <ScalarProperty Name="ReactionDateActual" ColumnName="ReactionDateActual" />
+          <ScalarProperty Name="ReactionDatePlanned" ColumnName="ReactionDatePlanned" />
+          <ScalarProperty Name="ServiceLevelID" ColumnName="ServiceLevelID" />
+          <ScalarProperty Name="ResponsibleID" ColumnName="ResponsibleID" />
+          <ScalarProperty Name="RequestStatusID" ColumnName="RequestStatusID" />
+          <ScalarProperty Name="ProductSeriesNumber" ColumnName="ProductSeriesNumber" />
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="ContactID" ColumnName="ContactID" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="RequestSourceID" ColumnName="RequestSourceID" />
+          <ScalarProperty Name="RequestSourceTypeID" ColumnName="RequestSourceTypeID" />
+          <ScalarProperty Name="CreatedAt" ColumnName="CreatedAt" />
+          <ScalarProperty Name="SerialNumber" ColumnName="SerialNumber" />
+          <ScalarProperty Name="Number" ColumnName="Number" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_RequestComment">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_RequestComment">
+        <MappingFragment StoreEntitySet="tbl_RequestComment">
+          <ScalarProperty Name="IsInternal" ColumnName="IsInternal" />
+          <ScalarProperty Name="ReplyToID" ColumnName="ReplyToID" />
+          <ScalarProperty Name="DestinationUserID" ColumnName="DestinationUserID" />
+          <ScalarProperty Name="IsOfficialAnswer" ColumnName="IsOfficialAnswer" />
+          <ScalarProperty Name="FileName" ColumnName="FileName" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="ContentID" ColumnName="ContentID" />
+          <ScalarProperty Name="CreatedAt" ColumnName="CreatedAt" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_RequestCommentMark">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_RequestCommentMark">
+        <MappingFragment StoreEntitySet="tbl_RequestCommentMark">
+          <ScalarProperty Name="Rank" ColumnName="Rank" />
+          <ScalarProperty Name="TypeID" ColumnName="TypeID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="ContentCommentID" ColumnName="ContentCommentID" />
+          <ScalarProperty Name="CreatedAt" ColumnName="CreatedAt" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_RequestFile">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_RequestFile">
+        <MappingFragment StoreEntitySet="tbl_RequestFile">
+          <ScalarProperty Name="FileName" ColumnName="FileName" />
+          <ScalarProperty Name="RequestID" ColumnName="RequestID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_RequestHistory">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_RequestHistory">
+        <MappingFragment StoreEntitySet="tbl_RequestHistory">
+          <ScalarProperty Name="ResponsibleID" ColumnName="ResponsibleID" />
+          <ScalarProperty Name="ContactID" ColumnName="ContactID" />
+          <ScalarProperty Name="RequestStatusID" ColumnName="RequestStatusID" />
+          <ScalarProperty Name="CreatedAt" ColumnName="CreatedAt" />
+          <ScalarProperty Name="RequestID" ColumnName="RequestID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_RequestSourceCategory">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_RequestSourceCategory">
+        <MappingFragment StoreEntitySet="tbl_RequestSourceCategory">
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_RequestSourceType">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_RequestSourceType">
+        <MappingFragment StoreEntitySet="tbl_RequestSourceType">
+          <ScalarProperty Name="NumeratorID" ColumnName="NumeratorID" />
+          <ScalarProperty Name="RequestSourceCategoryID" ColumnName="RequestSourceCategoryID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_RequestStatus">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_RequestStatus">
+        <MappingFragment StoreEntitySet="tbl_RequestStatus">
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Requirement">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_Requirement">
+        <MappingFragment StoreEntitySet="tbl_Requirement">
+          <ScalarProperty Name="EstimateCommentForClient" ColumnName="EstimateCommentForClient" />
+          <ScalarProperty Name="EstimateCommentInternal" ColumnName="EstimateCommentInternal" />
+          <ScalarProperty Name="InternalUnitID" ColumnName="InternalUnitID" />
+          <ScalarProperty Name="InternalQuantity" ColumnName="InternalQuantity" />
+          <ScalarProperty Name="RequestSourceTypeID" ColumnName="RequestSourceTypeID" />
+          <ScalarProperty Name="LongDescription" ColumnName="LongDescription" />
+          <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
+          <ScalarProperty Name="EstimationComment" ColumnName="EstimationComment" />
+          <ScalarProperty Name="RequirementSatisfactionID" ColumnName="RequirementSatisfactionID" />
+          <ScalarProperty Name="RequirementSpeedTimeID" ColumnName="RequirementSpeedTimeID" />
+          <ScalarProperty Name="RequirementImplementationCompleteID" ColumnName="RequirementImplementationCompleteID" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="CurrencyAmount" ColumnName="CurrencyAmount" />
+          <ScalarProperty Name="CurrencyPrice" ColumnName="CurrencyPrice" />
+          <ScalarProperty Name="Rate" ColumnName="Rate" />
+          <ScalarProperty Name="CurrencyID" ColumnName="CurrencyID" />
+          <ScalarProperty Name="UnitID" ColumnName="UnitID" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="AnyProductName" ColumnName="AnyProductName" />
+          <ScalarProperty Name="EvaluationRequirementsProductID" ColumnName="EvaluationRequirementsProductID" />
+          <ScalarProperty Name="InvoiceID" ColumnName="InvoiceID" />
+          <ScalarProperty Name="OrderID" ColumnName="OrderID" />
+          <ScalarProperty Name="ContractID" ColumnName="ContractID" />
+          <ScalarProperty Name="RealizationDateActual" ColumnName="RealizationDateActual" />
+          <ScalarProperty Name="RealizationDatePlanned" ColumnName="RealizationDatePlanned" />
+          <ScalarProperty Name="ResponsibleID" ColumnName="ResponsibleID" />
+          <ScalarProperty Name="RequirementStatusID" ColumnName="RequirementStatusID" />
+          <ScalarProperty Name="PublicationCategoryID" ColumnName="PublicationCategoryID" />
+          <ScalarProperty Name="RequirementComplexityID" ColumnName="RequirementComplexityID" />
+          <ScalarProperty Name="RequirementPriorityID" ColumnName="RequirementPriorityID" />
+          <ScalarProperty Name="ParentID" ColumnName="ParentID" />
+          <ScalarProperty Name="RequirementSeverityOfExposureID" ColumnName="RequirementSeverityOfExposureID" />
+          <ScalarProperty Name="ServiceLevelID" ColumnName="ServiceLevelID" />
+          <ScalarProperty Name="RequirementTypeID" ColumnName="RequirementTypeID" />
+          <ScalarProperty Name="ProductSeriesNumber" ColumnName="ProductSeriesNumber" />
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="ContactID" ColumnName="ContactID" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="RequestID" ColumnName="RequestID" />
+          <ScalarProperty Name="ShortDescription" ColumnName="ShortDescription" />
+          <ScalarProperty Name="CreatedAt" ColumnName="CreatedAt" />
+          <ScalarProperty Name="SerialNumber" ColumnName="SerialNumber" />
+          <ScalarProperty Name="Number" ColumnName="Number" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_RequirementComment">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_RequirementComment">
+        <MappingFragment StoreEntitySet="tbl_RequirementComment">
+          <ScalarProperty Name="IsInternal" ColumnName="IsInternal" />
+          <ScalarProperty Name="ReplyToID" ColumnName="ReplyToID" />
+          <ScalarProperty Name="DestinationUserID" ColumnName="DestinationUserID" />
+          <ScalarProperty Name="IsOfficialAnswer" ColumnName="IsOfficialAnswer" />
+          <ScalarProperty Name="FileName" ColumnName="FileName" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="ContentID" ColumnName="ContentID" />
+          <ScalarProperty Name="CreatedAt" ColumnName="CreatedAt" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_RequirementCommentMark">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_RequirementCommentMark">
+        <MappingFragment StoreEntitySet="tbl_RequirementCommentMark">
+          <ScalarProperty Name="Rank" ColumnName="Rank" />
+          <ScalarProperty Name="TypeID" ColumnName="TypeID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="ContentCommentID" ColumnName="ContentCommentID" />
+          <ScalarProperty Name="CreatedAt" ColumnName="CreatedAt" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_RequirementComplexity">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_RequirementComplexity">
+        <MappingFragment StoreEntitySet="tbl_RequirementComplexity">
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_RequirementHistory">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_RequirementHistory">
+        <MappingFragment StoreEntitySet="tbl_RequirementHistory">
+          <ScalarProperty Name="ResponsibleID" ColumnName="ResponsibleID" />
+          <ScalarProperty Name="ContactID" ColumnName="ContactID" />
+          <ScalarProperty Name="RequirementStatusID" ColumnName="RequirementStatusID" />
+          <ScalarProperty Name="CreatedAt" ColumnName="CreatedAt" />
+          <ScalarProperty Name="RequirementID" ColumnName="RequirementID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_RequirementImplementationComplete">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_RequirementImplementationComplete">
+        <MappingFragment StoreEntitySet="tbl_RequirementImplementationComplete">
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_RequirementPriority">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_RequirementPriority">
+        <MappingFragment StoreEntitySet="tbl_RequirementPriority">
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_RequirementSatisfaction">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_RequirementSatisfaction">
+        <MappingFragment StoreEntitySet="tbl_RequirementSatisfaction">
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_RequirementSeverityOfExposure">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_RequirementSeverityOfExposure">
+        <MappingFragment StoreEntitySet="tbl_RequirementSeverityOfExposure">
+          <ScalarProperty Name="ParentID" ColumnName="ParentID" />
+          <ScalarProperty Name="RequirementTypeID" ColumnName="RequirementTypeID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_RequirementSpeedTime">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_RequirementSpeedTime">
+        <MappingFragment StoreEntitySet="tbl_RequirementSpeedTime">
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_RequirementStatus">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_RequirementStatus">
+        <MappingFragment StoreEntitySet="tbl_RequirementStatus">
+          <ScalarProperty Name="ServiceLevelRoleID" ColumnName="ServiceLevelRoleID" />
+          <ScalarProperty Name="IsLast" ColumnName="IsLast" />
+          <ScalarProperty Name="IsDefault" ColumnName="IsDefault" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_RequirementTransition">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_RequirementTransition">
+        <MappingFragment StoreEntitySet="tbl_RequirementTransition">
+          <ScalarProperty Name="IsReviewRequired" ColumnName="IsReviewRequired" />
+          <ScalarProperty Name="RequirementTypeID" ColumnName="RequirementTypeID" />
+          <ScalarProperty Name="IsPortalAllowed" ColumnName="IsPortalAllowed" />
+          <ScalarProperty Name="AllowedAccessProfileID" ColumnName="AllowedAccessProfileID" />
+          <ScalarProperty Name="FinalRequirementStatusID" ColumnName="FinalRequirementStatusID" />
+          <ScalarProperty Name="InitialRequirementStatusID" ColumnName="InitialRequirementStatusID" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_RequirementType">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_RequirementType">
+        <MappingFragment StoreEntitySet="tbl_RequirementType">
+          <ScalarProperty Name="IsDefault" ColumnName="IsDefault" />
+          <ScalarProperty Name="NumeratorID" ColumnName="NumeratorID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Resolutions">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_Resolutions">
+        <MappingFragment StoreEntitySet="tbl_Resolutions">
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Responsible">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_Responsible">
+        <MappingFragment StoreEntitySet="tbl_Responsible">
+          <ScalarProperty Name="ResponsibleID" ColumnName="ResponsibleID" />
+          <ScalarProperty Name="WorkflowID" ColumnName="WorkflowID" />
+          <ScalarProperty Name="ContactID" ColumnName="ContactID" />
+          <ScalarProperty Name="ContactRoleID" ColumnName="ContactRoleID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_RuleTypes">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_RuleTypes">
+        <MappingFragment StoreEntitySet="tbl_RuleTypes">
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_ServiceLevel">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_ServiceLevel">
+        <MappingFragment StoreEntitySet="tbl_ServiceLevel">
+          <ScalarProperty Name="IsDefault" ColumnName="IsDefault" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="ResponseTime" ColumnName="ResponseTime" />
+          <ScalarProperty Name="ReactionTime" ColumnName="ReactionTime" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_ServiceLevelClient">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_ServiceLevelClient">
+        <MappingFragment StoreEntitySet="tbl_ServiceLevelClient">
+          <ScalarProperty Name="OutOfListServiceContactsID" ColumnName="OutOfListServiceContactsID" />
+          <ScalarProperty Name="CountOfServiceContacts" ColumnName="CountOfServiceContacts" />
+          <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="ClientID" ColumnName="ClientID" />
+          <ScalarProperty Name="ServiceLevelID" ColumnName="ServiceLevelID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_ServiceLevelContact">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_ServiceLevelContact">
+        <MappingFragment StoreEntitySet="tbl_ServiceLevelContact">
+          <ScalarProperty Name="InvoiceInformFormID" ColumnName="InvoiceInformFormID" />
+          <ScalarProperty Name="InvoiceInformCatalogID" ColumnName="InvoiceInformCatalogID" />
+          <ScalarProperty Name="IsInformInvoiceComments" ColumnName="IsInformInvoiceComments" />
+          <ScalarProperty Name="IsInformAboutInvoice" ColumnName="IsInformAboutInvoice" />
+          <ScalarProperty Name="ServiceLevelRoleID" ColumnName="ServiceLevelRoleID" />
+          <ScalarProperty Name="IsInformByRequest" ColumnName="IsInformByRequest" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="InformCommentID" ColumnName="InformCommentID" />
+          <ScalarProperty Name="IncludeToInformID" ColumnName="IncludeToInformID" />
+          <ScalarProperty Name="IsAutomateDownload" ColumnName="IsAutomateDownload" />
+          <ScalarProperty Name="InformRequestID" ColumnName="InformRequestID" />
+          <ScalarProperty Name="ContactID" ColumnName="ContactID" />
+          <ScalarProperty Name="ServiceLevelClientID" ColumnName="ServiceLevelClientID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_ServiceLevelIncludeToInform">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_ServiceLevelIncludeToInform">
+        <MappingFragment StoreEntitySet="tbl_ServiceLevelIncludeToInform">
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_ServiceLevelInform">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_ServiceLevelInform">
+        <MappingFragment StoreEntitySet="tbl_ServiceLevelInform">
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_ServiceLevelInformComment">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_ServiceLevelInformComment">
+        <MappingFragment StoreEntitySet="tbl_ServiceLevelInformComment">
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_ServiceLevelOutOfListServiceContacts">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_ServiceLevelOutOfListServiceContacts">
+        <MappingFragment StoreEntitySet="tbl_ServiceLevelOutOfListServiceContacts">
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_ServiceLevelRole">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_ServiceLevelRole">
+        <MappingFragment StoreEntitySet="tbl_ServiceLevelRole">
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_SessionSourceRule">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_SessionSourceRule">
+        <MappingFragment StoreEntitySet="tbl_SessionSourceRule">
+          <ScalarProperty Name="Pattern" ColumnName="Pattern" />
+          <ScalarProperty Name="SessionRuleTypeID" ColumnName="SessionRuleTypeID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Shipment">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_Shipment">
+        <MappingFragment StoreEntitySet="tbl_Shipment">
+          <ScalarProperty Name="ModifiedAt" ColumnName="ModifiedAt" />
+          <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
+          <ScalarProperty Name="PriceListID" ColumnName="PriceListID" />
+          <ScalarProperty Name="OrderID" ColumnName="OrderID" />
+          <ScalarProperty Name="SendDate" ColumnName="SendDate" />
+          <ScalarProperty Name="ShipmentAmount" ColumnName="ShipmentAmount" />
+          <ScalarProperty Name="ExecutorContactID" ColumnName="ExecutorContactID" />
+          <ScalarProperty Name="ExecutorCompanyLegalAccountID" ColumnName="ExecutorCompanyLegalAccountID" />
+          <ScalarProperty Name="ExecutorCompanyID" ColumnName="ExecutorCompanyID" />
+          <ScalarProperty Name="BuyerContactID" ColumnName="BuyerContactID" />
+          <ScalarProperty Name="BuyerCompanyLegalAccountID" ColumnName="BuyerCompanyLegalAccountID" />
+          <ScalarProperty Name="BuyerCompanyID" ColumnName="BuyerCompanyID" />
+          <ScalarProperty Name="Note" ColumnName="Note" />
+          <ScalarProperty Name="ShipmentStatusID" ColumnName="ShipmentStatusID" />
+          <ScalarProperty Name="ShipmentTypeID" ColumnName="ShipmentTypeID" />
+          <ScalarProperty Name="CreatedAt" ColumnName="CreatedAt" />
+          <ScalarProperty Name="SerialNumber" ColumnName="SerialNumber" />
+          <ScalarProperty Name="Number" ColumnName="Number" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_ShipmentComment">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_ShipmentComment">
+        <MappingFragment StoreEntitySet="tbl_ShipmentComment">
+          <ScalarProperty Name="IsInternal" ColumnName="IsInternal" />
+          <ScalarProperty Name="ReplyToID" ColumnName="ReplyToID" />
+          <ScalarProperty Name="DestinationUserID" ColumnName="DestinationUserID" />
+          <ScalarProperty Name="IsOfficialAnswer" ColumnName="IsOfficialAnswer" />
+          <ScalarProperty Name="FileName" ColumnName="FileName" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="ContentID" ColumnName="ContentID" />
+          <ScalarProperty Name="CreatedAt" ColumnName="CreatedAt" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_ShipmentCommentMark">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_ShipmentCommentMark">
+        <MappingFragment StoreEntitySet="tbl_ShipmentCommentMark">
+          <ScalarProperty Name="Rank" ColumnName="Rank" />
+          <ScalarProperty Name="TypeID" ColumnName="TypeID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="ContentCommentID" ColumnName="ContentCommentID" />
+          <ScalarProperty Name="CreatedAt" ColumnName="CreatedAt" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_ShipmentHistory">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_ShipmentHistory">
+        <MappingFragment StoreEntitySet="tbl_ShipmentHistory">
+          <ScalarProperty Name="Note" ColumnName="Note" />
+          <ScalarProperty Name="ShipmentStatusID" ColumnName="ShipmentStatusID" />
+          <ScalarProperty Name="ShipmentAmount" ColumnName="ShipmentAmount" />
+          <ScalarProperty Name="SendDate" ColumnName="SendDate" />
+          <ScalarProperty Name="AuthorID" ColumnName="AuthorID" />
+          <ScalarProperty Name="ShipmentID" ColumnName="ShipmentID" />
+          <ScalarProperty Name="CreatedAt" ColumnName="CreatedAt" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_ShipmentProducts">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_ShipmentProducts">
+        <MappingFragment StoreEntitySet="tbl_ShipmentProducts">
+          <ScalarProperty Name="TaskID" ColumnName="TaskID" />
+          <ScalarProperty Name="TotalAmount" ColumnName="TotalAmount" />
+          <ScalarProperty Name="CurrencyTotalAmount" ColumnName="CurrencyTotalAmount" />
+          <ScalarProperty Name="DiscountAmount" ColumnName="DiscountAmount" />
+          <ScalarProperty Name="CurrencyDiscountAmount" ColumnName="CurrencyDiscountAmount" />
+          <ScalarProperty Name="Discount" ColumnName="Discount" />
+          <ScalarProperty Name="SpecialOfferPriceListID" ColumnName="SpecialOfferPriceListID" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="CurrencyAmount" ColumnName="CurrencyAmount" />
+          <ScalarProperty Name="CurrencyPrice" ColumnName="CurrencyPrice" />
+          <ScalarProperty Name="Rate" ColumnName="Rate" />
+          <ScalarProperty Name="CurrencyID" ColumnName="CurrencyID" />
+          <ScalarProperty Name="UnitID" ColumnName="UnitID" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="PriceListID" ColumnName="PriceListID" />
+          <ScalarProperty Name="SerialNumber" ColumnName="SerialNumber" />
+          <ScalarProperty Name="AnyProductName" ColumnName="AnyProductName" />
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="ShipmentID" ColumnName="ShipmentID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_ShipmentStatus">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_ShipmentStatus">
+        <MappingFragment StoreEntitySet="tbl_ShipmentStatus">
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_ShipmentType">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_ShipmentType">
+        <MappingFragment StoreEntitySet="tbl_ShipmentType">
+          <ScalarProperty Name="IsDefault" ColumnName="IsDefault" />
+          <ScalarProperty Name="NumeratorID" ColumnName="NumeratorID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_SiteAction">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_SiteAction">
+        <MappingFragment StoreEntitySet="tbl_SiteAction">
+          <ScalarProperty Name="POPMessageID" ColumnName="POPMessageID" />
+          <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
+          <ScalarProperty Name="IsHidden" ColumnName="IsHidden" />
+          <ScalarProperty Name="MessageText" ColumnName="MessageText" />
+          <ScalarProperty Name="SenderID" ColumnName="SenderID" />
+          <ScalarProperty Name="DirectionID" ColumnName="DirectionID" />
+          <ScalarProperty Name="SourceMonitoringID" ColumnName="SourceMonitoringID" />
+          <ScalarProperty Name="MessageTitle" ColumnName="MessageTitle" />
+          <ScalarProperty Name="MessageTypeID" ColumnName="MessageTypeID" />
+          <ScalarProperty Name="ObjectID" ColumnName="ObjectID" />
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="ResponseDate" ColumnName="ResponseDate" />
+          <ScalarProperty Name="ActionDate" ColumnName="ActionDate" />
+          <ScalarProperty Name="ActionStatusID" ColumnName="ActionStatusID" />
+          <ScalarProperty Name="ContactID" ColumnName="ContactID" />
+          <ScalarProperty Name="SiteActionTemplateID" ColumnName="SiteActionTemplateID" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_SiteActionAttachment">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_SiteActionAttachment">
+        <MappingFragment StoreEntitySet="tbl_SiteActionAttachment">
+          <ScalarProperty Name="FileName" ColumnName="FileName" />
+          <ScalarProperty Name="SiteActionID" ColumnName="SiteActionID" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_SiteActionLink">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_SiteActionLink">
+        <MappingFragment StoreEntitySet="tbl_SiteActionLink">
+          <ScalarProperty Name="ActionLinkDate" ColumnName="ActionLinkDate" />
+          <ScalarProperty Name="LinkURL" ColumnName="LinkURL" />
+          <ScalarProperty Name="SiteActivityRuleID" ColumnName="SiteActivityRuleID" />
+          <ScalarProperty Name="SiteActionTemplateID" ColumnName="SiteActionTemplateID" />
+          <ScalarProperty Name="SiteActionID" ColumnName="SiteActionID" />
+          <ScalarProperty Name="ContactID" ColumnName="ContactID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_SiteActionTagValue">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_SiteActionTagValue">
+        <MappingFragment StoreEntitySet="tbl_SiteActionTagValue">
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="Tag" ColumnName="Tag" />
+          <ScalarProperty Name="SiteActionID" ColumnName="SiteActionID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_SiteActionTemplate">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_SiteActionTemplate">
+        <MappingFragment StoreEntitySet="tbl_SiteActionTemplate">
+          <ScalarProperty Name="FromContactRoleID" ColumnName="FromContactRoleID" />
+          <ScalarProperty Name="UsageID" ColumnName="UsageID" />
+          <ScalarProperty Name="ParentID" ColumnName="ParentID" />
+          <ScalarProperty Name="SiteActionTemplateCategoryID" ColumnName="SiteActionTemplateCategoryID" />
+          <ScalarProperty Name="ReplaceLinksID" ColumnName="ReplaceLinksID" />
+          <ScalarProperty Name="SystemName" ColumnName="SystemName" />
+          <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
+          <ScalarProperty Name="ReplyToName" ColumnName="ReplyToName" />
+          <ScalarProperty Name="ReplyToEmail" ColumnName="ReplyToEmail" />
+          <ScalarProperty Name="FromName" ColumnName="FromName" />
+          <ScalarProperty Name="MessageBody" ColumnName="MessageBody" />
+          <ScalarProperty Name="MessageCaption" ColumnName="MessageCaption" />
+          <ScalarProperty Name="ToEmail" ColumnName="ToEmail" />
+          <ScalarProperty Name="FromEmail" ColumnName="FromEmail" />
+          <ScalarProperty Name="ActionTypeID" ColumnName="ActionTypeID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_SiteActionTemplateRecipient">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_SiteActionTemplateRecipient">
+        <MappingFragment StoreEntitySet="tbl_SiteActionTemplateRecipient">
+          <ScalarProperty Name="DisplayName" ColumnName="DisplayName" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="ContactRoleID" ColumnName="ContactRoleID" />
+          <ScalarProperty Name="ContactID" ColumnName="ContactID" />
+          <ScalarProperty Name="SiteActionTemplateID" ColumnName="SiteActionTemplateID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_SiteActionTemplateUserColumn">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_SiteActionTemplateUserColumn">
+        <MappingFragment StoreEntitySet="tbl_SiteActionTemplateUserColumn">
+          <ScalarProperty Name="SiteColumnValueID" ColumnName="SiteColumnValueID" />
+          <ScalarProperty Name="DateValue" ColumnName="DateValue" />
+          <ScalarProperty Name="StringValue" ColumnName="StringValue" />
+          <ScalarProperty Name="SiteColumnID" ColumnName="SiteColumnID" />
+          <ScalarProperty Name="SiteEventTemplateID" ColumnName="SiteEventTemplateID" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_SiteActivityRuleExternalFormFields">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_SiteActivityRuleExternalFormFields">
+        <MappingFragment StoreEntitySet="tbl_SiteActivityRuleExternalFormFields">
+          <ScalarProperty Name="SysField" ColumnName="SysField" />
+          <ScalarProperty Name="FieldType" ColumnName="FieldType" />
+          <ScalarProperty Name="SiteColumnID" ColumnName="SiteColumnID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="SiteActivityRuleExternalFormID" ColumnName="SiteActivityRuleExternalFormID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_SiteActivityRuleExternalForms">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_SiteActivityRuleExternalForms">
+        <MappingFragment StoreEntitySet="tbl_SiteActivityRuleExternalForms">
+          <ScalarProperty Name="SiteActivityRuleID" ColumnName="SiteActivityRuleID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_SiteActivityRuleFormColumns">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_SiteActivityRuleFormColumns">
+        <MappingFragment StoreEntitySet="tbl_SiteActivityRuleFormColumns">
+          <ScalarProperty Name="SiteColumnID" ColumnName="SiteColumnID" />
+          <ScalarProperty Name="SiteActivityRuleID" ColumnName="SiteActivityRuleID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_SiteActivityRuleLayout">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_SiteActivityRuleLayout">
+        <MappingFragment StoreEntitySet="tbl_SiteActivityRuleLayout">
+          <ScalarProperty Name="ColumnTypeExpressionID" ColumnName="ColumnTypeExpressionID" />
+          <ScalarProperty Name="LayoutTypeBackup" ColumnName="LayoutTypeBackup" />
+          <ScalarProperty Name="SysField" ColumnName="SysField" />
+          <ScalarProperty Name="LayoutParams" ColumnName="LayoutParams" />
+          <ScalarProperty Name="LayoutType" ColumnName="LayoutType" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="OutputFormatFields" ColumnName="OutputFormatFields" />
+          <ScalarProperty Name="OutputFormat" ColumnName="OutputFormat" />
+          <ScalarProperty Name="Orientation" ColumnName="Orientation" />
+          <ScalarProperty Name="ShowName" ColumnName="ShowName" />
+          <ScalarProperty Name="Order" ColumnName="Order" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="DefaultValue" ColumnName="DefaultValue" />
+          <ScalarProperty Name="CSSStyle" ColumnName="CSSStyle" />
+          <ScalarProperty Name="IsAdmin" ColumnName="IsAdmin" />
+          <ScalarProperty Name="IsExtraField" ColumnName="IsExtraField" />
+          <ScalarProperty Name="IsRequired" ColumnName="IsRequired" />
+          <ScalarProperty Name="SiteColumnID" ColumnName="SiteColumnID" />
+          <ScalarProperty Name="ParentID" ColumnName="ParentID" />
+          <ScalarProperty Name="SiteActivityRuleID" ColumnName="SiteActivityRuleID" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_SiteActivityRuleOption">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_SiteActivityRuleOption">
+        <MappingFragment StoreEntitySet="tbl_SiteActivityRuleOption">
+          <ScalarProperty Name="HtmlTemplate" ColumnName="HtmlTemplate" />
+          <ScalarProperty Name="Conversion" ColumnName="Conversion" />
+          <ScalarProperty Name="Result" ColumnName="Result" />
+          <ScalarProperty Name="Views" ColumnName="Views" />
+          <ScalarProperty Name="LastViewDate" ColumnName="LastViewDate" />
+          <ScalarProperty Name="ViewTypeID" ColumnName="ViewTypeID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="SiteActivityRuleID" ColumnName="SiteActivityRuleID" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_SiteActivityRules">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_SiteActivityRules">
+        <MappingFragment StoreEntitySet="tbl_SiteActivityRules">
+          <ScalarProperty Name="YandexGoals" ColumnName="YandexGoals" />
+          <ScalarProperty Name="SuccessMessage" ColumnName="SuccessMessage" />
+          <ScalarProperty Name="SendFields" ColumnName="SendFields" />
+          <ScalarProperty Name="ActionOnFillForm" ColumnName="ActionOnFillForm" />
+          <ScalarProperty Name="Skin" ColumnName="Skin" />
+          <ScalarProperty Name="ErrorMessage" ColumnName="ErrorMessage" />
+          <ScalarProperty Name="WufooUpdatePeriod" ColumnName="WufooUpdatePeriod" />
+          <ScalarProperty Name="WufooRevisionDate" ColumnName="WufooRevisionDate" />
+          <ScalarProperty Name="WufooAPIKey" ColumnName="WufooAPIKey" />
+          <ScalarProperty Name="WufooName" ColumnName="WufooName" />
+          <ScalarProperty Name="TemplateID" ColumnName="TemplateID" />
+          <ScalarProperty Name="CSSForm" ColumnName="CSSForm" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="FileSize" ColumnName="FileSize" />
+          <ScalarProperty Name="TextButton" ColumnName="TextButton" />
+          <ScalarProperty Name="CSSButton" ColumnName="CSSButton" />
+          <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
+          <ScalarProperty Name="RepostURL" ColumnName="RepostURL" />
+          <ScalarProperty Name="ExternalFormURL" ColumnName="ExternalFormURL" />
+          <ScalarProperty Name="CountExtraFields" ColumnName="CountExtraFields" />
+          <ScalarProperty Name="FormWidth" ColumnName="FormWidth" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="UserFullName" ColumnName="UserFullName" />
+          <ScalarProperty Name="URL" ColumnName="URL" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="RuleTypeID" ColumnName="RuleTypeID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_SiteActivityScoreType">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_SiteActivityScoreType">
+        <MappingFragment StoreEntitySet="tbl_SiteActivityScoreType">
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_SiteColumns">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_SiteColumns">
+        <MappingFragment StoreEntitySet="tbl_SiteColumns">
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="TypeID" ColumnName="TypeID" />
+          <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="SiteActivityRuleID" ColumnName="SiteActivityRuleID" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_SiteColumnValues">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_SiteColumnValues">
+        <MappingFragment StoreEntitySet="tbl_SiteColumnValues">
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="SiteColumnID" ColumnName="SiteColumnID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_SiteDomain">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_SiteDomain">
+        <MappingFragment StoreEntitySet="tbl_SiteDomain">
+          <ScalarProperty Name="PageCountWithOnClosingForms" ColumnName="PageCountWithOnClosingForms" />
+          <ScalarProperty Name="PageCountWithForms" ColumnName="PageCountWithForms" />
+          <ScalarProperty Name="TotalPageCount" ColumnName="TotalPageCount" />
+          <ScalarProperty Name="PageCountWithCounter" ColumnName="PageCountWithCounter" />
+          <ScalarProperty Name="StatusID" ColumnName="StatusID" />
+          <ScalarProperty Name="Note" ColumnName="Note" />
+          <ScalarProperty Name="Aliases" ColumnName="Aliases" />
+          <ScalarProperty Name="Domain" ColumnName="Domain" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_SiteEventActionTemplate">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_SiteEventActionTemplate">
+        <MappingFragment StoreEntitySet="tbl_SiteEventActionTemplate">
+          <ScalarProperty Name="MessageText" ColumnName="MessageText" />
+          <ScalarProperty Name="StartAfterTypeID" ColumnName="StartAfterTypeID" />
+          <ScalarProperty Name="StartAfter" ColumnName="StartAfter" />
+          <ScalarProperty Name="SiteActionTemplateID" ColumnName="SiteActionTemplateID" />
+          <ScalarProperty Name="SiteEventTemplateID" ColumnName="SiteEventTemplateID" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_SiteEventTemplateActivity">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_SiteEventTemplateActivity">
+        <MappingFragment StoreEntitySet="tbl_SiteEventTemplateActivity">
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="FormulaID" ColumnName="FormulaID" />
+          <ScalarProperty Name="Option" ColumnName="Option" />
+          <ScalarProperty Name="ActualPeriod" ColumnName="ActualPeriod" />
+          <ScalarProperty Name="ActivityCode" ColumnName="ActivityCode" />
+          <ScalarProperty Name="ActivityTypeID" ColumnName="ActivityTypeID" />
+          <ScalarProperty Name="EventCategoryID" ColumnName="EventCategoryID" />
+          <ScalarProperty Name="SiteEventTemplateID" ColumnName="SiteEventTemplateID" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_SiteEventTemplates">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_SiteEventTemplates">
+        <MappingFragment StoreEntitySet="tbl_SiteEventTemplates">
+          <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
+          <ScalarProperty Name="FrequencyPeriod" ColumnName="FrequencyPeriod" />
+          <ScalarProperty Name="EventConditions" ColumnName="EventConditions" />
+          <ScalarProperty Name="ActionCount" ColumnName="ActionCount" />
+          <ScalarProperty Name="LogicConditionID" ColumnName="LogicConditionID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_SiteEventTemplateScore">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_SiteEventTemplateScore">
+        <MappingFragment StoreEntitySet="tbl_SiteEventTemplateScore">
+          <ScalarProperty Name="Score" ColumnName="Score" />
+          <ScalarProperty Name="OperationID" ColumnName="OperationID" />
+          <ScalarProperty Name="SiteActivityScoreTypeID" ColumnName="SiteActivityScoreTypeID" />
+          <ScalarProperty Name="SiteEventTemplateID" ColumnName="SiteEventTemplateID" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Sites">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_Sites">
+        <MappingFragment StoreEntitySet="tbl_Sites">
+          <ScalarProperty Name="PayerCompanyID" ColumnName="PayerCompanyID" />
+          <ScalarProperty Name="PriceListID" ColumnName="PriceListID" />
+          <ScalarProperty Name="ActiveUntilDate" ColumnName="ActiveUntilDate" />
+          <ScalarProperty Name="MainUserID" ColumnName="MainUserID" />
+          <ScalarProperty Name="IsBlockAccessFromDomainsOutsideOfList" ColumnName="IsBlockAccessFromDomainsOutsideOfList" />
+          <ScalarProperty Name="UserSessionTimeout" ColumnName="UserSessionTimeout" />
+          <ScalarProperty Name="IsTemplate" ColumnName="IsTemplate" />
+          <ScalarProperty Name="HtmlEditorModeID" ColumnName="HtmlEditorModeID" />
+          <ScalarProperty Name="LinkProcessingURL" ColumnName="LinkProcessingURL" />
+          <ScalarProperty Name="ShowHiddenMessages" ColumnName="ShowHiddenMessages" />
+          <ScalarProperty Name="IsSendFromLeadForce" ColumnName="IsSendFromLeadForce" />
+          <ScalarProperty Name="AccessProfileID" ColumnName="AccessProfileID" />
+          <ScalarProperty Name="SessionTimeout" ColumnName="SessionTimeout" />
+          <ScalarProperty Name="FileQuota" ColumnName="FileQuota" />
+          <ScalarProperty Name="MaxFileSize" ColumnName="MaxFileSize" />
+          <ScalarProperty Name="ServiceAdvertisingActionID" ColumnName="ServiceAdvertisingActionID" />
+          <ScalarProperty Name="IsServiceAdvertising" ColumnName="IsServiceAdvertising" />
+          <ScalarProperty Name="UnsubscribeActionID" ColumnName="UnsubscribeActionID" />
+          <ScalarProperty Name="IsUnsubscribe" ColumnName="IsUnsubscribe" />
+          <ScalarProperty Name="IsSendEmailToSubscribedUser" ColumnName="IsSendEmailToSubscribedUser" />
+          <ScalarProperty Name="IsAllowUseSystemEmail" ColumnName="IsAllowUseSystemEmail" />
+          <ScalarProperty Name="SystemEmail" ColumnName="SystemEmail" />
+          <ScalarProperty Name="SmtpPort" ColumnName="SmtpPort" />
+          <ScalarProperty Name="SmtpPassword" ColumnName="SmtpPassword" />
+          <ScalarProperty Name="SmtpUsername" ColumnName="SmtpUsername" />
+          <ScalarProperty Name="SmtpHost" ColumnName="SmtpHost" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_SiteTagObjects">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_SiteTagObjects">
+        <MappingFragment StoreEntitySet="tbl_SiteTagObjects">
+          <ScalarProperty Name="ObjectID" ColumnName="ObjectID" />
+          <ScalarProperty Name="SiteTagID" ColumnName="SiteTagID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_SiteTags">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_SiteTags">
+        <MappingFragment StoreEntitySet="tbl_SiteTags">
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="ObjectTypeID" ColumnName="ObjectTypeID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_SocialAuthorizationToken">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_SocialAuthorizationToken">
+        <MappingFragment StoreEntitySet="tbl_SocialAuthorizationToken">
+          <ScalarProperty Name="ExpirationDate" ColumnName="ExpirationDate" />
+          <ScalarProperty Name="PortalSettingsID" ColumnName="PortalSettingsID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_SourceMonitoring">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_SourceMonitoring">
+        <MappingFragment StoreEntitySet="tbl_SourceMonitoring">
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="ReceiverContactID" ColumnName="ReceiverContactID" />
+          <ScalarProperty Name="RequestSourceTypeID" ColumnName="RequestSourceTypeID" />
+          <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
+          <ScalarProperty Name="IsRemoveAutoReplies" ColumnName="IsRemoveAutoReplies" />
+          <ScalarProperty Name="ProcessingOfAutoRepliesID" ColumnName="ProcessingOfAutoRepliesID" />
+          <ScalarProperty Name="IsRemoveReturns" ColumnName="IsRemoveReturns" />
+          <ScalarProperty Name="ProcessingOfReturnsID" ColumnName="ProcessingOfReturnsID" />
+          <ScalarProperty Name="SenderProcessingID" ColumnName="SenderProcessingID" />
+          <ScalarProperty Name="DaysToDelete" ColumnName="DaysToDelete" />
+          <ScalarProperty Name="LastReceivedAt" ColumnName="LastReceivedAt" />
+          <ScalarProperty Name="IsLeaveOnServer" ColumnName="IsLeaveOnServer" />
+          <ScalarProperty Name="IsSsl" ColumnName="IsSsl" />
+          <ScalarProperty Name="PopPort" ColumnName="PopPort" />
+          <ScalarProperty Name="PopPassword" ColumnName="PopPassword" />
+          <ScalarProperty Name="PopUserName" ColumnName="PopUserName" />
+          <ScalarProperty Name="PopHost" ColumnName="PopHost" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="StatusID" ColumnName="StatusID" />
+          <ScalarProperty Name="SourceTypeID" ColumnName="SourceTypeID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_SourceMonitoringFilter">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_SourceMonitoringFilter">
+        <MappingFragment StoreEntitySet="tbl_SourceMonitoringFilter">
+          <ScalarProperty Name="MonitoringActionID" ColumnName="MonitoringActionID" />
+          <ScalarProperty Name="Mask" ColumnName="Mask" />
+          <ScalarProperty Name="SourcePropertyID" ColumnName="SourcePropertyID" />
+          <ScalarProperty Name="SourceMonitoringID" ColumnName="SourceMonitoringID" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_StartAfterTypes">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_StartAfterTypes">
+        <MappingFragment StoreEntitySet="tbl_StartAfterTypes">
+          <ScalarProperty Name="Order" ColumnName="Order" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_StatisticData">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_StatisticData">
+        <MappingFragment StoreEntitySet="tbl_StatisticData">
+          <ScalarProperty Name="PreviousValue" ColumnName="PreviousValue" />
+          <ScalarProperty Name="RecalculateDate" ColumnName="RecalculateDate" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Status">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_Status">
+        <MappingFragment StoreEntitySet="tbl_Status">
+          <ScalarProperty Name="IsDefault" ColumnName="IsDefault" />
+          <ScalarProperty Name="Order" ColumnName="Order" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Task">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_Task">
+        <MappingFragment StoreEntitySet="tbl_Task">
+          <ScalarProperty Name="MainMemberCompanyID" ColumnName="MainMemberCompanyID" />
+          <ScalarProperty Name="MainMemberContactID" ColumnName="MainMemberContactID" />
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="OrderID" ColumnName="OrderID" />
+          <ScalarProperty Name="CompletePercentage" ColumnName="CompletePercentage" />
+          <ScalarProperty Name="ActualDurationHours" ColumnName="ActualDurationHours" />
+          <ScalarProperty Name="ActualDurationMinutes" ColumnName="ActualDurationMinutes" />
+          <ScalarProperty Name="DetailedResult" ColumnName="DetailedResult" />
+          <ScalarProperty Name="TaskResultID" ColumnName="TaskResultID" />
+          <ScalarProperty Name="TaskStatusID" ColumnName="TaskStatusID" />
+          <ScalarProperty Name="IsUrgentTask" ColumnName="IsUrgentTask" />
+          <ScalarProperty Name="CreatorReminderDate" ColumnName="CreatorReminderDate" />
+          <ScalarProperty Name="ResponsibleReminderDate" ColumnName="ResponsibleReminderDate" />
+          <ScalarProperty Name="CreatorID" ColumnName="CreatorID" />
+          <ScalarProperty Name="ResponsibleID" ColumnName="ResponsibleID" />
+          <ScalarProperty Name="PlanDurationHours" ColumnName="PlanDurationHours" />
+          <ScalarProperty Name="PlanDurationMinutes" ColumnName="PlanDurationMinutes" />
+          <ScalarProperty Name="IsImportantTask" ColumnName="IsImportantTask" />
+          <ScalarProperty Name="DateOfControl" ColumnName="DateOfControl" />
+          <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="TaskTypeID" ColumnName="TaskTypeID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_TaskDuration">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_TaskDuration">
+        <MappingFragment StoreEntitySet="tbl_TaskDuration">
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="ResponsibleID" ColumnName="ResponsibleID" />
+          <ScalarProperty Name="ActualDurationHours" ColumnName="ActualDurationHours" />
+          <ScalarProperty Name="ActualDurationMinutes" ColumnName="ActualDurationMinutes" />
+          <ScalarProperty Name="SectionDateEnd" ColumnName="SectionDateEnd" />
+          <ScalarProperty Name="SectionDateStart" ColumnName="SectionDateStart" />
+          <ScalarProperty Name="TaskID" ColumnName="TaskID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_TaskHistory">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_TaskHistory">
+        <MappingFragment StoreEntitySet="tbl_TaskHistory">
+          <ScalarProperty Name="DetailedResult" ColumnName="DetailedResult" />
+          <ScalarProperty Name="TaskResultID" ColumnName="TaskResultID" />
+          <ScalarProperty Name="TaskStatusID" ColumnName="TaskStatusID" />
+          <ScalarProperty Name="ResponsibleID" ColumnName="ResponsibleID" />
+          <ScalarProperty Name="PlanDurationHours" ColumnName="PlanDurationHours" />
+          <ScalarProperty Name="PlanDurationMinutes" ColumnName="PlanDurationMinutes" />
+          <ScalarProperty Name="IsImportantTask" ColumnName="IsImportantTask" />
+          <ScalarProperty Name="DateOfControl" ColumnName="DateOfControl" />
+          <ScalarProperty Name="DateEnd" ColumnName="DateEnd" />
+          <ScalarProperty Name="DateStart" ColumnName="DateStart" />
+          <ScalarProperty Name="CreatedAt" ColumnName="CreatedAt" />
+          <ScalarProperty Name="TaskID" ColumnName="TaskID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_TaskMember">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_TaskMember">
+        <MappingFragment StoreEntitySet="tbl_TaskMember">
+          <ScalarProperty Name="IsInformed" ColumnName="IsInformed" />
+          <ScalarProperty Name="OrderProductsID" ColumnName="OrderProductsID" />
+          <ScalarProperty Name="UserComment" ColumnName="UserComment" />
+          <ScalarProperty Name="OrderID" ColumnName="OrderID" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="TaskMemberStatusID" ColumnName="TaskMemberStatusID" />
+          <ScalarProperty Name="TaskMemberRoleID" ColumnName="TaskMemberRoleID" />
+          <ScalarProperty Name="ContactID" ColumnName="ContactID" />
+          <ScalarProperty Name="ContractorID" ColumnName="ContractorID" />
+          <ScalarProperty Name="TaskID" ColumnName="TaskID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_TaskMembersCount">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_TaskMembersCount">
+        <MappingFragment StoreEntitySet="tbl_TaskMembersCount">
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_TaskPersonalComment">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_TaskPersonalComment">
+        <MappingFragment StoreEntitySet="tbl_TaskPersonalComment">
+          <ScalarProperty Name="RefusedComment" ColumnName="RefusedComment" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="ContactID" ColumnName="ContactID" />
+          <ScalarProperty Name="TaskID" ColumnName="TaskID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_TaskResult">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_TaskResult">
+        <MappingFragment StoreEntitySet="tbl_TaskResult">
+          <ScalarProperty Name="IsDefault" ColumnName="IsDefault" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_TaskType">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_TaskType">
+        <MappingFragment StoreEntitySet="tbl_TaskType">
+          <ScalarProperty Name="TaskMembersCountID" ColumnName="TaskMembersCountID" />
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="IsTimePayment" ColumnName="IsTimePayment" />
+          <ScalarProperty Name="TaskTypePaymentSchemeID" ColumnName="TaskTypePaymentSchemeID" />
+          <ScalarProperty Name="IsPublicEvent" ColumnName="IsPublicEvent" />
+          <ScalarProperty Name="TaskTypeAdjustDurationID" ColumnName="TaskTypeAdjustDurationID" />
+          <ScalarProperty Name="TaskTypeCategoryID" ColumnName="TaskTypeCategoryID" />
+          <ScalarProperty Name="StandardDurationMinutes" ColumnName="StandardDurationMinutes" />
+          <ScalarProperty Name="StandardDurationHours" ColumnName="StandardDurationHours" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_TaskTypeAdjustDuration">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_TaskTypeAdjustDuration">
+        <MappingFragment StoreEntitySet="tbl_TaskTypeAdjustDuration">
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_TaskTypeCategory">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_TaskTypeCategory">
+        <MappingFragment StoreEntitySet="tbl_TaskTypeCategory">
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_TaskTypePaymentScheme">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_TaskTypePaymentScheme">
+        <MappingFragment StoreEntitySet="tbl_TaskTypePaymentScheme">
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Term">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_Term">
+        <MappingFragment StoreEntitySet="tbl_Term">
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="PublicationID" ColumnName="PublicationID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Unit">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_Unit">
+        <MappingFragment StoreEntitySet="tbl_Unit">
+          <ScalarProperty Name="IsDefault" ColumnName="IsDefault" />
+          <ScalarProperty Name="Order" ColumnName="Order" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_User">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_User">
+        <MappingFragment StoreEntitySet="tbl_User">
+          <ScalarProperty Name="AccessLevelID" ColumnName="AccessLevelID" />
+          <ScalarProperty Name="AccessProfileID" ColumnName="AccessProfileID" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Login" ColumnName="Login" />
+          <ScalarProperty Name="ContactID" ColumnName="ContactID" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_UserSettings">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_UserSettings">
+        <MappingFragment StoreEntitySet="tbl_UserSettings">
+          <ScalarProperty Name="ShowAlternativeControl" ColumnName="ShowAlternativeControl" />
+          <ScalarProperty Name="ShowFilterPanel" ColumnName="ShowFilterPanel" />
+          <ScalarProperty Name="ShowGroupPanel" ColumnName="ShowGroupPanel" />
+          <ScalarProperty Name="UserSettings" ColumnName="UserSettings" />
+          <ScalarProperty Name="ClassName" ColumnName="ClassName" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_ViewTypes">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_ViewTypes">
+        <MappingFragment StoreEntitySet="tbl_ViewTypes">
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_WebSite">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_WebSite">
+        <MappingFragment StoreEntitySet="tbl_WebSite">
+          <ScalarProperty Name="FavIcon" ColumnName="FavIcon" />
+          <ScalarProperty Name="SiteDomainID" ColumnName="SiteDomainID" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_WebSitePage">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_WebSitePage">
+        <MappingFragment StoreEntitySet="tbl_WebSitePage">
+          <ScalarProperty Name="WebSiteID" ColumnName="WebSiteID" />
+          <ScalarProperty Name="IsHomePage" ColumnName="IsHomePage" />
+          <ScalarProperty Name="Body" ColumnName="Body" />
+          <ScalarProperty Name="MetaDescription" ColumnName="MetaDescription" />
+          <ScalarProperty Name="MetaKeywords" ColumnName="MetaKeywords" />
+          <ScalarProperty Name="MetaTitle" ColumnName="MetaTitle" />
+          <ScalarProperty Name="WebSiteElementStatusID" ColumnName="WebSiteElementStatusID" />
+          <ScalarProperty Name="Url" ColumnName="Url" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Widget">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_Widget">
+        <MappingFragment StoreEntitySet="tbl_Widget">
+          <ScalarProperty Name="UserControl" ColumnName="UserControl" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="WidgetCategoryID" ColumnName="WidgetCategoryID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_WidgetCategory">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_WidgetCategory">
+        <MappingFragment StoreEntitySet="tbl_WidgetCategory">
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="ParentID" ColumnName="ParentID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_WidgetToAccessProfile">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_WidgetToAccessProfile">
+        <MappingFragment StoreEntitySet="tbl_WidgetToAccessProfile">
+          <ScalarProperty Name="ModuleID" ColumnName="ModuleID" />
+          <ScalarProperty Name="Order" ColumnName="Order" />
+          <ScalarProperty Name="AccessProfileID" ColumnName="AccessProfileID" />
+          <ScalarProperty Name="WidgetID" ColumnName="WidgetID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Workflow">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_Workflow">
+        <MappingFragment StoreEntitySet="tbl_Workflow">
+          <ScalarProperty Name="MassWorkflowID" ColumnName="MassWorkflowID" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="Author" ColumnName="Author" />
+          <ScalarProperty Name="WorkflowTemplateID" ColumnName="WorkflowTemplateID" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_WorkflowElement">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_WorkflowElement">
+        <MappingFragment StoreEntitySet="tbl_WorkflowElement">
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Result" ColumnName="Result" />
+          <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+          <ScalarProperty Name="ControlDate" ColumnName="ControlDate" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="WorkflowTemplateElementID" ColumnName="WorkflowTemplateElementID" />
+          <ScalarProperty Name="WorkflowID" ColumnName="WorkflowID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_WorkflowParameter">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_WorkflowParameter">
+        <MappingFragment StoreEntitySet="tbl_WorkflowParameter">
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="WorkflowTemplateParameterID" ColumnName="WorkflowTemplateParameterID" />
+          <ScalarProperty Name="WorkflowID" ColumnName="WorkflowID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_WorkflowTemplate">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_WorkflowTemplate">
+        <MappingFragment StoreEntitySet="tbl_WorkflowTemplate">
+          <ScalarProperty Name="DataBaseStatusID" ColumnName="DataBaseStatusID" />
+          <ScalarProperty Name="WorkflowXml" ColumnName="WorkflowXml" />
+          <ScalarProperty Name="DenyMultipleRun" ColumnName="DenyMultipleRun" />
+          <ScalarProperty Name="ActivityCount" ColumnName="ActivityCount" />
+          <ScalarProperty Name="Condition" ColumnName="Condition" />
+          <ScalarProperty Name="Frequency" ColumnName="Frequency" />
+          <ScalarProperty Name="Event" ColumnName="Event" />
+          <ScalarProperty Name="AutomaticMethod" ColumnName="AutomaticMethod" />
+          <ScalarProperty Name="ManualStart" ColumnName="ManualStart" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="ModuleID" ColumnName="ModuleID" />
+          <ScalarProperty Name="ContactID" ColumnName="ContactID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_WorkflowTemplateConditionEvent">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_WorkflowTemplateConditionEvent">
+        <MappingFragment StoreEntitySet="tbl_WorkflowTemplateConditionEvent">
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="Formula" ColumnName="Formula" />
+          <ScalarProperty Name="Requisite" ColumnName="Requisite" />
+          <ScalarProperty Name="ActualPeriod" ColumnName="ActualPeriod" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="ActivityType" ColumnName="ActivityType" />
+          <ScalarProperty Name="Category" ColumnName="Category" />
+          <ScalarProperty Name="WorkflowTemplateElementEventID" ColumnName="WorkflowTemplateElementEventID" />
+          <ScalarProperty Name="WorkflowTemplateID" ColumnName="WorkflowTemplateID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_WorkflowTemplateElement">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_WorkflowTemplateElement">
+        <MappingFragment StoreEntitySet="tbl_WorkflowTemplateElement">
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="ControlFromBeginProccess" ColumnName="ControlFromBeginProccess" />
+          <ScalarProperty Name="ControlPeriod" ColumnName="ControlPeriod" />
+          <ScalarProperty Name="ControlAfter" ColumnName="ControlAfter" />
+          <ScalarProperty Name="DurationMinutes" ColumnName="DurationMinutes" />
+          <ScalarProperty Name="DurationHours" ColumnName="DurationHours" />
+          <ScalarProperty Name="StartPeriod" ColumnName="StartPeriod" />
+          <ScalarProperty Name="StartAfter" ColumnName="StartAfter" />
+          <ScalarProperty Name="Order" ColumnName="Order" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="ShowCurrentUser" ColumnName="ShowCurrentUser" />
+          <ScalarProperty Name="AllowOptionalTransfer" ColumnName="AllowOptionalTransfer" />
+          <ScalarProperty Name="ResultName" ColumnName="ResultName" />
+          <ScalarProperty Name="Optional" ColumnName="Optional" />
+          <ScalarProperty Name="ElementType" ColumnName="ElementType" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="WorkflowTemplateID" ColumnName="WorkflowTemplateID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_WorkflowTemplateElementEvent">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_WorkflowTemplateElementEvent">
+        <MappingFragment StoreEntitySet="tbl_WorkflowTemplateElementEvent">
+          <ScalarProperty Name="ActivityCount" ColumnName="ActivityCount" />
+          <ScalarProperty Name="Condition" ColumnName="Condition" />
+          <ScalarProperty Name="WorkflowTemplateElementID" ColumnName="WorkflowTemplateElementID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_WorkflowTemplateElementExternalRequest">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_WorkflowTemplateElementExternalRequest">
+        <MappingFragment StoreEntitySet="tbl_WorkflowTemplateElementExternalRequest">
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="WorkflowTemplateElementID" ColumnName="WorkflowTemplateElementID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_WorkflowTemplateElementParameter">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_WorkflowTemplateElementParameter">
+        <MappingFragment StoreEntitySet="tbl_WorkflowTemplateElementParameter">
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="WorkflowTemplateElementID" ColumnName="WorkflowTemplateElementID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_WorkflowTemplateElementPeriod">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_WorkflowTemplateElementPeriod">
+        <MappingFragment StoreEntitySet="tbl_WorkflowTemplateElementPeriod">
+          <ScalarProperty Name="ToTime" ColumnName="ToTime" />
+          <ScalarProperty Name="FromTime" ColumnName="FromTime" />
+          <ScalarProperty Name="DayWeek" ColumnName="DayWeek" />
+          <ScalarProperty Name="WorkflowTemplateElementID" ColumnName="WorkflowTemplateElementID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_WorkflowTemplateElementRelation">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_WorkflowTemplateElementRelation">
+        <MappingFragment StoreEntitySet="tbl_WorkflowTemplateElementRelation">
+          <ScalarProperty Name="EndElementID" ColumnName="EndElementID" />
+          <ScalarProperty Name="StartElementResult" ColumnName="StartElementResult" />
+          <ScalarProperty Name="StartElementID" ColumnName="StartElementID" />
+          <ScalarProperty Name="WorkflowTemplateID" ColumnName="WorkflowTemplateID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_WorkflowTemplateElementResult">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_WorkflowTemplateElementResult">
+        <MappingFragment StoreEntitySet="tbl_WorkflowTemplateElementResult">
+          <ScalarProperty Name="IsSystem" ColumnName="IsSystem" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="WorkflowTemplateElementID" ColumnName="WorkflowTemplateElementID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_WorkflowTemplateElementTag">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_WorkflowTemplateElementTag">
+        <MappingFragment StoreEntitySet="tbl_WorkflowTemplateElementTag">
+          <ScalarProperty Name="Operation" ColumnName="Operation" />
+          <ScalarProperty Name="SiteTagID" ColumnName="SiteTagID" />
+          <ScalarProperty Name="WorkflowTemplateElementID" ColumnName="WorkflowTemplateElementID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_WorkflowTemplateGoal">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_WorkflowTemplateGoal">
+        <MappingFragment StoreEntitySet="tbl_WorkflowTemplateGoal">
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="WorkflowTemplateID" ColumnName="WorkflowTemplateID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_WorkflowTemplateParameter">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_WorkflowTemplateParameter">
+        <MappingFragment StoreEntitySet="tbl_WorkflowTemplateParameter">
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="IsSystem" ColumnName="IsSystem" />
+          <ScalarProperty Name="ModuleID" ColumnName="ModuleID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="WorkflowTemplateID" ColumnName="WorkflowTemplateID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_WorkflowTemplateRole">
+      <EntityTypeMapping TypeName="WebCounterModel.tbl_WorkflowTemplateRole">
+        <MappingFragment StoreEntitySet="tbl_WorkflowTemplateRole">
+          <ScalarProperty Name="ResponsibleID" ColumnName="ResponsibleID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="WorkflowTemplateID" ColumnName="WorkflowTemplateID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="tbl_AccessProfileModuleEditionOption" TypeName="WebCounterModel.tbl_AccessProfileModuleEditionOption" StoreEntitySet="tbl_AccessProfileModuleEditionOption">
+      <EndProperty Name="tbl_ModuleEditionOption">
+        <ScalarProperty Name="ID" ColumnName="ModuleEditionOptionID" />
+      </EndProperty>
+      <EndProperty Name="tbl_AccessProfileModule">
+        <ScalarProperty Name="ID" ColumnName="AccessProfileModuleID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="tbl_InvoiceToShipment" TypeName="WebCounterModel.tbl_InvoiceToShipment" StoreEntitySet="tbl_InvoiceToShipment">
+      <EndProperty Name="tbl_Shipment">
+        <ScalarProperty Name="ID" ColumnName="ShipmentID" />
+      </EndProperty>
+      <EndProperty Name="tbl_Invoice">
+        <ScalarProperty Name="ID" ColumnName="InvoiceID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="tbl_RequestToRequirement" TypeName="WebCounterModel.tbl_RequestToRequirement" StoreEntitySet="tbl_RequestToRequirement">
+      <EndProperty Name="tbl_Requirement">
+        <ScalarProperty Name="ID" ColumnName="RequirementID" />
+      </EndProperty>
+      <EndProperty Name="tbl_Request">
+        <ScalarProperty Name="ID" ColumnName="RequestID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="tbl_WebSitePageExternalResource" TypeName="WebCounterModel.tbl_WebSitePageExternalResource" StoreEntitySet="tbl_WebSitePageExternalResource">
+      <EndProperty Name="tbl_WebSitePage">
+        <ScalarProperty Name="ID" ColumnName="WebSitePageID" />
+      </EndProperty>
+      <EndProperty Name="tbl_ExternalResource">
+        <ScalarProperty Name="ID" ColumnName="ExternalResourceID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="tbl_WorkflowTemplateGoalElement" TypeName="WebCounterModel.tbl_WorkflowTemplateGoalElement" StoreEntitySet="tbl_WorkflowTemplateGoalElement">
+      <EndProperty Name="tbl_WorkflowTemplateGoal">
+        <ScalarProperty Name="ID" ColumnName="WorkflowTemplateGoalID" />
+      </EndProperty>
+      <EndProperty Name="tbl_WorkflowTemplateElement">
+        <ScalarProperty Name="ID" ColumnName="WorkflowTemplateElementID" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping>

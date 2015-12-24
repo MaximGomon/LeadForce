@@ -1,0 +1,28 @@
+﻿html, body { overflow: hidden; margin: 0px; padding: 0px; }
+body { font-family: Tahoma, Geneva, sans-serif; font-size: 12px; line-height: 16px; }
+form { height: 100%; }
+textarea:focus, input:focus{ outline: none; }
+.hide { display: none!important; }
+.label { font-family: Tahoma, Geneva, sans-serif; font-size: 12px; line-height: 16px; }
+a.hdr { display: inline-block; font-family: Tahoma, Geneva, sans-serif; font-size: 12px; line-height: 14px; color: #333; font-weight: bold; margin: 5px 0; }
+.field-wrapper { width: 100%; display: inline-block; margin-bottom: 5px; }
+.hor-left { width: 25%; display: table-cell; vertical-align: top; } .hor-left .label { width: 49%; float: left; } .hor-left input { width: 97%; float: left; } .hor-left select { width: 100%; float: left; } .hor-left textarea { width: 97%; float: left; }
+.hor-top { width: 25%; display: table-cell; padding: 2px; vertical-align: top; } .hor-top .label { width: 99%; float: left; } .hor-top input { width: 97%; float: left; } .hor-top select { width: 100%; float: left; } .hor-top textarea { width: 97%; float: left; }
+.ver-left { width: 100%; display: table; margin-bottom: 5px; } .ver-left .label { width: 50%; display: table-cell; } .ver-left input { width: 98%; } .ver-left select { width: 100%; } .ver-left textarea { width: 98%; }
+.ver-top { width: 100%; } .ver-top .label { width: 99%; } .ver-top input { width: 99%; } .ver-top select { width: 100%; } .ver-top textarea { width: 99%; }
+.hor-none { width: 25%; display: table-cell; padding: 2px; vertical-align: top; } .hor-none input { width: 99%; float: left; } .hor-none select { width: 100%; float: left; } .hor-none textarea { width: 99%; float: left; }
+.ver-none { width: 100%; } .ver-none input { width: 99%; } .ver-none select { width: 100%; } .ver-none textarea { width: 99%; }
+.ver-left .field-wrapper { width: 50%; display: table-cell; }
+.hor-left .field-wrapper { width: 50%; }
+
+.btn { height: 27px; display: inline-block; font-size: 13px; font-weight: normal; line-height: 27px; text-decoration: none!important; text-align: center; color: #fff; background-color: #64c400; -webkit-border-radius: 16px; -moz-border-radius: 16px; border-radius: 16px; margin-top: 10px; }
+.btn em { width: 13px; height: 27px; display: inline-block; float: left; background: url(images/sprite.png) 0 -97px no-repeat; }
+.btn span { height: 27px; display: inline-block; float: left; background: url(images/sprite.png) right -70px no-repeat; padding: 0 26px 0 12px; }
+a:hover.btn em { background-position: 0 -151px; }
+a:hover.btn span { background-position: right -124px; }
+a:active.btn em { background-position: 0 -205px; }
+a:active.btn span { background-position: right -178px; }
+
+html body .riSingle .riTextBox, html body .riSingle .riTextBox[type="text"] { -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px;}
+html body .riSingle .riTextBox.error, html body .riSingle .riTextBox.error[type="text"] { background-image: none; background-color: #ffebe8!important; border-color: #D51923; }
+.RadComboBox.error .rcbInputCell, .RadComboBox.error .rcbArrowCell { background-image: url(images/comboxboxerror.png); }
