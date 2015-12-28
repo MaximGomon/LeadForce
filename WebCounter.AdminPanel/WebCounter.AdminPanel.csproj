@@ -2502,7 +2502,7 @@
     <Content Include="connectionstrings.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="appsettings.config" />
+    <Content Include="App.config" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
