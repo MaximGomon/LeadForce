@@ -30,7 +30,8 @@ namespace Labitec.LeadForce.Portal.Handlers
                 var result = ContentCommentRepository.GetComments(CurrentUser.Instance, Guid.Parse(contentId), commentType.ToEnum<CommentTables>(), true).OrderByDescending(c => c.CreatedAt).ToList();
 
                 foreach (var contentComment in result)                
-                    contentComment.Comment = contentComment.Comment.Replace("=\"/files/", "=\"" + ConfigurationManager.AppSettings["LeadForceSiteUrl"] + "/files/");                
+                    contentComment.Comment = contentComment.Comment.Replace("=\"/files/", "=\"" + 
+                        ConfigurationManager.AppSettings["LeadForceSiteUrl"] + "/files/");                
 
                 return result;
             }

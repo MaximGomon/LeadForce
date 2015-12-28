@@ -106,3 +106,40 @@ C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce - Copy\W
 C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce - Copy\WebCounter.AdminPanel\obj\Debug\WebCounter.AdminPanel.csprojResolveAssemblyReference.cache
 C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce - Copy\WebCounter.AdminPanel\obj\Debug\WebCounter.AdminPanel.dll
 C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce - Copy\WebCounter.AdminPanel\obj\Debug\WebCounter.AdminPanel.pdb
+D:\Work\Sources\LeadForce\WebCounter.AdminPanel\bin\WebCounter.AdminPanel.dll.config
+D:\Work\Sources\LeadForce\WebCounter.AdminPanel\bin\WebCounter.AdminPanel.dll
+D:\Work\Sources\LeadForce\WebCounter.AdminPanel\bin\WebCounter.AdminPanel.pdb
+D:\Work\Sources\LeadForce\WebCounter.AdminPanel\bin\AForge.dll
+D:\Work\Sources\LeadForce\WebCounter.AdminPanel\bin\AForge.Imaging.dll
+D:\Work\Sources\LeadForce\WebCounter.AdminPanel\bin\DirtyPageReminder.dll
+D:\Work\Sources\LeadForce\WebCounter.AdminPanel\bin\Excel.dll
+D:\Work\Sources\LeadForce\WebCounter.AdminPanel\bin\HtmlAgilityPack.dll
+D:\Work\Sources\LeadForce\WebCounter.AdminPanel\bin\HtmlSanitizationLibrary.dll
+D:\Work\Sources\LeadForce\WebCounter.AdminPanel\bin\ICSharpCode.SharpZipLib.dll
+D:\Work\Sources\LeadForce\WebCounter.AdminPanel\bin\Labitec.DataFeed.dll
+D:\Work\Sources\LeadForce\WebCounter.AdminPanel\bin\Labitec.LeadForce.CronJobs.dll
+D:\Work\Sources\LeadForce\WebCounter.AdminPanel\bin\Labitec.LeadForce.Report.dll
+D:\Work\Sources\LeadForce\WebCounter.AdminPanel\bin\Labitec.UI.Address.dll
+D:\Work\Sources\LeadForce\WebCounter.AdminPanel\bin\Labitec.UI.BaseWorkspace.dll
+D:\Work\Sources\LeadForce\WebCounter.AdminPanel\bin\Labitec.UI.Dictionary.dll
+D:\Work\Sources\LeadForce\WebCounter.AdminPanel\bin\Labitec.UI.Photo.dll
+D:\Work\Sources\LeadForce\WebCounter.AdminPanel\bin\Newtonsoft.Json.dll
+D:\Work\Sources\LeadForce\WebCounter.AdminPanel\bin\Telerik.Reporting.dll
+D:\Work\Sources\LeadForce\WebCounter.AdminPanel\bin\Telerik.ReportViewer.WebForms.dll
+D:\Work\Sources\LeadForce\WebCounter.AdminPanel\bin\Telerik.Web.Design.dll
+D:\Work\Sources\LeadForce\WebCounter.AdminPanel\bin\Telerik.Web.UI.dll
+D:\Work\Sources\LeadForce\WebCounter.AdminPanel\bin\Telerik.Web.UI.Skins.dll
+D:\Work\Sources\LeadForce\WebCounter.AdminPanel\bin\WebCounter.BusinessLogicLayer.dll
+D:\Work\Sources\LeadForce\WebCounter.AdminPanel\bin\WebCounter.DataAccessLayer.dll
+D:\Work\Sources\LeadForce\WebCounter.AdminPanel\bin\WufooSharp.dll
+D:\Work\Sources\LeadForce\WebCounter.AdminPanel\bin\OpenPop.dll
+D:\Work\Sources\LeadForce\WebCounter.AdminPanel\bin\log4net.dll
+D:\Work\Sources\LeadForce\WebCounter.AdminPanel\bin\Microsoft.Web.Administration.dll
+D:\Work\Sources\LeadForce\WebCounter.AdminPanel\bin\Labitec.LeadForce.CronJobs.pdb
+D:\Work\Sources\LeadForce\WebCounter.AdminPanel\bin\Labitec.LeadForce.Report.pdb
+D:\Work\Sources\LeadForce\WebCounter.AdminPanel\bin\WebCounter.BusinessLogicLayer.pdb
+D:\Work\Sources\LeadForce\WebCounter.AdminPanel\bin\WebCounter.DataAccessLayer.pdb
+D:\Work\Sources\LeadForce\WebCounter.AdminPanel\bin\Labitec.UI.BaseWorkspace.pdb
+D:\Work\Sources\LeadForce\WebCounter.AdminPanel\obj\Debug\WebCounter.AdminPanel.csprojResolveAssemblyReference.cache
+D:\Work\Sources\LeadForce\WebCounter.AdminPanel\obj\Debug\WebCounter.AdminPanel.dll
+D:\Work\Sources\LeadForce\WebCounter.AdminPanel\obj\Debug\WebCounter.AdminPanel.pdb

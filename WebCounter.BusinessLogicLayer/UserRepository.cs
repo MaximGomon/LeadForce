@@ -30,7 +30,8 @@ namespace WebCounter.BusinessLogicLayer
         /// <returns></returns>
         public List<tbl_User> SelectByLoginPassword(string login, string password)
         {
-            return _dataContext.tbl_User.Where(a => a.Login == login && a.Password == password).ToList();
+            var users = _dataContext.tbl_User.Where(a => a.Login == login && a.Password == password).ToList();
+            return users;
         }
 
 

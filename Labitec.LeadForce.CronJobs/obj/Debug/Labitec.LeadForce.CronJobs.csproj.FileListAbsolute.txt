@@ -43,3 +43,19 @@ C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce - Copy\L
 C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce - Copy\Labitec.LeadForce.CronJobs\obj\Debug\Labitec.LeadForce.CronJobs.csprojResolveAssemblyReference.cache
 C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce - Copy\Labitec.LeadForce.CronJobs\obj\Debug\Labitec.LeadForce.CronJobs.dll
 C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce - Copy\Labitec.LeadForce.CronJobs\obj\Debug\Labitec.LeadForce.CronJobs.pdb
+D:\Work\Sources\LeadForce\Labitec.LeadForce.CronJobs\bin\Debug\Labitec.LeadForce.CronJobs.dll
+D:\Work\Sources\LeadForce\Labitec.LeadForce.CronJobs\bin\Debug\Labitec.LeadForce.CronJobs.pdb
+D:\Work\Sources\LeadForce\Labitec.LeadForce.CronJobs\bin\Debug\Labitec.DataFeed.dll
+D:\Work\Sources\LeadForce\Labitec.LeadForce.CronJobs\bin\Debug\OpenPop.dll
+D:\Work\Sources\LeadForce\Labitec.LeadForce.CronJobs\bin\Debug\WebCounter.BusinessLogicLayer.dll
+D:\Work\Sources\LeadForce\Labitec.LeadForce.CronJobs\bin\Debug\WebCounter.DataAccessLayer.dll
+D:\Work\Sources\LeadForce\Labitec.LeadForce.CronJobs\bin\Debug\WufooSharp.dll
+D:\Work\Sources\LeadForce\Labitec.LeadForce.CronJobs\bin\Debug\log4net.dll
+D:\Work\Sources\LeadForce\Labitec.LeadForce.CronJobs\bin\Debug\Microsoft.Web.Administration.dll
+D:\Work\Sources\LeadForce\Labitec.LeadForce.CronJobs\bin\Debug\HtmlAgilityPack.dll
+D:\Work\Sources\LeadForce\Labitec.LeadForce.CronJobs\bin\Debug\Newtonsoft.Json.dll
+D:\Work\Sources\LeadForce\Labitec.LeadForce.CronJobs\bin\Debug\WebCounter.BusinessLogicLayer.pdb
+D:\Work\Sources\LeadForce\Labitec.LeadForce.CronJobs\bin\Debug\WebCounter.DataAccessLayer.pdb
+D:\Work\Sources\LeadForce\Labitec.LeadForce.CronJobs\obj\Debug\Labitec.LeadForce.CronJobs.csprojResolveAssemblyReference.cache
+D:\Work\Sources\LeadForce\Labitec.LeadForce.CronJobs\obj\Debug\Labitec.LeadForce.CronJobs.dll
+D:\Work\Sources\LeadForce\Labitec.LeadForce.CronJobs\obj\Debug\Labitec.LeadForce.CronJobs.pdb

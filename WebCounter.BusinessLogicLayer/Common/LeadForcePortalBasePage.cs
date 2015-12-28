@@ -75,7 +75,8 @@ namespace WebCounter.BusinessLogicLayer.Common
                 if (!string.IsNullOrEmpty(portalSettings.HeaderTemplate))
                 {
                     if (!portalSettings.HeaderTemplate.Contains("http"))
-                        portalSettings.HeaderTemplate = portalSettings.HeaderTemplate.Replace("/files/" + SiteId, ConfigurationManager.AppSettings["LeadForceSiteUrl"] + "/files/" + SiteId);
+                        portalSettings.HeaderTemplate = portalSettings.HeaderTemplate.Replace("/files/" + SiteId, 
+                            ConfigurationManager.AppSettings["LeadForceSiteUrl"] + "/files/" + SiteId);
                 }                
 
                 return portalSettings;

@@ -65,9 +65,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AnalyticReportRepository.cs">
-      <SubType>Component</SubType>
-    </Compile>
+    <Compile Include="AnalyticReportRepository.cs" />
     <Compile Include="Common\AddSiteUserParams.cs" />
     <Compile Include="Common\Access.cs" />
     <Compile Include="Common\AnalyticReportFilter.cs" />
@@ -495,6 +493,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="connectionstrings.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

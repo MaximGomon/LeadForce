@@ -34,3 +34,17 @@ C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce - Copy\W
 C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce - Copy\WebCounter.BusinessLogicLayer\obj\Debug\WebCounter.BusinessLogicLayer.csprojResolveAssemblyReference.cache
 C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce - Copy\WebCounter.BusinessLogicLayer\obj\Debug\WebCounter.BusinessLogicLayer.dll
 C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce - Copy\WebCounter.BusinessLogicLayer\obj\Debug\WebCounter.BusinessLogicLayer.pdb
+D:\Work\Sources\LeadForce\WebCounter.BusinessLogicLayer\bin\Debug\WebCounter.BusinessLogicLayer.dll
+D:\Work\Sources\LeadForce\WebCounter.BusinessLogicLayer\bin\Debug\WebCounter.BusinessLogicLayer.pdb
+D:\Work\Sources\LeadForce\WebCounter.BusinessLogicLayer\bin\Debug\HtmlAgilityPack.dll
+D:\Work\Sources\LeadForce\WebCounter.BusinessLogicLayer\bin\Debug\Labitec.DataFeed.dll
+D:\Work\Sources\LeadForce\WebCounter.BusinessLogicLayer\bin\Debug\log4net.dll
+D:\Work\Sources\LeadForce\WebCounter.BusinessLogicLayer\bin\Debug\Microsoft.Web.Administration.dll
+D:\Work\Sources\LeadForce\WebCounter.BusinessLogicLayer\bin\Debug\Newtonsoft.Json.dll
+D:\Work\Sources\LeadForce\WebCounter.BusinessLogicLayer\bin\Debug\WebCounter.DataAccessLayer.dll
+D:\Work\Sources\LeadForce\WebCounter.BusinessLogicLayer\bin\Debug\WufooSharp.dll
+D:\Work\Sources\LeadForce\WebCounter.BusinessLogicLayer\bin\Debug\WebCounter.DataAccessLayer.pdb
+D:\Work\Sources\LeadForce\WebCounter.BusinessLogicLayer\obj\Debug\WebCounter.BusinessLogicLayer.csprojResolveAssemblyReference.cache
+D:\Work\Sources\LeadForce\WebCounter.BusinessLogicLayer\obj\Debug\WebCounter.BusinessLogicLayer.dll
+D:\Work\Sources\LeadForce\WebCounter.BusinessLogicLayer\obj\Debug\WebCounter.BusinessLogicLayer.pdb
+D:\Work\Sources\LeadForce\WebCounter.BusinessLogicLayer\bin\Debug\WebCounter.BusinessLogicLayer.dll.config

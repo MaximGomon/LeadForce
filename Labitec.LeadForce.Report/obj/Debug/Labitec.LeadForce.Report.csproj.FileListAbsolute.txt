@@ -55,3 +55,23 @@ C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce - Copy\L
 C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce - Copy\Labitec.LeadForce.Report\obj\Debug\Labitec.LeadForce.Report.csproj.GenerateResource.Cache
 C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce - Copy\Labitec.LeadForce.Report\obj\Debug\Labitec.LeadForce.Report.dll
 C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce - Copy\Labitec.LeadForce.Report\obj\Debug\Labitec.LeadForce.Report.pdb
+D:\Work\Sources\LeadForce\Labitec.LeadForce.Report\bin\Debug\Labitec.LeadForce.Report.dll.config
+D:\Work\Sources\LeadForce\Labitec.LeadForce.Report\bin\Debug\Labitec.LeadForce.Report.dll
+D:\Work\Sources\LeadForce\Labitec.LeadForce.Report\bin\Debug\Labitec.LeadForce.Report.pdb
+D:\Work\Sources\LeadForce\Labitec.LeadForce.Report\bin\Debug\Telerik.Reporting.dll
+D:\Work\Sources\LeadForce\Labitec.LeadForce.Report\bin\Debug\WebCounter.BusinessLogicLayer.dll
+D:\Work\Sources\LeadForce\Labitec.LeadForce.Report\bin\Debug\WebCounter.DataAccessLayer.dll
+D:\Work\Sources\LeadForce\Labitec.LeadForce.Report\bin\Debug\log4net.dll
+D:\Work\Sources\LeadForce\Labitec.LeadForce.Report\bin\Debug\Microsoft.Web.Administration.dll
+D:\Work\Sources\LeadForce\Labitec.LeadForce.Report\bin\Debug\HtmlAgilityPack.dll
+D:\Work\Sources\LeadForce\Labitec.LeadForce.Report\bin\Debug\Labitec.DataFeed.dll
+D:\Work\Sources\LeadForce\Labitec.LeadForce.Report\bin\Debug\Newtonsoft.Json.dll
+D:\Work\Sources\LeadForce\Labitec.LeadForce.Report\bin\Debug\WufooSharp.dll
+D:\Work\Sources\LeadForce\Labitec.LeadForce.Report\bin\Debug\WebCounter.BusinessLogicLayer.pdb
+D:\Work\Sources\LeadForce\Labitec.LeadForce.Report\bin\Debug\WebCounter.DataAccessLayer.pdb
+D:\Work\Sources\LeadForce\Labitec.LeadForce.Report\obj\Debug\Labitec.LeadForce.Report.csprojResolveAssemblyReference.cache
+D:\Work\Sources\LeadForce\Labitec.LeadForce.Report\obj\Debug\Labitec.LeadForce.Report.InvoiceReport.resources
+D:\Work\Sources\LeadForce\Labitec.LeadForce.Report\obj\Debug\Labitec.LeadForce.Report.RequirementReport.resources
+D:\Work\Sources\LeadForce\Labitec.LeadForce.Report\obj\Debug\Labitec.LeadForce.Report.csproj.GenerateResource.Cache
+D:\Work\Sources\LeadForce\Labitec.LeadForce.Report\obj\Debug\Labitec.LeadForce.Report.dll
+D:\Work\Sources\LeadForce\Labitec.LeadForce.Report\obj\Debug\Labitec.LeadForce.Report.pdb

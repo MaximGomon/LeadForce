@@ -16,3 +16,9 @@ C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce - Copy\W
 C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce - Copy\WebCounter.DataAccessLayer\obj\Debug\WebCounter.DataAccessLayer.csprojResolveAssemblyReference.cache
 C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce - Copy\WebCounter.DataAccessLayer\obj\Debug\WebCounter.DataAccessLayer.dll
 C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce - Copy\WebCounter.DataAccessLayer\obj\Debug\WebCounter.DataAccessLayer.pdb
+D:\Work\Sources\LeadForce\WebCounter.DataAccessLayer\bin\Debug\WebCounter.DataAccessLayer.dll.config
+D:\Work\Sources\LeadForce\WebCounter.DataAccessLayer\bin\Debug\WebCounter.DataAccessLayer.dll
+D:\Work\Sources\LeadForce\WebCounter.DataAccessLayer\bin\Debug\WebCounter.DataAccessLayer.pdb
+D:\Work\Sources\LeadForce\WebCounter.DataAccessLayer\obj\Debug\WebCounter.DataAccessLayer.csprojResolveAssemblyReference.cache
+D:\Work\Sources\LeadForce\WebCounter.DataAccessLayer\obj\Debug\WebCounter.DataAccessLayer.dll
+D:\Work\Sources\LeadForce\WebCounter.DataAccessLayer\obj\Debug\WebCounter.DataAccessLayer.pdb
