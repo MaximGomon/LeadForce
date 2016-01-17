@@ -55,3 +55,23 @@ C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce - Copy\L
 C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce - Copy\Labitec.LeadForce.CronJobs.Launcher\obj\x86\Debug\Labitec.LeadForce.CronJobs.Launcher.csprojResolveAssemblyReference.cache
 C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce - Copy\Labitec.LeadForce.CronJobs.Launcher\obj\x86\Debug\Labitec.LeadForce.CronJobs.Launcher.exe
 C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce - Copy\Labitec.LeadForce.CronJobs.Launcher\obj\x86\Debug\Labitec.LeadForce.CronJobs.Launcher.pdb
+D:\Work\Sources\LeadForce\Labitec.LeadForce.CronJobs.Launcher\bin\Debug\log4net.config
+D:\Work\Sources\LeadForce\Labitec.LeadForce.CronJobs.Launcher\bin\Debug\Labitec.LeadForce.CronJobs.Launcher.exe.config
+D:\Work\Sources\LeadForce\Labitec.LeadForce.CronJobs.Launcher\bin\Debug\Labitec.LeadForce.CronJobs.Launcher.exe
+D:\Work\Sources\LeadForce\Labitec.LeadForce.CronJobs.Launcher\bin\Debug\Labitec.LeadForce.CronJobs.Launcher.pdb
+D:\Work\Sources\LeadForce\Labitec.LeadForce.CronJobs.Launcher\bin\Debug\Labitec.LeadForce.CronJobs.dll
+D:\Work\Sources\LeadForce\Labitec.LeadForce.CronJobs.Launcher\bin\Debug\log4net.dll
+D:\Work\Sources\LeadForce\Labitec.LeadForce.CronJobs.Launcher\bin\Debug\WebCounter.BusinessLogicLayer.dll
+D:\Work\Sources\LeadForce\Labitec.LeadForce.CronJobs.Launcher\bin\Debug\WebCounter.DataAccessLayer.dll
+D:\Work\Sources\LeadForce\Labitec.LeadForce.CronJobs.Launcher\bin\Debug\OpenPop.dll
+D:\Work\Sources\LeadForce\Labitec.LeadForce.CronJobs.Launcher\bin\Debug\Labitec.DataFeed.dll
+D:\Work\Sources\LeadForce\Labitec.LeadForce.CronJobs.Launcher\bin\Debug\Microsoft.Web.Administration.dll
+D:\Work\Sources\LeadForce\Labitec.LeadForce.CronJobs.Launcher\bin\Debug\HtmlAgilityPack.dll
+D:\Work\Sources\LeadForce\Labitec.LeadForce.CronJobs.Launcher\bin\Debug\Newtonsoft.Json.dll
+D:\Work\Sources\LeadForce\Labitec.LeadForce.CronJobs.Launcher\bin\Debug\WufooSharp.dll
+D:\Work\Sources\LeadForce\Labitec.LeadForce.CronJobs.Launcher\bin\Debug\Labitec.LeadForce.CronJobs.pdb
+D:\Work\Sources\LeadForce\Labitec.LeadForce.CronJobs.Launcher\bin\Debug\WebCounter.BusinessLogicLayer.pdb
+D:\Work\Sources\LeadForce\Labitec.LeadForce.CronJobs.Launcher\bin\Debug\WebCounter.DataAccessLayer.pdb
+D:\Work\Sources\LeadForce\Labitec.LeadForce.CronJobs.Launcher\obj\x86\Debug\Labitec.LeadForce.CronJobs.Launcher.csprojResolveAssemblyReference.cache
+D:\Work\Sources\LeadForce\Labitec.LeadForce.CronJobs.Launcher\obj\x86\Debug\Labitec.LeadForce.CronJobs.Launcher.exe
+D:\Work\Sources\LeadForce\Labitec.LeadForce.CronJobs.Launcher\obj\x86\Debug\Labitec.LeadForce.CronJobs.Launcher.pdb

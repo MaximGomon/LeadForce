@@ -82,3 +82,32 @@ C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce - Copy\L
 C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce - Copy\Labitec.LeadForce.Portal\obj\Debug\Labitec.LeadForce.Portal.csprojResolveAssemblyReference.cache
 C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce - Copy\Labitec.LeadForce.Portal\obj\Debug\Labitec.LeadForce.Portal.dll
 C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce - Copy\Labitec.LeadForce.Portal\obj\Debug\Labitec.LeadForce.Portal.pdb
+D:\Work\Sources\LeadForce\Labitec.LeadForce.Portal\bin\Labitec.LeadForce.Portal.dll.config
+D:\Work\Sources\LeadForce\Labitec.LeadForce.Portal\bin\Labitec.LeadForce.Portal.dll
+D:\Work\Sources\LeadForce\Labitec.LeadForce.Portal\bin\Labitec.LeadForce.Portal.pdb
+D:\Work\Sources\LeadForce\Labitec.LeadForce.Portal\bin\HtmlSanitizationLibrary.dll
+D:\Work\Sources\LeadForce\Labitec.LeadForce.Portal\bin\Labitec.LeadForce.Report.dll
+D:\Work\Sources\LeadForce\Labitec.LeadForce.Portal\bin\Labitec.UI.Address.dll
+D:\Work\Sources\LeadForce\Labitec.LeadForce.Portal\bin\Labitec.UI.BaseWorkspace.dll
+D:\Work\Sources\LeadForce\Labitec.LeadForce.Portal\bin\Labitec.UI.Dictionary.dll
+D:\Work\Sources\LeadForce\Labitec.LeadForce.Portal\bin\Newtonsoft.Json.dll
+D:\Work\Sources\LeadForce\Labitec.LeadForce.Portal\bin\skmValidators.dll
+D:\Work\Sources\LeadForce\Labitec.LeadForce.Portal\bin\Telerik.Reporting.dll
+D:\Work\Sources\LeadForce\Labitec.LeadForce.Portal\bin\Telerik.ReportViewer.WebForms.dll
+D:\Work\Sources\LeadForce\Labitec.LeadForce.Portal\bin\Telerik.Web.Design.dll
+D:\Work\Sources\LeadForce\Labitec.LeadForce.Portal\bin\Telerik.Web.UI.dll
+D:\Work\Sources\LeadForce\Labitec.LeadForce.Portal\bin\Telerik.Web.UI.Skins.dll
+D:\Work\Sources\LeadForce\Labitec.LeadForce.Portal\bin\WebCounter.BusinessLogicLayer.dll
+D:\Work\Sources\LeadForce\Labitec.LeadForce.Portal\bin\WebCounter.DataAccessLayer.dll
+D:\Work\Sources\LeadForce\Labitec.LeadForce.Portal\bin\log4net.dll
+D:\Work\Sources\LeadForce\Labitec.LeadForce.Portal\bin\Microsoft.Web.Administration.dll
+D:\Work\Sources\LeadForce\Labitec.LeadForce.Portal\bin\HtmlAgilityPack.dll
+D:\Work\Sources\LeadForce\Labitec.LeadForce.Portal\bin\Labitec.DataFeed.dll
+D:\Work\Sources\LeadForce\Labitec.LeadForce.Portal\bin\WufooSharp.dll
+D:\Work\Sources\LeadForce\Labitec.LeadForce.Portal\bin\Labitec.LeadForce.Report.pdb
+D:\Work\Sources\LeadForce\Labitec.LeadForce.Portal\bin\WebCounter.BusinessLogicLayer.pdb
+D:\Work\Sources\LeadForce\Labitec.LeadForce.Portal\bin\WebCounter.DataAccessLayer.pdb
+D:\Work\Sources\LeadForce\Labitec.LeadForce.Portal\bin\Labitec.UI.BaseWorkspace.pdb
+D:\Work\Sources\LeadForce\Labitec.LeadForce.Portal\obj\Debug\Labitec.LeadForce.Portal.csprojResolveAssemblyReference.cache
+D:\Work\Sources\LeadForce\Labitec.LeadForce.Portal\obj\Debug\Labitec.LeadForce.Portal.dll
+D:\Work\Sources\LeadForce\Labitec.LeadForce.Portal\obj\Debug\Labitec.LeadForce.Portal.pdb

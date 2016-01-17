@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Express 2013 for Web
-VisualStudioVersion = 12.0.21005.1
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{639A4493-6B87-455B-9C70-BA9968B6EEEE}"
 	ProjectSection(SolutionItems) = preProject
@@ -42,6 +42,34 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Fx", "Fx", "{888B361E-F85B-4C04-A84A-2F6F17A8F750}"
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "LeadForce.Database", "LeadForce.Database\LeadForce.Database.sqlproj", "{3725D898-5EF7-4C1E-BC44-E85FAAA3FB4A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libs", "Libs", "{8D7B10DE-6F88-4D55-8D1C-904DBC3DEEFE}"
+	ProjectSection(SolutionItems) = preProject
+		Libs\AForge.dll = Libs\AForge.dll
+		Libs\AForge.Imaging.dll = Libs\AForge.Imaging.dll
+		Libs\DirtyPageReminder.dll = Libs\DirtyPageReminder.dll
+		Libs\Excel.dll = Libs\Excel.dll
+		Libs\HtmlAgilityPack.dll = Libs\HtmlAgilityPack.dll
+		Libs\HtmlSanitizationLibrary.dll = Libs\HtmlSanitizationLibrary.dll
+		Libs\ICSharpCode.SharpZipLib.dll = Libs\ICSharpCode.SharpZipLib.dll
+		Libs\Labitec.DataFeed.dll = Libs\Labitec.DataFeed.dll
+		Libs\Labitec.UI.Address.dll = Libs\Labitec.UI.Address.dll
+		Libs\Labitec.UI.BaseWorkspace.dll = Libs\Labitec.UI.BaseWorkspace.dll
+		Libs\Labitec.UI.BaseWorkspace.pdb = Libs\Labitec.UI.BaseWorkspace.pdb
+		Libs\Labitec.UI.Dictionary.dll = Libs\Labitec.UI.Dictionary.dll
+		Libs\Labitec.UI.Photo.dll = Libs\Labitec.UI.Photo.dll
+		Libs\log4net.dll = Libs\log4net.dll
+		Libs\Microsoft.Web.Administration.dll = Libs\Microsoft.Web.Administration.dll
+		Libs\Newtonsoft.Json.dll = Libs\Newtonsoft.Json.dll
+		Libs\OpenPop.dll = Libs\OpenPop.dll
+		Libs\skmValidators.dll = Libs\skmValidators.dll
+		Libs\Telerik.Reporting.dll = Libs\Telerik.Reporting.dll
+		Libs\Telerik.ReportViewer.WebForms.dll = Libs\Telerik.ReportViewer.WebForms.dll
+		Libs\Telerik.Web.Design.dll = Libs\Telerik.Web.Design.dll
+		Libs\Telerik.Web.UI.dll = Libs\Telerik.Web.UI.dll
+		Libs\Telerik.Web.UI.Skins.dll = Libs\Telerik.Web.UI.Skins.dll
+		Libs\WufooSharp.dll = Libs\WufooSharp.dll
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -532,12 +560,12 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{EA0D5DA4-4E2F-4475-8285-B954204AFA7D} = {888B361E-F85B-4C04-A84A-2F6F17A8F750}
-		{2E3AC325-A73F-4008-B7B5-3CC9A61BAC21} = {888B361E-F85B-4C04-A84A-2F6F17A8F750}
-		{172F2C6C-4818-4DC7-9B09-6EA0D755F633} = {888B361E-F85B-4C04-A84A-2F6F17A8F750}
-		{2DFD3EEB-1B13-4BFD-8A33-C08E38B93BB7} = {888B361E-F85B-4C04-A84A-2F6F17A8F750}
-		{405B7B2D-902C-491B-B031-ECEA0D32A372} = {888B361E-F85B-4C04-A84A-2F6F17A8F750}
 		{750A873E-E0C0-4A99-ABB7-410F74CBBD76} = {888B361E-F85B-4C04-A84A-2F6F17A8F750}
 		{A049CEF2-3015-49A8-81D0-B4A460086BA2} = {888B361E-F85B-4C04-A84A-2F6F17A8F750}
+		{EA0D5DA4-4E2F-4475-8285-B954204AFA7D} = {888B361E-F85B-4C04-A84A-2F6F17A8F750}
+		{405B7B2D-902C-491B-B031-ECEA0D32A372} = {888B361E-F85B-4C04-A84A-2F6F17A8F750}
+		{172F2C6C-4818-4DC7-9B09-6EA0D755F633} = {888B361E-F85B-4C04-A84A-2F6F17A8F750}
+		{2DFD3EEB-1B13-4BFD-8A33-C08E38B93BB7} = {888B361E-F85B-4C04-A84A-2F6F17A8F750}
+		{2E3AC325-A73F-4008-B7B5-3CC9A61BAC21} = {888B361E-F85B-4C04-A84A-2F6F17A8F750}
 	EndGlobalSection
 EndGlobal

@@ -26,3 +26,9 @@ C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce - Copy\L
 C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce - Copy\LeadForce.Database\obj\Debug\LeadForce.Database.sqlprojResolveAssemblyReference.cache
 C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce - Copy\LeadForce.Database\obj\Debug\LeadForce.Database.dll
 C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce - Copy\LeadForce.Database\obj\Debug\LeadForce.Database.pdb
+D:\Work\Sources\LeadForce\LeadForce.Database\bin\Debug\LeadForce.Database.dacpac
+D:\Work\Sources\LeadForce\LeadForce.Database\bin\Debug\LeadForce.Database.dll
+D:\Work\Sources\LeadForce\LeadForce.Database\bin\Debug\LeadForce.Database.pdb
+D:\Work\Sources\LeadForce\LeadForce.Database\obj\Debug\LeadForce.Database.sqlprojResolveAssemblyReference.cache
+D:\Work\Sources\LeadForce\LeadForce.Database\obj\Debug\LeadForce.Database.dll
+D:\Work\Sources\LeadForce\LeadForce.Database\obj\Debug\LeadForce.Database.pdb

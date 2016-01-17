@@ -27,7 +27,8 @@ namespace WebCounter.BusinessLogicLayer
         /// <returns></returns>
         public tbl_Module SelectByName(string name)
         {
-            return _dataContext.tbl_Module.Where(m => m.Name.ToLower() == name.ToLower()).SingleOrDefault();
+            var result = _dataContext.tbl_Module.SingleOrDefault(m => m.Name.ToLower() == name.ToLower());
+            return result;
         }
 
 

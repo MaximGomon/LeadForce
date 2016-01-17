@@ -23283,7 +23283,6 @@ BEGIN
 	INSERT INTO [dbo].[tbl_ColumnCategories] (ID, SiteID, Title) VALUES (@_columnCategory2, @_siteID, N''Фирмографические данные'')
 	INSERT INTO [dbo].[tbl_ColumnCategories] (ID, SiteID, Title) VALUES (@_columnCategory3, @_siteID, N''Готовность сделки'')
 	
-	
 	INSERT INTO [dbo].[tbl_Status] (SiteID, Title, [Order], IsDefault) VALUES (@_siteID, N''Активна'', 0, 1)
 	INSERT INTO [dbo].[tbl_Status] (SiteID, Title, [Order], IsDefault) VALUES (@_siteID, N''Активна (Возврат)'', 1, 0)
 	INSERT INTO [dbo].[tbl_Status] (SiteID, Title, [Order], IsDefault) VALUES (@_siteID, N''Передана в продажи'', 2, 0)
@@ -23291,13 +23290,11 @@ BEGIN
 	INSERT INTO [dbo].[tbl_Status] (SiteID, Title, [Order], IsDefault) VALUES (@_siteID, N''Отказ в продаже'', 4, 0)
 	INSERT INTO [dbo].[tbl_Status] (SiteID, Title, [Order], IsDefault) VALUES (@_siteID, N''Отменена'', 5, 0)
 	
-	
 	INSERT INTO [dbo].[tbl_ReadyToSell] (SiteID, Title, IsDefault, MinScore, MaxScore) VALUES (@_siteID, N''Нет информации'', 1, 0, 14)
 	INSERT INTO [dbo].[tbl_ReadyToSell] (SiteID, Title, IsDefault, MinScore, MaxScore) VALUES (@_siteID, N''Холодный'', 0, 15, 59)
 	INSERT INTO [dbo].[tbl_ReadyToSell] (SiteID, Title, IsDefault, MinScore, MaxScore) VALUES (@_siteID, N''Теплый'', 0, 60, 79)
 	INSERT INTO [dbo].[tbl_ReadyToSell] (SiteID, Title, IsDefault, MinScore, MaxScore) VALUES (@_siteID, N''Горячий'', 0, 80, 100)
-	
-	
+		
 	INSERT INTO [dbo].[tbl_Priorities] (SiteID, Title, MinScore, MaxScore) VALUES (@_siteID, N''A'', 80, 100)
 	INSERT INTO [dbo].[tbl_Priorities] (SiteID, Title, MinScore, MaxScore) VALUES (@_siteID, N''B'', 50, 79)
 	INSERT INTO [dbo].[tbl_Priorities] (SiteID, Title, MinScore, MaxScore) VALUES (@_siteID, N''C'', 20, 49)

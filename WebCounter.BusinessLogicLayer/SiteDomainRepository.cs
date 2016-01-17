@@ -63,7 +63,8 @@ namespace WebCounter.BusinessLogicLayer
         /// <returns></returns>
         public tbl_SiteDomain SelectBySiteId(Guid siteid)
         {
-            return _dataContext.tbl_SiteDomain.FirstOrDefault(c => c.SiteID == siteid);
+            var result = _dataContext.tbl_SiteDomain.FirstOrDefault(c => c.SiteID == siteid);
+            return result;
         }
 
 

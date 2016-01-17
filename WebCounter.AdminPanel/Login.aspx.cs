@@ -45,7 +45,8 @@ namespace WebCounter.AdminPanel
 
             var login = txtLogin.Text;
             var password = txtPassword.Text;
-            var users = dataManager.User.SelectByLoginPassword(login, password).Where(u => u.AccessLevelID != (int)AccessLevel.Portal).ToList();
+            var users = dataManager.User.SelectByLoginPassword(login, password)
+                .Where(u => u.AccessLevelID != (int)AccessLevel.Portal).ToList();
 
             ErrorMessage.Visible = false;
 

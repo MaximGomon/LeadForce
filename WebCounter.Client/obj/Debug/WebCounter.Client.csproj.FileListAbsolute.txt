@@ -10,3 +10,9 @@ C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce\WebCount
 C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce\WebCounter.Client\obj\Debug\WebCounter.Client.csprojResolveAssemblyReference.cache
 C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce\WebCounter.Client\obj\Debug\WebCounter.Client.dll
 C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce\WebCounter.Client\obj\Debug\WebCounter.Client.pdb
+D:\Work\Sources\LeadForce\WebCounter.Client\bin\WebCounter.Client.dll.config
+D:\Work\Sources\LeadForce\WebCounter.Client\bin\WebCounter.Client.dll
+D:\Work\Sources\LeadForce\WebCounter.Client\bin\WebCounter.Client.pdb
+D:\Work\Sources\LeadForce\WebCounter.Client\obj\Debug\WebCounter.Client.csprojResolveAssemblyReference.cache
+D:\Work\Sources\LeadForce\WebCounter.Client\obj\Debug\WebCounter.Client.dll
+D:\Work\Sources\LeadForce\WebCounter.Client\obj\Debug\WebCounter.Client.pdb

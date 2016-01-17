@@ -52,3 +52,22 @@ C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce - Copy\W
 C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce - Copy\WebCounter.Service\obj\Debug\WebCounter.Service.csprojResolveAssemblyReference.cache
 C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce - Copy\WebCounter.Service\obj\Debug\WebCounter.Service.dll
 C:\Users\Max\AppData\Roaming\Skype\My Skype Received Files\LF\LeadForce - Copy\WebCounter.Service\obj\Debug\WebCounter.Service.pdb
+D:\Work\Sources\LeadForce\WebCounter.Service\bin\WebCounter.Service.dll.config
+D:\Work\Sources\LeadForce\WebCounter.Service\bin\WebCounter.Service.dll
+D:\Work\Sources\LeadForce\WebCounter.Service\bin\WebCounter.Service.pdb
+D:\Work\Sources\LeadForce\WebCounter.Service\bin\Labitec.DataFeed.dll
+D:\Work\Sources\LeadForce\WebCounter.Service\bin\Telerik.Web.Design.dll
+D:\Work\Sources\LeadForce\WebCounter.Service\bin\Telerik.Web.UI.dll
+D:\Work\Sources\LeadForce\WebCounter.Service\bin\Telerik.Web.UI.Skins.dll
+D:\Work\Sources\LeadForce\WebCounter.Service\bin\WebCounter.BusinessLogicLayer.dll
+D:\Work\Sources\LeadForce\WebCounter.Service\bin\WebCounter.DataAccessLayer.dll
+D:\Work\Sources\LeadForce\WebCounter.Service\bin\log4net.dll
+D:\Work\Sources\LeadForce\WebCounter.Service\bin\Microsoft.Web.Administration.dll
+D:\Work\Sources\LeadForce\WebCounter.Service\bin\HtmlAgilityPack.dll
+D:\Work\Sources\LeadForce\WebCounter.Service\bin\Newtonsoft.Json.dll
+D:\Work\Sources\LeadForce\WebCounter.Service\bin\WufooSharp.dll
+D:\Work\Sources\LeadForce\WebCounter.Service\bin\WebCounter.BusinessLogicLayer.pdb
+D:\Work\Sources\LeadForce\WebCounter.Service\bin\WebCounter.DataAccessLayer.pdb
+D:\Work\Sources\LeadForce\WebCounter.Service\obj\Debug\WebCounter.Service.csprojResolveAssemblyReference.cache
+D:\Work\Sources\LeadForce\WebCounter.Service\obj\Debug\WebCounter.Service.dll
+D:\Work\Sources\LeadForce\WebCounter.Service\obj\Debug\WebCounter.Service.pdb
